@@ -70,7 +70,7 @@ const Header = () => {
                   className={`px-4 py-3 text-sm font-medium transition-colors duration-200 rounded-lg ${
                     isActivePage(item.path)
                       ? 'text-white bg-brand-blue'
-                      : 'text-gray-700 hover:text-brand-blue hover:bg-gray-50'
+                      : 'text-black-700 hover:text-brand-blue hover:bg-gray-50'
                   }`}
                 >
                   {item.name}
