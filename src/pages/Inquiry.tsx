@@ -166,7 +166,7 @@ const Inquiry = () => {
                   <div>
                     <label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">
                       <DollarSign className="inline h-4 w-4 mr-1" />
-                      Ориентировъчен бюджет
+                      Ориент. бюджет
                     </label>
                     <select
                       id="budget"
