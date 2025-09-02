@@ -155,12 +155,18 @@ const Inquiry = () => {
                       Брой гости
                     </label>
                     <input
-                      type="number"
-                      id="guestCount"
-                      placeholder="например 50"
-                      value={formData.guestCount}
-                      onChange={(e) => setFormData(prev => ({...prev, guestCount: e.target.value}))}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                     type="number"
+                     id="guestCount"
+                     placeholder="например 50"
+                     value={formData.guestCount}
+                     onChange={(e) =>
+                     setFormData (prev => ({ 
+                        ...prev,
+                         guestCount: +e.target.value < 1 ? 1 : +e.target.value 
+                        }))
+                    }
+                    min={1}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                     />
                   </div>
                   <div>
