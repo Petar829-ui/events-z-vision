@@ -123,9 +123,11 @@ const Partnerships = () => {
         </div>
 
         {/* Partnership Opportunities */}
-        <div className="mt-20 bg-gradient-to-r from-blue-800 to-blue-900 rounded-2xl p-12 text-white">
+        <div className="mt-20 bg-gradient-to-r from-[#075994] to-[#075994] rounded-2xl p-12 text-white">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Искате да станете наш партньор?</h2>
+            <h2 className="text-3xl font-bold mb-4">Искате да станете{""}
+              <span className='text-[#c1ff72]'> наш партньор?</span>
+            </h2>
             <p className="text-xl text-blue-100 max-w-2xl mx-auto">
               Ако предлагате висококачествени услуги и търсите надеждни партньори за събития, 
               ще се радваме да се свържем с вас.
@@ -144,39 +146,39 @@ const Partnerships = () => {
                   'Готовност за дългосрочно сътрудничество'
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="h-6 w-6 text-emerald-400 flex-shrink-0" />
+                    <CheckCircle className="h-6 w-6 text-[#c1ff72] flex-shrink-0" />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8">
+            <div className="bg-[#7fb3d5] bg-opacity-10 backdrop-blur-sm rounded-xl p-8">
               <h3 className="text-2xl font-bold mb-6">Свържете се с нас</h3>
               <form className="space-y-4">
                 <div>
                   <input
                     type="text"
                     placeholder="Име на компанията"
-                    className="w-full px-4 py-3 rounded-lg bg-[#1d3d9f] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                    className="w-full px-4 py-3 rounded-lg bg-[#075994] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-[#c1ff72]"
                   />
                 </div>
                 <div>
                   <input
                     type="email"
                     placeholder="Email адрес"
-                    className="w-full px-4 py-3 rounded-lg bg-[#1d3d9f] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                    className="w-full px-4 py-3 rounded-lg bg-[#075994] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-[#c1ff72]"
                   />
                 </div>
                 <div>
                   <input
                     type="tel"
                     placeholder="Телефон"
-                    className="w-full px-4 py-3 rounded-lg bg-[#1d3d9f] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                    className="w-full px-4 py-3 rounded-lg bg-[#075994] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-[#c1ff72]"
                   />
                 </div>
                 <div>
-                  <select className="w-full px-4 py-3 rounded-lg bg-[#1d3d9f] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                  <select className="w-full px-4 py-3 rounded-lg bg-[#075994] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-[#c1ff72]">
                     <option value="">Тип услуги</option>
                     <option value="venue">Места за провеждане</option>
                     <option value="catering">Кетъринг</option>
@@ -189,12 +191,12 @@ const Partnerships = () => {
                   <textarea
                     placeholder="Опишете вашите услуги"
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg bg-[#1d3d9f] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400 resize-vertical"
+                    className="w-full px-4 py-3 rounded-lg bg-[#075994] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-[#c1ff72] resize-vertical"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
+                  className="w-full bg-[#c1ff72] hover:bg-[#2f492f] hover:text-[#c1ff72] text-[#075994] px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
                 >
                   <span>Изпратете заявката</span>
                   <ArrowRight className="h-5 w-5" />
