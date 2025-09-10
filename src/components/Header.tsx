@@ -6,7 +6,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const location = useLocation();
 
-  const menuItems = [
+  const menuItems = [ 
     { name: 'Начало', path: '/' },
     { name: 'Услуги', path: '/services' },
     { name: 'За нас', path: '/about' },

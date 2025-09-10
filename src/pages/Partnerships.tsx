@@ -158,25 +158,25 @@ const Partnerships = () => {
                   <input
                     type="text"
                     placeholder="Име на компанията"
-                    className="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                    className="w-full px-4 py-3 rounded-lg bg-[#1d3d9f] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400"
                   />
                 </div>
                 <div>
                   <input
                     type="email"
                     placeholder="Email адрес"
-                    className="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                    className="w-full px-4 py-3 rounded-lg bg-[#1d3d9f] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400"
                   />
                 </div>
                 <div>
                   <input
                     type="tel"
                     placeholder="Телефон"
-                    className="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                    className="w-full px-4 py-3 rounded-lg bg-[#1d3d9f] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400"
                   />
                 </div>
                 <div>
-                  <select className="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                  <select className="w-full px-4 py-3 rounded-lg bg-[#1d3d9f] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400">
                     <option value="">Тип услуги</option>
                     <option value="venue">Места за провеждане</option>
                     <option value="catering">Кетъринг</option>
@@ -189,7 +189,7 @@ const Partnerships = () => {
                   <textarea
                     placeholder="Опишете вашите услуги"
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400 resize-vertical"
+                    className="w-full px-4 py-3 rounded-lg bg-[#1d3d9f] border border-white border-opacity-30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-emerald-400 resize-vertical"
                   ></textarea>
                 </div>
                 <button
