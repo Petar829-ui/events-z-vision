@@ -31,28 +31,38 @@ const Home = () => {
   ];
 
   return (
+
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-brand-blue to-brand-green text-white py-20">
+      <section className="text-white py-20 bg-cover bg-center min-h-[80vh]"
+      style={{backgroundImage:"url('website design EZV.png')"}}
+      >
+        <div
+       className="absolute top-[5rem] right-[5rem] w-[70rem] h-[70rem] bg-cover bg-center"
+       style={{ backgroundImage: "url('')" }}
+       ></div>
+       <div className="shape1"></div>
+       <div className="shape2"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Създаваме <span className="text-brand-lime">незабравими</span> преживявания
+          <div className="md:text-left max-w-3x1">
+            <h1 className="font-poppins font-semibold [font-size:69px] tracking-normal leading-[1.1]">
+              <span className='text-brand-lime'>Създаваме </span><br /> незабравими <br /><span className='text-brand-lime'>преживявания</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              Нова и амбициозна агенция за събития, готова да превърне вашите идеи в реалност 
-              с креативност, професионализъм и внимание към детайлите.
+            <p className="font-inter font-bold text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
+              Агенция за цялостно професионално организиране на <br /> събития,
+              готова да превърне Вашите идеи в реалност с <br /> креативност, 
+              професионализъм и внимание към <br /> детайлите.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-start">
               <Link
                 to="/inquiry"
-                className="bg-brand-lime hover:bg-green-400 text-brand-green px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-[#c1ff72] hover:bg-[#2f492f] text-[#075994] hover:text-[#c1ff72] px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Изпрати запитване
               </Link>
               <Link
                 to="/portfolio"
-                className="bg-transparent border-2 border-white hover:bg-white hover:text-brand-blue text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300"
+                className="bg-[#075994] border-2 border-white hover:bg-white hover:text-brand-blue text-white px-11 py-4 rounded-lg text-lg font-semibold transition-all duration-300"
               >
                 Вижте портфолио
               </Link>

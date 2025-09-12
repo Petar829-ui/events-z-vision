@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ .shape1 {
+  width: 280px;
+  height: 575px;
+  background-color: #c1ff72;
+  transform: rotate(185deg) skewY(10deg);
+  border-radius:60% 60% 0 0 / 100% 100% 0 0;
+  position: absolute;
+  right: 63vh;
+  top: 12vh;
+
+  clip-path: polygon(
+    29% 0%,   /* горе вляво – малко по-надолу */
+    64% 0%,  /* горе вдясно – най-горе */
+    100% 82%,/* долу вдясно */
+    0% 100%   /* долу вляво */
+  );
+}
+
+.shape2 {
+  width: 750px;
+  height: 90vh;
+  background-color: #2f492f;
+  border-radius: 20px;
+  transform: rotate(20deg) skewY(10deg);
+  position: absolute;
+  right: 10vh;
+  top: 17.8vh;
+
+  clip-path: polygon(
+    0% 15%,    /* горе вляво – по-ниско */
+    67% 0%,   /* горе вдясно – по-нагоре */
+    100% 60%,  /* долу вдясно */
+    0% 95%    /* долу вляво */
+  );
+}
