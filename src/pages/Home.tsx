@@ -72,13 +72,13 @@ const Home = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-[#075994]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Нашите услуги
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <span className='text-[#c1ff72]'>Нашите </span>услуги
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-white max-w-2xl mx-auto">
               Специализираме се в организацията на разнообразни събития за всички случаи
             </p>
           </div>
@@ -108,57 +108,50 @@ const Home = () => {
           <div className="text-center mt-12">
             <Link
               to="/services"
-              className="inline-flex items-center text-brand-blue hover:text-blue-600 font-semibold text-lg transition-colors"
+              className="inline-flex items-center text-[#c1ff72] hover:text-[#2f492f] font-semibold text-lg transition-colors"
             >
               Вижте всички услуги <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
         </div>
       </section>
-
       {/* Mission & Vision */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 bg-[#075994]">
+         <img src="website design N EZV.png" alt="Image" 
+         className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-[95%] w-[900px] h-auto object-contain z-[-1]" /> 
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Мисия и визия
-              </h2>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-2xl font-semibold text-brand-blue mb-3">Нашата мисия</h3>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    Да превръщаме всяко ваше събитие в споделена история, като съчетаваме прецизност с емоция, свежест с професионализъм, превръщайки всеки момент в значим и запомнящ се.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-semibold text-brand-green mb-3">Нашата визия</h3>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    Да се утвърдим като иновативна агенция за събития, известна с креативния подход, 
-                    високото качество и персонализираното отношение към всеки клиент.
-                  </p>
-                </div>
-              </div>
-            </div>
+             <div className='z-[10]'> 
+              <h2 className="text-3xl md:text-4xl font-bold text-[#c1ff72] mb-6"> Мисия и визия </h2>
+               <div className="space-y-6"> <div> 
+                <h3 className="text-2xl font-semibold text-gray-100 mb-3">Нашата мисия</h3>
+                 <p className="text-lg text-white leading-relaxed"> Да превръщаме всяко ваше събитие в споделена история, като съчетаваме прецизност с емоция, свежест
+                   с професионализъм, превръщайки всеки момент в значим и запомнящ се. </p>
+                  </div>
 
-            <div className="bg-blue-50 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Защо да изберете нас?</h3>
-              <ul className="space-y-4">
-                {[
-                  'Свеж и иновативен подход',
-                  'Персонализирани решения за всеки клиент',
+                   <div> 
+                    <h3 className="text-2xl font-semibold text-[#c1ff72] mb-3">Нашата визия</h3>
+                     <p className="text-lg text-white leading-relaxed"> Да се утвърдим като иновативна агенция за събития, известна с креативния подход, високото качество и персонализираното отношение към всеки клиент. </p>
+                    </div>
+                     </div> 
+                    </div>
+
+                  <div className="bg-[#c1ff72] p-8 rounded-xl z-[10]">
+                 <h3 className="text-2xl font-bold text-[#075994] mb-6">Защо да изберете нас?</h3>
+                 <ul className="space-y-4"> {[ 'Свеж и иновативен подход',
+                 'Персонализирани решения за всеки клиент',
                   'Индивидуален подход към всеки клиент',
                   '24/7 поддръжка по време на събитието',
-                  'Партньорства с водещи доставчици',
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="h-6 w-6 text-brand-lime flex-shrink-0" />
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+                   'Партньорства с водещи доставчици',
+                    ].map((item, index) => ( <li key={index} className="flex items-center space-x-3">
+                    <CheckCircle className="h-6 w-6 text-[#c1ff72] flex-shrink-0" />
+                    <span className="text-[#075994]">{item}
+                  </span>
+               </li> 
+               ))} 
+             </ul> 
+           </div> 
+         </div>
         </div>
       </section>
 

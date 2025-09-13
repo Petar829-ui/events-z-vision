@@ -25,7 +25,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/Events Z visioN logo.png" 
+              src="Events Z visioN logo1.pdf.png" 
               alt="Events Z Vision Logo" 
               className="h-12 w-12 object-contain"
             />
