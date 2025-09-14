@@ -76,11 +76,9 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              <span className='text-[#c1ff72]'>Нашите </span>услуги
+              <span className='text-[#c1ff72]'>Предлагаме висококачествени и професионални услуги, </span>
+              свързани с организиране на:
             </h2>
-            <p className="text-xl text-white max-w-2xl mx-auto">
-              Специализираме се в организацията на разнообразни събития за всички случаи
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -118,7 +116,7 @@ const Home = () => {
       {/* Mission & Vision */}
       <section className="py-16 bg-[#075994]">
          <img src="website design N EZV.png" alt="Image" 
-         className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-[95%] w-[900px] h-auto object-contain z-[-1]" /> 
+         className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-[133%] w-[600px] h-auto object-contain z-[-1]" /> 
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
              <div className='z-[10]'> 
@@ -156,92 +154,24 @@ const Home = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-16 bg-gradient-to-r from-brand-blue to-brand-green">
+      <section className="py-16 bg-[#075994]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Имате въпроси?
+          <div className="text-center p-10 rounded-xl bg-[#f6f6f6]">
+            <h2 className="text-3xl md:text-3xl font-inter font-bold text-[#075994] mb-4">
+              Готов ли си да изживееш <span className='text-[#f96e0c]'>мечтаното събитие</span>?
             </h2>
-            <p className="text-xl text-blue-100">
+            <p className="font-inter font-normal text-xl text-[#075994] m-6">
               Свържете се с нас за безплатна консултация
             </p>
-          </div>
-
-          <form className="bg-white p-8 rounded-xl shadow-2xl">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Име и фамилия *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email адрес *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
-                />
-              </div>
-            </div>
-
-            <div className="mt-6">
-              <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                Телефон
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
-              />
-            </div>
-
-            <div className="mt-6">
-              <label htmlFor="event-type" className="block text-sm font-medium text-gray-700 mb-2">
-                Тип събитие
-              </label>
-              <select
-                id="event-type"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
-              >
-                <option value="">Изберете тип събитие</option>
-                <option value="teambuilding">Тиймбилдинг</option>
-                <option value="corporate">Корпоративно събитие</option>
-                <option value="personal">Лично събитие</option>
-                <option value="other">Друго</option>
-              </select>
-            </div>
-
-            <div className="mt-6">
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                Съобщение *
-              </label>
-              <textarea
-                id="message"
-                required
-                rows={4}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors resize-vertical"
-                placeholder="Разкажете ни повече за вашето събитие..."
-              ></textarea>
-            </div>
-
             <div className="mt-8">
-              <button
-                type="submit"
-                className="w-full bg-brand-lime hover:bg-green-400 text-brand-green px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+              <Link
+              to="/inquiry"
+              className="w-full bg-[#c1ff72] hover:bg-[#2f492f] text-[#075994] hover:text-[#c1ff72] px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-center block"
               >
-                Изпратете запитването
-              </button>
+              Кликни тук, за да направиш запитване
+              </Link>
+              </div>
             </div>
-          </form>
         </div>
       </section>
     </div>
