@@ -22,8 +22,8 @@ const Header = () => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          <Link to="/" className="flex items-center space-x-3">
+        <div className="flex justify-between items-center py-4 min-h-16">
+          <Link to="/" className="flex items-center space-x-3 absolute left-10">
             <img 
               src="Events Z visioN logo1.pdf.png" 
               alt="Events Z Vision Logo" 
@@ -33,7 +33,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Menu - показва всички страници */}
-          <nav className="hidden xl:flex items-center space-x-6">
+          <nav className="hidden xl:flex items-center space-x-6 absolute right-10">
             {menuItems.map((item) => (
               <Link
                 key={item.path}
@@ -52,7 +52,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="xl:hidden p-2 text-gray-700 hover:text-brand-blue"
+            className="xl:hidden p-2 text-gray-700 hover:text-[#075994]"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -60,7 +60,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <nav className="xl:hidden pb-4 border-t border-gray-100">
+          <nav className="xl:hidden pb-4 border-t border-[#075994]">
             <div className="flex flex-col space-y-1 pt-4">
               {menuItems.map((item) => (
                 <Link
@@ -69,8 +69,8 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className={`px-4 py-3 text-sm font-medium transition-colors duration-200 rounded-lg ${
                     isActivePage(item.path)
-                      ? 'text-white bg-brand-blue'
-                      : 'text-black-700 hover:text-brand-blue hover:bg-gray-50'
+                      ? 'text-white bg-[#075994]'
+                      : 'text-black-700 hover:text-brand-blue hover:bg-[#075994]'
                   }`}
                 >
                   {item.name}

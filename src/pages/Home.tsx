@@ -17,7 +17,7 @@ const Home = () => {
             <h1 className="font-poppins font-semibold [font-size:69px] tracking-normal leading-[1.1]">
               <span className='text-[#c1ff72]'>Създаваме </span><br /> незабравими <br /><span className='text-[#c1ff72]'>преживявания</span>
             </h1>
-            <p className="font-inter font-bold text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
+            <p className="font-inter font-normal text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
               Агенция за цялостно професионално организиране на <br /> събития,
               готова да превърне Вашите идеи в реалност с <br /> креативност, 
               професионализъм и внимание към <br /> детайлите.
@@ -25,15 +25,15 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-start">
               <Link
                 to="/inquiry"
-                className="bg-[#c1ff72] hover:bg-[#2f492f] text-[#075994] hover:text-[#c1ff72] px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-[#c1ff72] hover:bg-[#2f492f] text-[#075994] hover:text-[#c1ff72] px-8 py-4 rounded-lg text-lg font-poppins font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
-                Изпрати запитване
+                ИЗПРАТИ ЗАПИТВАНЕ
               </Link>
               <Link
                 to="/portfolio"
-                className="bg-[#075994] border-2 border-white hover:bg-white hover:text-[#075994] text-white px-11 py-4 rounded-lg text-lg font-semibold transition-all duration-300"
+                className="bg-[#075994] border-2 border-white hover:bg-white hover:text-[#075994] text-white px-11 py-4 rounded-lg text-lg font-poppins font-semibold transition-all duration-300"
               >
-                Вижте портфолио
+                ВИЖ УСЛУГИТЕ НИ
               </Link>
             </div>
           </div>
