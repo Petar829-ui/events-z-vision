@@ -10,16 +10,12 @@ const Home = () => {
       <section className="text-white py-20 bg-cover bg-center min-h-[80vh]"
       style={{backgroundImage:"url('website design EZV.png')"}}
       >
-        <div
-       className="absolute top-[5rem] right-[5rem] w-[70rem] h-[70rem] bg-cover bg-center"
-       style={{ backgroundImage: "url('')" }}
-       ></div>
        <div className="shape1"></div>
        <div className="shape2"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="md:text-left max-w-3x1">
             <h1 className="font-poppins font-semibold [font-size:69px] tracking-normal leading-[1.1]">
-              <span className='text-brand-lime'>Създаваме </span><br /> незабравими <br /><span className='text-brand-lime'>преживявания</span>
+              <span className='text-[#c1ff72]'>Създаваме </span><br /> незабравими <br /><span className='text-[#c1ff72]'>преживявания</span>
             </h1>
             <p className="font-inter font-bold text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
               Агенция за цялостно професионално организиране на <br /> събития,
@@ -35,7 +31,7 @@ const Home = () => {
               </Link>
               <Link
                 to="/portfolio"
-                className="bg-[#075994] border-2 border-white hover:bg-white hover:text-brand-blue text-white px-11 py-4 rounded-lg text-lg font-semibold transition-all duration-300"
+                className="bg-[#075994] border-2 border-white hover:bg-white hover:text-[#075994] text-white px-11 py-4 rounded-lg text-lg font-semibold transition-all duration-300"
               >
                 Вижте портфолио
               </Link>
@@ -47,7 +43,7 @@ const Home = () => {
       {/* Services Preview */}
       <section className="py-16 bg-[#075994]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 relative z-[10]">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               <span className='text-[#c1ff72]'>Предлагаме висококачествени и професионални услуги, </span>
               свързани с организиране на:
@@ -68,7 +64,7 @@ const Home = () => {
             </div>
            </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 relative z-[10]">
             <Link
               to="/services"
               className="inline-flex items-center text-[#c1ff72] hover:text-[#2f492f] font-semibold text-lg transition-colors"
@@ -81,9 +77,9 @@ const Home = () => {
       {/* Mission & Vision */}
       <section className="py-16 bg-[#075994]">
          <img src="website design N EZV.png" alt="Image" 
-         className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-[133%] w-[600px] h-auto object-contain z-[0]" /> 
+         className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-[115%] w-[750px] h-auto object-contain z-[0]" /> 
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
-          <h1 className='text-4x1 fond-Playfair Display fond-serif text-[#c1ff72] mb-6 text-center relative z-[10]'>Кои сме ние?</h1>
+          <h1 className='text-7xl font-caveat Display bont-serif text-[#c1ff72] mb-6 text-center relative z-[10]'>Кои сме ние?</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
              <div className='z-[10]'>
               <h2 className="text-3xl md:text-4xl font-bold text-[#c1ff72] mb-6"> Мисия и визия </h2>
@@ -122,7 +118,7 @@ const Home = () => {
       {/* Contact Form */}
       <section className="py-16 bg-[#075994]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center p-10 rounded-xl bg-[#f6f6f6]">
+          <div className="text-center p-10 rounded-xl bg-[#f6f6f6] relative z-[10]">
             <h2 className="text-3xl md:text-3xl font-inter font-bold text-[#075994] mb-4">
               Готов ли си да изживееш <span className='text-[#f96e0c]'>мечтаното събитие</span>?
             </h2>

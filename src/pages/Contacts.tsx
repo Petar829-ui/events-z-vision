@@ -188,7 +188,7 @@ const Contacts = () => {
 
               <button
                 type="submit"
-                className="w-full bg-brand-blue hover:bg-blue-700 text-white px-6 py-4 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
+                className="w-full bg-[#075994] hover:bg-blue-700 text-white px-6 py-4 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
               >
                 <Send className="h-5 w-5" />
                 <span>Изпратете съобщението</span>

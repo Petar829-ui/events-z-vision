@@ -40,8 +40,8 @@ const Header = () => {
                 to={item.path}
                 className={`text-sm font-medium transition-colors duration-200 px-3 py-2 rounded-lg ${
                   isActivePage(item.path)
-                    ? 'text-white bg-brand-blue'
-                    : 'text-black-700 hover:text-brand-blue hover:bg-gray-50'
+                    ? 'text-white bg-[#075994]'
+                    : 'text-black-700 hover:text-white hover:bg-[#075994]'
                 }`}
               >
                 {item.name}
