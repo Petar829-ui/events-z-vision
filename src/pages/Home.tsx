@@ -1,35 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Star, Users, Calendar, Trophy, ArrowRight, CheckCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle,} from 'lucide-react';
 
 const Home = () => {
-  const services = [
-    {
-      title: 'Тиймбилдинги',
-      description: 'Укрепете екипа си с вълнуващи и мотивиращи активности',
-      icon: Users,
-      color: 'bg-blue-500',
-    },
-    {
-      title: 'Корпоративни събития',
-      description: 'Професионални конференции, семинари и бизнес срещи',
-      icon: Calendar,
-      color: 'bg-emerald-500',
-    },
-    {
-      title: 'Лични събития',
-      description: 'Сватби, рождени дни и специални празненства',
-      icon: Star,
-      color: 'bg-purple-500',
-    },
-    {
-      title: 'Други',
-      description: 'Индивидуални решения за уникални събития',
-      icon: Trophy,
-      color: 'bg-amber-500',
-    },
-  ];
-
   return (
 
     <div className="min-h-screen">
@@ -79,29 +52,21 @@ const Home = () => {
               <span className='text-[#c1ff72]'>Предлагаме висококачествени и професионални услуги, </span>
               свързани с организиране на:
             </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => {
-              const IconComponent = service.icon;
-              return (
-                <div
-                  key={index}
-                  className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
-                >
-                  <div className={`${service.color} w-16 h-16 rounded-lg flex items-center justify-center mb-4 mx-auto`}>
-                    <IconComponent className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2 text-center">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 text-center mb-4">
-                    {service.description}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
+            <div className='font-playfair font-normal text-2xl flex justify-center gap-12 my-12'>
+              <div className='text-center'>
+              <img src="website 2 design EZV.png" alt="Img" className='w-[400px] h-auto' />
+              <h2 className='text-[#c1ff72]'>Корпоративни събития</h2>
+              </div>
+              <div className='text-center'>
+              <img src="website 3 design EZV.png" alt="Img" className='w-[400px] h-auto' />
+              <h2 className='text-[#c1ff72]'>Лични събития</h2>
+              </div>
+              <div className='text-center'>
+              <img src="website 4 design EZV.png" alt="Img" className='w-[400px] h-auto' />
+              <h2 className='text-[#c1ff72]'>Нестандартни Z Experience събития</h2>
+              </div>
+            </div>
+           </div>
 
           <div className="text-center mt-12">
             <Link
@@ -116,10 +81,11 @@ const Home = () => {
       {/* Mission & Vision */}
       <section className="py-16 bg-[#075994]">
          <img src="website design N EZV.png" alt="Image" 
-         className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-[133%] w-[600px] h-auto object-contain z-[-1]" /> 
+         className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-[133%] w-[600px] h-auto object-contain z-[0]" /> 
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
+          <h1 className='text-4x1 fond-Playfair Display fond-serif text-[#c1ff72] mb-6 text-center relative z-[10]'>Кои сме ние?</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-             <div className='z-[10]'> 
+             <div className='z-[10]'>
               <h2 className="text-3xl md:text-4xl font-bold text-[#c1ff72] mb-6"> Мисия и визия </h2>
                <div className="space-y-6"> <div> 
                 <h3 className="text-2xl font-semibold text-gray-100 mb-3">Нашата мисия</h3>
