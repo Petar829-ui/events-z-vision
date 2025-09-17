@@ -12,12 +12,12 @@ const Home = () => {
       >
        <div className="shape1"></div>
        <div className="shape2"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32">
           <div className="md:text-left max-w-3x1">
-            <h1 className="font-poppins font-semibold [font-size:69px] tracking-normal leading-[1.1]">
+            <h1 className="font-poppins font-semibold [font-size:100px] tracking-normal leading-[1.1]">
               <span className='text-[#c1ff72]'>Създаваме </span><br /> незабравими <br /><span className='text-[#c1ff72]'>преживявания</span>
             </h1>
-            <p className="font-inter font-normal text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
+            <p className="font-inter font-normal text-2xl md:text-3xl mb-8 text-blue-100 leading-relaxed">
               Агенция за цялостно професионално организиране на <br /> събития,
               готова да превърне Вашите идеи в реалност с <br /> креативност, 
               професионализъм и внимание към <br /> детайлите.
