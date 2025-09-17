@@ -29,7 +29,7 @@ const Header = () => {
               alt="Events Z Vision Logo" 
               className="h-12 w-12 object-contain"
             />
-            <span className="text-xl font-bold text-gray-900">Events Z Vision</span>
+            <span className="text-xl font-inter font-bold text-gray-900">Events Z Vision</span>
           </Link>
 
           {/* Desktop Menu - показва всички страници */}

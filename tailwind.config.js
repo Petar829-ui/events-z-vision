@@ -21,23 +21,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        caveat: ['"Caveat"', 'cursive'],
-      },
-    },
-  },
-  plugins: [],
-};
-
-
-module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        caveat: ['Caveat', 'cursive'],
         poppins: ['Poppins', 'sans-serif'],
+        playfair: ['"playfair Display"', 'serif']
       },
     },
   },

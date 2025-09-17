@@ -45,7 +45,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 relative z-[10]">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              <span className='text-[#c1ff72]'>Предлагаме висококачествени и професионални услуги, </span>
+              <span className='text-[#c1ff72] font-poppins font-semibold'>Предлагаме висококачествени и професионални услуги, </span>
               свързани с организиране на:
             </h2>
             <div className='font-playfair font-normal text-2xl flex justify-center gap-12 my-12'>
@@ -67,7 +67,7 @@ const Home = () => {
           <div className="text-center mt-12 relative z-[10]">
             <Link
               to="/services"
-              className="inline-flex items-center text-[#c1ff72] hover:text-[#2f492f] font-semibold text-lg transition-colors"
+              className="inline-flex items-center text-[#c1ff72] hover:text-[#2f492f] font-playfair font-semibold text-lg transition-colors"
             >
               Вижте всички услуги <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
@@ -82,33 +82,32 @@ const Home = () => {
           <h1 className='text-7xl font-caveat Display bont-serif text-[#c1ff72] mb-6 text-center relative z-[10]'>Кои сме ние?</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
              <div className='z-[10]'>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#c1ff72] mb-6"> Мисия и визия </h2>
                <div className="space-y-6"> <div> 
-                <h3 className="text-2xl font-semibold text-gray-100 mb-3">Нашата мисия</h3>
-                 <p className="text-lg text-white leading-relaxed"> Да превръщаме всяко ваше събитие в споделена история, като съчетаваме прецизност с емоция, свежест
-                   с професионализъм, превръщайки всеки момент в значим и запомнящ се. </p>
+                 <p className="text-lg text-[#c1ff72] font-inter font-normal leading-relaxed"> Ние сме новото поколение създатели
+                   на събития – с душа, посока и визия. Създаваме преживявания,
+                    които доказват, че животът е красив, когато се споделя с готини хора,
+                     в правилната среда и по вълнуващ, автентичен и неподправен начин.
+                      В основата ни стоят новаторството, страстта и професионализмът. се. </p>
                   </div>
 
                    <div> 
-                    <h3 className="text-2xl font-semibold text-[#c1ff72] mb-3">Нашата визия</h3>
-                     <p className="text-lg text-white leading-relaxed"> Да се утвърдим като иновативна агенция за събития, известна с креативния подход, високото качество и персонализираното отношение към всеки клиент. </p>
+                    <h3 className="text-5xl font-caveat font-normal text-[#c1ff72] mb-3">Нашата мисия</h3>
+                     <p className="text-lg text-[#c1ff72] leading-relaxed font-inter font-normal"> Мисията ни е да превръщаме всяко ваше събитие в споделена история,
+                       като съчетаваме прецизност с емоция,свежест с професионализъм,
+                         превръщайки всеки момент в значим и запомнящ се. </p>
                     </div>
                      </div> 
                     </div>
 
                   <div className="bg-[#c1ff72] p-8 rounded-xl z-[10]">
-                 <h3 className="text-2xl font-bold text-[#075994] mb-6">Защо да изберете нас?</h3>
-                 <ul className="space-y-4"> {[ 'Свеж и иновативен подход',
-                 'Персонализирани решения за всеки клиент',
-                  'Индивидуален подход към всеки клиент',
-                  '24/7 поддръжка по време на събитието',
-                   'Партньорства с водещи доставчици',
+                 <h3 className="text-5xl font-caveat font-normal text-[#075994] mb-6">Какво ни отличава?</h3>
+                  <ul className="font-inter font-normal"> {[ 'Не разглеждаме събитията просто като услуга, а като артистичен израз и личен наш ангажимент. Слушаме внимателно. Мечтаем заедно с клиента. Надскачаме очакванията. Комбинираме достъпност с безкомпромисно качество, smart решения и авторски почерк. Създаваме нови стандарти в мениджмънта на събития -корпоративни и лични.'
                     ].map((item, index) => ( <li key={index} className="flex items-center space-x-3">
                     <CheckCircle className="h-6 w-6 text-[#c1ff72] flex-shrink-0" />
                     <span className="text-[#075994]">{item}
-                  </span>
+                  </span> 
                </li> 
-               ))} 
+               ))}
              </ul> 
            </div> 
          </div>
@@ -119,7 +118,7 @@ const Home = () => {
       <section className="py-16 bg-[#075994]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center p-10 rounded-xl bg-[#f6f6f6] relative z-[10]">
-            <h2 className="text-3xl md:text-3xl font-inter font-bold text-[#075994] mb-4">
+            <h2 className="text-3xl md:text-3xl font-inter font-semibold text-[#075994] mb-4">
               Готов ли си да изживееш <span className='text-[#f96e0c]'>мечтаното събитие</span>?
             </h2>
             <p className="font-inter font-normal text-xl text-[#075994] m-6">
@@ -128,7 +127,7 @@ const Home = () => {
             <div className="mt-8">
               <Link
               to="/inquiry"
-              className="w-full bg-[#c1ff72] hover:bg-[#2f492f] text-[#075994] hover:text-[#c1ff72] px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-center block"
+              className="w-full bg-[#c1ff72] hover:bg-[#2f492f] text-[#075994] hover:text-[#c1ff72] px-8 py-4 rounded-lg text-lg font-poppins font-bold transition-all duration-300 transform hover:scale-105 shadow-lg text-center block"
               >
               Кликни тук, за да направиш запитване
               </Link>
