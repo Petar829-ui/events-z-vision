@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  overflow-x:hidden
+}
+
  .shape1 {
   width: 280px;
   height: 575px;
