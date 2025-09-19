@@ -6,15 +6,15 @@ html, body {
   overflow-x:hidden
 }
 
- .shape1 {
+.shape1 {
   width: 280px;
   height: 575px;
   background-color: #c1ff72;
-  transform: rotate(185deg) skewY(10deg);
+  transform: rotate(190deg) skewY(10deg);
   border-radius:60% 60% 0 0 / 100% 100% 0 0;
   position: absolute;
   right: 63vh;
-  top: 12vh;
+  top: 5vh;
 
   clip-path: polygon(
     29% 0%,   /* горе вляво – малко по-надолу */
@@ -32,7 +32,7 @@ html, body {
   transform: rotate(20deg) skewY(10deg);
   position: absolute;
   right: 10vh;
-  top: 17.8vh;
+  top: 12vh;
 
   clip-path: polygon(
     0% 15%,    /* горе вляво – по-ниско */
@@ -41,3 +41,4 @@ html, body {
     0% 95%    /* долу вляво */
   );
 }
+

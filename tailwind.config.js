@@ -21,6 +21,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
         caveat: ['Caveat', 'cursive'],
         poppins: ['Poppins', 'sans-serif'],

@@ -7,11 +7,14 @@ const Home = () => {
 
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="text-white py-20 bg-cover bg-center min-h-[80vh]"
+      <section className="text-white py-20 bg-cover bg-center min-h-[80vh] overflow-hidden bg-cover bg-center"
       style={{backgroundImage:"url('website design EZV.png')"}}
       >
+  <section className='relative text-white ... hero-is-relative'>
        <div className="shape1"></div>
        <div className="shape2"></div>
+         <div className="relative z-[2]"></div>
+       </section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32">
           <div className="md:text-left max-w-3x1">
             <h1 className="font-poppins font-semibold [font-size:100px] tracking-normal leading-[1.1]">
@@ -77,7 +80,7 @@ const Home = () => {
       {/* Mission & Vision */}
       <section className="py-16 bg-[#075994]">
          <img src="website design N EZV.png" alt="Image" 
-         className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-[115%] w-[750px] h-auto object-contain z-[0]" /> 
+         className="pointer-events-none absolute left-1/2 top-2/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain z-0 opacity-70" /> 
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
           <h1 className='text-7xl font-caveat Display bont-serif text-[#c1ff72] mb-6 text-center relative z-[10]'>Кои сме ние?</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

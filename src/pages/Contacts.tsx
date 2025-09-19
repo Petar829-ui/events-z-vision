@@ -1,217 +1,153 @@
-import React from 'react';
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Send } from 'lucide-react';
+import React from "react";
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Music2 } from "lucide-react";
+import { Link } from "react-router-dom";
+import { SiTiktok } from "react-icons/si";
 
 const Contacts = () => {
   return (
-    <div className="min-h-screen py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Контакти
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Свържете се с нас по удобния за вас начин. Нашият екип е готов да отговори на всички ваши въпроси.
+    <div className="pt-24 pb-9 bg-[#075994]">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Заглавие */}
+        <h1 className="text-4xl md:text-5xl font-poppins font-semibold text-[#c1ff72] text-center">
+          Контакти
+        </h1>
+
+        {/* Ляво/Дясно заглавия */}
+        <div className="mt-8 flex flex-col md:flex-row justify-between gap-6">
+          <p className="text-3xl md:text-4xl font-poppins font-semibold">
+            <span className="text-[#c1ff72]"><br />Информация</span>{" "}
+            <span className="text-white">за контакт</span>
           </p>
+          <p className="text-2xl md:text-4xl font-poppins font-semibold text-center md:text-center">
+            <span className="text-[#c1ff72]">Следваш ли нашите<br /> профили</span>
+            <span className="text-white"> в социалните<br /> мрежи?</span>
+          </p>
+          <img src="website design N EZV.png" alt="Image" 
+         className="pointer-events-none absolute left-1/2 top-[30rem] -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain z-[-1] opacity-70" />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Информация за контакт</h2>
-              
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-green-100 p-3 rounded-lg">
-                    <Phone className="h-6 w-6 text-brand-green" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Телефони</h3>
-                    <p className="text-gray-600">+359 888 123 456</p>
-                    <p className="text-gray-600">+359 877 654 321</p>
-                  </div>
-                </div>
+        {/* Две колони */}
+        <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 opacity-85">
+          {/* Лява карта */}
+          <div className="bg-white rounded-3xl shadow-xl p-8 z-[1]">
+            <h2 className="text-2xl font-bold text-[#f96e0c] mb-6">Информация за контакт</h2>
 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-lime-100 p-3 rounded-lg">
-                    <Mail className="h-6 w-6 text-green-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Email адреси</h3>
-                    <p className="text-gray-600">info@eventszv.bg</p>
-                    <p className="text-gray-600">office@eventszv.bg</p>
-                  </div>
+            <div className="space-y-8">
+              {/* Адрес */}
+              <div className="flex gap-4">
+                <div className="bg-blue-100 text-blue-700 p-3 rounded-lg">
+                  <MapPin className="h-6 w-6" />
                 </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <MapPin className="h-6 w-6 text-brand-blue" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Адрес</h3>
-                    <p className="text-gray-600">
-                      бул. Витоша 100<br />
-                      1000 София, България
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-yellow-100 p-3 rounded-lg">
-                    <Clock className="h-6 w-6 text-yellow-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Работно време</h3>
-                    <p className="text-gray-600">
-                      Понеделник - Петък: 9:00 - 18:00<br />
-                      Събота: 10:00 - 15:00<br />
-                      Неделя: Почивен ден
-                    </p>
-                  </div>
+                <div>
+                  <p className="font-inter font-semibold text-[#075994]">
+                    <span className="text-[#f96e0c]">Адрес:</span>{" "}
+                    София, кв. “Карпузица”, 1619, ул. “Любляна” 47А
+                  </p>
                 </div>
               </div>
-            </div>
 
-            {/* Social Media */}
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Следете ни в социалните мрежи</h2>
-              <div className="flex space-x-6">
-                <a
-                  href="https://facebook.com/eventszv"
-                  className="flex items-center space-x-3 bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Facebook className="h-6 w-6 text-blue-600" />
-                  <span className="font-medium text-blue-600">Facebook</span>
-                </a>
-                <a
-                  href="https://instagram.com/eventszv"
-                  className="flex items-center space-x-3 bg-pink-50 hover:bg-pink-100 p-4 rounded-lg transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Instagram className="h-6 w-6 text-pink-600" />
-                  <span className="font-medium text-pink-600">Instagram</span>
-                </a>
-                <a
-                  href="https://linkedin.com/company/eventszv"
-                  className="flex items-center space-x-3 bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Linkedin className="h-6 w-6 text-blue-700" />
-                  <span className="font-medium text-blue-700">LinkedIn</span>
-                </a>
+              {/* Телефони */}
+              <div className="flex gap-4 font-inter font-semibold text-[#075994]">
+                <div className="bg-green-100 text-green-700 p-3 rounded-lg">
+                  <Phone className="h-6 w-6" />
+                </div>
+                <div>
+                  <p className="font-semibold text-[#f96e0c]">Телефонни номера:</p>
+                  <p>+359 885928422</p>
+                  <p>+359 888805512</p>
+                </div>
+              </div>
+
+              {/* Имейл */}
+              <div className="flex gap-4 font-inter font-semibold text-[#075994]">
+                <div className="bg-lime-100 text-lime-700 p-3 rounded-lg">
+                  <Mail className="h-6 w-6" />
+                </div>
+                <div>
+                  <p className="font-semibold text-[#f96e0c]">Имейл:</p>
+                  <p>info@eventszv.bg</p>
+                  <p>office@eventszv.bg</p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="bg-white rounded-xl shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Изпратете ни съобщение</h2>
-            
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                    Име *
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                    Фамилия *
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
-                  />
-                </div>
-              </div>
+          {/* Дясна карта – социалки */}
+          <div className="relative bg-slate-100 rounded-3xl shadow-xl p-8">
+            {/* Плочки вътре в картата */}
+            <div className="mt-2 flex flex-col items-left gap-4">
+              {/* Facebook */}
 
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email адрес *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                  Телефон
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                  Тема *
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Съобщение *
-                </label>
-                <textarea
-                  id="message"
-                  required
-                  rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors resize-vertical"
-                  placeholder="Напишете вашето съобщение тук..."
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-[#075994] hover:bg-blue-700 text-white px-6 py-4 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
+             <a
+                href="https://facebook.com/eventszv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 px-5 py-4 rounded-xl
+                           bg-blue-100 hover:bg-blue-200 text-blue-700 transition-all
+                           shadow-sm hover:shadow-md"
+                aria-label="Facebook"
               >
-                <Send className="h-5 w-5" />
-                <span>Изпратете съобщението</span>
-              </button>
-            </form>
+                <Facebook className="h-5 w-5 transition-transform group-hover:scale-110" />
+                <span className="font-medium">Facebook @UserName</span>
+              </a>
+
+              {/* Instagram */}
+              <a
+                href="https://instagram.com/eventszv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 px-5 py-4 rounded-xl
+                           bg-pink-100 hover:bg-pink-200 text-pink-600 transition-all
+                           shadow-sm hover:shadow-md"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5 transition-transform group-hover:scale-110" />
+                <span className="font-medium">Instagram @UserName</span>
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://linkedin.com/company/eventszv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 px-5 py-4 rounded-xl
+                           bg-indigo-100 hover:bg-indigo-200 text-indigo-700 transition-all
+                           shadow-sm hover:shadow-md"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5 transition-transform group-hover:scale-110" />
+                <span className="font-medium">LinkedIn @UserName</span>
+              </a>
+
+              {/* TikTok – без външен пакет, ползваме Music2 като иконка */}
+              <a
+                href="https://www.tiktok.com/@eventszv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 px-5 py-4 rounded-xl
+                           bg-neutral-100 hover:bg-neutral-200 text-neutral-900 transition-all
+                           shadow-sm hover:shadow-md"
+                aria-label="TikTok"
+              >
+                <Music2 className="h-5 w-5 transition-transform group-hover:scale-110" />
+                <span className="font-medium">TikTok @UserName</span>
+              </a>
+
+            </div>
           </div>
         </div>
 
-        {/* Google Maps */}
-        <div className="mt-12">
-          <div className="bg-white rounded-xl shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Нашето местоположение</h2>
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              <div className="text-center text-gray-600">
-                <MapPin className="h-12 w-12 mx-auto mb-4" />
-                <p className="text-lg font-medium">Google Maps</p>
-                <p className="text-sm">бул. Витоша 100, София 1000</p>
-                <p className="text-xs mt-2 text-gray-500">
-                  *Тук ще бъде вградена интерактивна карта с нашето местоположение
-                </p>
-              </div>
-            </div>
-          </div>
+        {/* Голям зелен CTA */}
+        <div className="mt-10 flex justify-center">
+          <Link
+            to="/inquiry"
+            className="w-full max-w-4xl bg-[#c1ff72] text-[#075994] font-poppins font-bold 
+                       text-xl md:text-2xl px-8 py-6 rounded-full text-center
+                       hover:bg-[#2f492f] hover:text-[#c1ff72] transition-colors duration-200
+                       shadow-lg"
+          >
+            Кликни тук, за да направиш запитване
+          </Link>
         </div>
       </div>
     </div>
