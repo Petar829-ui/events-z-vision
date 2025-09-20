@@ -8,29 +8,29 @@ const Contacts = () => {
     <div className="pt-24 pb-9 bg-[#075994]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Заглавие */}
-        <h1 className="text-4xl md:text-5xl font-poppins font-semibold text-[#c1ff72] text-center">
+        <h1 className="text-4xl md:text-5xl font-poppins font-semibold text-[#c1ff72] text-center relative z-[1]">
           Контакти
         </h1>
 
         {/* Ляво/Дясно заглавия */}
         <div className="mt-8 flex flex-col md:flex-row justify-between gap-6">
-          <p className="text-3xl md:text-4xl font-poppins font-semibold">
+          <p className="text-3xl md:text-4xl font-poppins font-semibold relative z-[1]">
             <span className="text-[#c1ff72]"><br />Информация</span>{" "}
             <span className="text-white">за контакт</span>
           </p>
-          <p className="text-2xl md:text-4xl font-poppins font-semibold text-center md:text-center">
+          <p className="text-2xl md:text-4xl font-poppins font-semibold text-center md:text-center relative z-[1]">
             <span className="text-[#c1ff72]">Следваш ли нашите<br /> профили</span>
             <span className="text-white"> в социалните<br /> мрежи?</span>
           </p>
           <img src="website design N EZV.png" alt="Image" 
-         className="pointer-events-none absolute left-1/2 top-[30rem] -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain z-[-1] opacity-70" />
+         className="pointer-events-none absolute left-1/2 top-[30rem] -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain z-[0] opacity-70" />
         </div>
 
         {/* Две колони */}
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 opacity-85">
           {/* Лява карта */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 z-[1]">
-            <h2 className="text-2xl font-bold text-[#f96e0c] mb-6">Информация за контакт</h2>
+          <div className="bg-white rounded-3xl shadow-xl p-8">
+            <h2 className="text-2xl font-bold text-[#f96e0c] mb-6 relative z-[1]">Информация за контакт</h2>
 
             <div className="space-y-8">
               {/* Адрес */}
@@ -38,7 +38,7 @@ const Contacts = () => {
                 <div className="bg-blue-100 text-blue-700 p-3 rounded-lg">
                   <MapPin className="h-6 w-6" />
                 </div>
-                <div>
+                <div className="relative z-[1]">
                   <p className="font-inter font-semibold text-[#075994]">
                     <span className="text-[#f96e0c]">Адрес:</span>{" "}
                     София, кв. “Карпузица”, 1619, ул. “Любляна” 47А
@@ -144,7 +144,7 @@ const Contacts = () => {
             className="w-full max-w-4xl bg-[#c1ff72] text-[#075994] font-poppins font-bold 
                        text-xl md:text-2xl px-8 py-6 rounded-full text-center
                        hover:bg-[#2f492f] hover:text-[#c1ff72] transition-colors duration-200
-                       shadow-lg"
+                       shadow-lg relative z-[1]"
           >
             Кликни тук, за да направиш запитване
           </Link>

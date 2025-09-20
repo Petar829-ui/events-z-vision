@@ -32,12 +32,12 @@ const Home = () => {
               >
                 ИЗПРАТИ ЗАПИТВАНЕ
               </Link>
-              <Link
+              {/*<Link
                 to="/portfolio"
                 className="bg-[#075994] border-2 border-white hover:bg-white hover:text-[#075994] text-white px-11 py-4 rounded-lg text-lg font-poppins font-semibold transition-all duration-300"
               >
                 ВИЖ УСЛУГИТЕ НИ
-              </Link>
+              </Link>*/}
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@ const Home = () => {
             </h2>
             <div className='font-playfair font-normal text-2xl flex justify-center gap-12 my-12'>
               <div className='text-center'>
-              <img src="website 2 design EZV.png" alt="Img" className='w-[400px] h-auto' />
+              <img src="website H2 design EZV.png" alt="Img" className='w-[400px] h-auto' />
               <h2 className='text-[#c1ff72]'>Корпоративни събития</h2>
               </div>
               <div className='text-center'>
@@ -70,7 +70,7 @@ const Home = () => {
           <div className="text-center mt-12 relative z-[10]">
             <Link
               to="/services"
-              className="inline-flex items-center text-[#c1ff72] hover:text-[#2f492f] font-playfair font-semibold text-lg transition-colors"
+              className="inline-flex items-center text-[#c1ff72] hover:text-[#7fbf4f] font-playfair font-semibold text-lg transition-colors"
             >
               Вижте всички услуги <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

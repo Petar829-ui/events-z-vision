@@ -5,19 +5,24 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-[#075994] pb-10">
       {/* Hero */}
-      <section
-        className="bg-white py-20 bg-cover bg-center min-h-[80vh]"
-        style={{ backgroundImage: "url('website 2 service background design EZV.png')" }}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="relative min-h-[80vh] overflow-hidden">
+        {/* Фон – overscan с 4px, за да няма бели линии */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-y-0 left-[-4px] right-[-4px] bg-cover bg-center"
+          style={{ backgroundImage: "url('website 2 design EZV.svg')" }}
+        />
+        {/* Съдържание */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-poppins font-semibold text-white pt-16 mb-64">
+            <h1 className="text-4xl md:text-6xl font-poppins font-semibold text-white pt-24 mb-64">
               <span className="text-[#c1ff72]">Нашите</span> услуги
             </h1>
             <p className="text-3xl text-white max-w-6xl mx-auto leading-snug font-playfair font-semibold">
               <span className="text-[#c1ff72]">Организацията на събития е</span> изкуство
               <span className="text-[#c1ff72]">, в което всеки детайл има значение. В</span> Events Z Vision{' '}
-              <span className="text-[#c1ff72]">предлагаме пълна гама услуги за</span> корпоративни събития, лични празници и нестандартни “Z Experience” формати.{' '}
+              <span className="text-[#c1ff72]">предлагаме пълна гама услуги за</span> корпоративни събития,
+              лични празници и нестандартни “Z Experience” формати.{' '}
               <span className="text-[#c1ff72]">Събитията, които създаваме вдъхновяват, обединяват и оставят следа.</span>
             </p>
           </div>
@@ -25,35 +30,33 @@ const Services = () => {
       </section>
 
       {/* Категории услуги */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 mt-10">
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 mt-10 isolate relative">
         <h2 className="text-5xl font-poppins font-bold text-center text-white p-20">
           <span className="text-[#c1ff72]">Категории</span> услуги
         </h2>
 
-        {/* Две колони: ляво (карта) + дясно (текст) */}
         <div className="relative flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-32">
+          {/* Декоративен бекграунд */}
+          <img
+            src="website design N EZV.png"
+            alt="Декор"
+            className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+          />
 
-          <img src="website design N EZV.png" alt="Image" 
-         className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain z-0 opacity-70" />
-
-          {/* Лява колона: зелено каре със „офсет“ бяла плочка */}
-          <div className="relative w-full lg:w-[420px] z-10">
+          {/* Лява колона */}
+          <div className="relative w-full lg:w-[420px] z-20">
             <div
               aria-hidden="true"
-              className="absolute -bottom-3 -right-3 w-full h-full rounded-xl bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)]"
+              className="absolute -bottom-3 -right-3 w-full h-full rounded-xl bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
             />
-
-            <div className="relative bg-[#c1f772] rounded-xl shadow-xl text-center overflow-hidden
-                            px-8 pt-10 pb-56 md:pb-64 min-h-[500px] md:min-h-500px]">
+            <div className="relative bg-[#c1f772] rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px] md:min-h-[500px]">
               <h3 className="text-4xl font-montserrat font-bold text-[#2f492f] mb-4">
-                Корпоративни<br/> събития
+                Корпоративни<br /> събития
               </h3>
-
               <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
-                Планирате <span className="font-bold">тиймбилдинг, конференция</span> или друго
-                фирмено събитие – доверете се на нас – <span className="font-bold">в сигурни ръце сте!</span>
+                Планирате <span className="font-bold">тиймбилдинг, конференция</span> или друго фирмено събитие –
+                доверете се на нас – <span className="font-bold">в сигурни ръце сте!</span>
               </p>
-
               <img
                 src="website 5 design EZV.svg"
                 alt="Корпоративни събития"
@@ -68,13 +71,92 @@ const Services = () => {
               Организиране на корпоративни събития
             </h3>
             <p className="text-2xl text-[#c1ff72] font-inter font-normal leading-snug max-w-2xl">
-              Фирмени партита, тиймбилдинги, семинари и работни срещи – всичко,
-              от което бизнесът ви има нужда, за да изгради доверие,
-              да сплоти екипа си и да представи своята визия. Ние сме до вас,
-              за да превърнем всяко корпоративно събитие в преживяване със смисъл,
-              подкрепено от професионална организация и внимание към детайла.
+              Фирмени партита, тиймбилдинги, семинари и работни срещи – всичко, от което бизнесът ви има нужда,
+              за да изгради доверие, да сплоти екипа си и да представи своята визия. Ние сме до вас,
+              за да превърнем всяко корпоративно събитие в преживяване със смисъл, подкрепено от професионална
+              организация и внимание към детайла.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Лични празници – вариант 1 (текст вляво, карта вдясно) */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 mt-40 isolate relative z-[2]">
+        <div className="relative flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-32">
+          {/* Текст – по-широк */}
+          <div className="flex-1 z-[2] max-w-[60rem]">
+            <h3 className="text-3xl md:text-3xl lg:text-4xl font-montserrat font-bold text-[#c1ff72] tracking-tight mb-20">
+              Организиране на лични празници
+            </h3>
+            <p className="text-2xl text-[#c1ff72] font-inter font-normal leading-[1.75] max-w-[52rem]">
+              Сватби, рождени дни, кръщенета или бутикови празници – личните поводи заслужават индивидуален подход.
+              Създаваме уникални концепции и сценарии, които превръщат личния ви ден в спомен, който се помни цял живот.
+            </p>
+          </div>
+
+          {/* Карта вдясно */}
+          <div className="relative w-full lg:w-[420px] z-20">
+            <div
+              aria-hidden="true"
+              className="absolute -bottom-3 -right-3 w-full h-full rounded-xl bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
+            />
+            <div className="relative bg-[#ebee68] rounded-xl shadow-xl text-center px-8 pt-10 pb-56 md:pb-64 min-h-[500px] z-20">
+              <h2 className="text-5xl font-montserrat font-bold text-[#2f492f] mb-7">Лични празници</h2>
+              <p className="text-2xl font-inter font-semibold text-[#2f492f]">
+                Отпразнувайте мечтаният си празник, като му се насладите напълно без да се притеснявате за организацията и логистиката!
+              </p>
+              <img
+                src="website S2 design EZV.png"
+                alt="Лични празници"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-60 md:w-72"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Лични празници – вариант 2 (карта вляво, текст вдясно) */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 mt-40 isolate relative z-[2]">
+        <div className="relative flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-32">
+          {/* Карта вляво */}
+          <div className="relative w-full lg:w-[420px] z-20">
+            <div
+              aria-hidden="true"
+              className="absolute -bottom-3 -right-3 w-full h-full rounded-xl bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
+            />
+            <div className="relative bg-[#30e8b0] rounded-xl shadow-xl text-center px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
+              <h2 className="text-5xl font-montserrat font-bold text-[#2f492f] mb-4">Z Experience събития</h2>
+              <p className="text-2xl font-inter font-semibold text-[#2f492f]">
+                Ако искате да усетите вкусът на авторските ни събития или пък вашето желано събитие не попада
+                в нито една от горните две категории, мястото ви е тук в Z Experience!
+              </p>
+              <img
+                src="website S3 design EZV.png"
+                alt="Z Experience"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-60 md:w-72"
+              />
+            </div>
+          </div>
+
+          {/* Текст вдясно */}
+          <div className="flex-1 relative z-[2]">
+            <h3 className="text-3xl text-[#c1ff72] font-montserrat font-bold mb-20">
+              Авторски и нестандартни събития
+            </h3>
+            <p className="text-2xl text-[#c1ff72] font-inter font-normal leading-[1.75] max-w-[52rem]">
+              Авторски и нестандартни формати, които излизат извън рамките на обичайното.
+              Storytelling концепции, immersive преживявания, pop-up партита и културни инициативи
+              – тук е креативното ДНК на нашата работа. Z Experience е за хора и компании,
+              които искат не просто събитие, а запомняща се история.
+            </p>
+          </div>
+
+          {/* Декор зад реда */}
+          <img
+            src="website design N EZV.png"
+            alt="Декор"
+            className="pointer-events-none absolute left-2/2 top-3/3 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+          />
         </div>
       </section>
 
@@ -89,7 +171,7 @@ const Services = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/inquiry"
-            className="bg-[#c1ff72] hover:bg-[#2f492f] text-[#075994] hover:text-[#c1ff72] px-8 py-4 rounded-lg text-lg font-poppins font-bold transition-colors duration-200"
+            className="bg-[#c1ff72] hover:bg-[#2f492f] text-[#075994] hover:text-[#c1ff72] px-8 py-4 rounded-lg text-lg font-poppins font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Кликни тук, за да направиш запитване
           </Link>
@@ -100,3 +182,4 @@ const Services = () => {
 };
 
 export default Services;
+

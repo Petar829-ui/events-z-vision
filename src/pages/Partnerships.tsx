@@ -64,7 +64,7 @@ const Partnerships = () => {
   ];
 
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen py-12 bg-[#075994]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -123,7 +123,7 @@ const Partnerships = () => {
         </div>
 
         {/* Partnership Opportunities */}
-        <div className="mt-20 bg-gradient-to-r from-[#075994] to-[#075994] rounded-2xl p-12 text-white">
+        <div className="mt-20 bg-gradient-to-r from-[#5b9cc6] to-[#1f6da8] rounded-2xl p-12 text-white">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Искате да станете{""}
               <span className='text-[#c1ff72]'> наш партньор?</span>

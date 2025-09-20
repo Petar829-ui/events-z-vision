@@ -18,12 +18,11 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+    {/*Портфолио /portfolio */}
   const menuItems = [ 
     { name: 'Начало', path: '/' },
     { name: 'Услуги', path: '/services' },
     { name: 'За нас', path: '/about' },
-    { name: 'Портфолио', path: '/portfolio' },
     { name: 'Блог', path: '/blog' },
     { name: 'Партньори', path: '/partnerships' },
     { name: 'Контакти', path: '/contacts' },
@@ -57,7 +56,7 @@ const Header = () => {
              to={item.path} 
             className={`text-sm font-medium transition-colors duration-200 px-3 py-2 rounded-lg ${
             isActivePage(item.path)
-            ? "text-white bg-[#075994]"
+            ? "text-white bg-[#1f6da8]"
             : scrolled
             ? "text-black hover:text-white hover:bg-[#075994]"
            : "text-white hover:text-[#c1ff72]"
