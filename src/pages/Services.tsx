@@ -165,26 +165,65 @@ const Services = () => {
         <h2 className='text-3xl font-poppins font-bold text-[#c1ff72] mb-14 text-center'>
           Разполагаме с богата гама услуги и партньорски фирми
         </h2>
-        <h3 className='text-2xl font-inter font-normal text-[#c1ff72] mb-4 text-center'>
+        <h3 className='text-2xl font-inter font-normal text-[#c1ff72] mb-14 text-center'>
           За да осигурим цялостна и безупречна организация, работим с утвърдени професионалисти във всяка сфера:
           </h3>
-        <p>
 
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
+          <ul className="text-2xl font-inter font-normal text-[#c1ff72] mb-4 list-outside list-disc">
+          <li>
+          бармани и бар оборудване;
+          </li>
+          <li>
+          кетъринг, сладкарници и пекарни;
+          </li>
+          <li>
+          зали, ресторанти, барове и пространства за събития;
+          </li>
+          <li>
+          музиканти, диджеи, водещи и визуален ентъртейнмънт;
+          </li>
+          <li>
+          декорация, флорални аранжировки и хендмейд продукти
+          </li>
+          </ul>
+
+          <ul className="text-2xl font-inter font-normal text-[#c1ff72] mb-20 list-outside list-disc">
+          <li>
+          фотографи и професионално видеозаснемане;
+          </li>
+          <li>
+          озвучаване, осветление и специализирано оборудване;
+          </li>
+          <li>
+          промоутъри, хостеси, аниматори и сервитьори;
+          </li>
+          <li>
+          охрана, транспорт и хамалски услуги;
+          </li>
+          <li>
+          медийни партньори, рекламни агенции и печатници.
+          </li>
+          </ul>
+        </div>
+        <p className='text-2xl font-inter font-normal text-[#c1ff72] mb-4 text-center'>
+          Това ни позволява да предложим цялостна организация на събития – от концепцията и атмосферата до последния детайл.
         </p>
+        
         <img
         src="website design N EZV.png"
         alt="Декор"
-        className="pointer-events-none absolute left-2/2 top-3/3 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70" 
+        className="pointer-events-none absolute left-1/2 top-1/1 -translate-x-2/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70 rotate-90" 
         />
         </div>
       </section>
 
       {/* Call to action */}
       <div className="mt-20 bg-white rounded-2xl p-6 text-center max-w-3xl mx-auto relative z-[2]">
-        <h2 className="text-3xl font-inter font-semibold mb-4 text-[#075994]">
+        <h2 className="text-3xl font-inter font-bold mb-4 text-[#075994]">
           Искате ли вашето събитие да бъде повече от формалност?
         </h2>
-        <p className="text-xl font-inter font-semibold text-[#f96e0c] mb-8 max-w-2xl mx-auto">
+        <p className="text-2xl font-inter font-bold text-[#f96e0c] mb-8 max-w-2xl mx-auto">
           Свържете се с нас и заедно ще създадем преживяване, което ще се помни.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -201,4 +240,3 @@ const Services = () => {
 };
 
 export default Services;
-

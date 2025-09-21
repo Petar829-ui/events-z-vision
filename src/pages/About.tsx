@@ -60,28 +60,31 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen py-12 bg-[#075994]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            За нас
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Events Z Vision е нова и амбициозна агенция за събития с мисия да внесе свежест 
-            и иновации в индустрията чрез създаването на незабравими преживявания.
-          </p>
-        </div>
+<div className="min-h-screen bg-[#075994]">
+  <section className="relative min-h-[80vh] overflow-hidden isolate">
+    {/* Фонът – зад съдържанието */}
+    <div
+      aria-hidden="true"
+      className="absolute inset-0 left-[-4px] right-[-4px] bg-cover bg-center -z-10 pointer-events-none"
+      style={{ backgroundImage: "url('website A1 design EZV.svg')" }}
+    />
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center bg-white rounded-xl shadow-lg p-8">
-              <div className="text-4xl font-bold text-brand-blue mb-2">{stat.number}</div>
-              <div className="text-gray-600 font-medium">{stat.label}</div>
-            </div>
-          ))}
-        </div>
+    {/* Съдържание над фона */}
+    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-16">
+        <h1 className="text-6xl md:text-7xl font-poppins font-semibold text-[#c1ff72] py-28 mb-16">
+          За <span className="text-white">нас</span>
+        </h1>
+        <p className="text-3xl font-playfair font-semibold text-[#c1ff72] py-28 mx-auto leading-relaxed">
+          Организацията на събития е <span className="text-white">изкуство</span>, в което всеки детайл има значение.
+          В <span className="text-white">Events Z Vision</span> предлагаме пълна гама услуги за <span className="text-white">корпоративни събития,
+          лични празници и нестандартни “Z Experience” формати.</span> Събитията,
+          които създаваме вдъхновяват, обединяват и оставят следа.
+        </p>
+      </div>
+    </div>
+  </section>
+
 
         {/* Story */}
         <div className="mb-16">
@@ -212,7 +215,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
