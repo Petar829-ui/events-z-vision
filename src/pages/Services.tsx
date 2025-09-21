@@ -102,8 +102,8 @@ const Services = () => {
             />
             <div className="relative bg-[#ebee68] rounded-xl shadow-xl text-center px-8 pt-10 pb-56 md:pb-64 min-h-[500px] z-20">
               <h2 className="text-5xl font-montserrat font-bold text-[#2f492f] mb-7">Лични празници</h2>
-              <p className="text-2xl font-inter font-semibold text-[#2f492f]">
-                Отпразнувайте мечтаният си празник, като му се насладите напълно без да се притеснявате за организацията и логистиката!
+              <p className="text-2xl font-inter font-medium text-[#2f492f]">
+                Отпразнувайте <span className='font-bold'>мечтаният<br /> си празник,</span> като му се насладите напълно <span className='font-bold'>без да<br /> се притеснявате</span> за организацията и логистиката!
               </p>
               <img
                 src="website S2 design EZV.png"
@@ -126,9 +126,9 @@ const Services = () => {
             />
             <div className="relative bg-[#30e8b0] rounded-xl shadow-xl text-center px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
               <h2 className="text-5xl font-montserrat font-bold text-[#2f492f] mb-4">Z Experience събития</h2>
-              <p className="text-2xl font-inter font-semibold text-[#2f492f]">
-                Ако искате да усетите вкусът на авторските ни събития или пък вашето желано събитие не попада
-                в нито една от горните две категории, мястото ви е тук в Z Experience!
+              <p className="text-2xl font-inter font-medium text-[#2f492f]">
+                Ако искате да усетите<br /> вкусът на <span className='font-bold'>авторските ни<br /> събития</span> или пък вашето желано събитие не попада<br />
+                в нито една от горните две категории, мястото ви е<br /> тук в <span className='font-bold'>Z Experience!</span>
               </p>
               <img
                 src="website S3 design EZV.png"
@@ -160,8 +160,27 @@ const Services = () => {
         </div>
       </section>
 
+      <section className='max-w-7xl mx-auto px-6 lg:px-8 mt-40 isolate relative z-[2]'>
+        <div>
+        <h2 className='text-3xl font-poppins font-bold text-[#c1ff72] mb-14 text-center'>
+          Разполагаме с богата гама услуги и партньорски фирми
+        </h2>
+        <h3 className='text-2xl font-inter font-normal text-[#c1ff72] mb-4 text-center'>
+          За да осигурим цялостна и безупречна организация, работим с утвърдени професионалисти във всяка сфера:
+          </h3>
+        <p>
+
+        </p>
+        <img
+        src="website design N EZV.png"
+        alt="Декор"
+        className="pointer-events-none absolute left-2/2 top-3/3 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70" 
+        />
+        </div>
+      </section>
+
       {/* Call to action */}
-      <div className="mt-20 bg-white rounded-2xl p-6 text-center max-w-3xl mx-auto">
+      <div className="mt-20 bg-white rounded-2xl p-6 text-center max-w-3xl mx-auto relative z-[2]">
         <h2 className="text-3xl font-inter font-semibold mb-4 text-[#075994]">
           Искате ли вашето събитие да бъде повече от формалност?
         </h2>
