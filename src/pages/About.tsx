@@ -1,220 +1,169 @@
 import React from 'react';
-import { CheckCircle, Award, Users, Calendar, Star, Target, Eye, Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
-  const stats = [
-    { number: 'Нова', label: 'Агенция на пазара' },
-    { number: '100%', label: 'Мотивация' },
-    { number: 'Безброй', label: 'Идеи' },
-    { number: '24/7', label: 'Поддръжка' },
-  ];
-
-  const values = [
-    {
-      icon: Target,
-      title: 'Прецизност',
-      description: 'Внимание към всеки детайл и професионално изпълнение на всеки проект.'
-    },
-    {
-      icon: Heart,
-      title: 'Страст',
-      description: 'Обичаме това, което правим и вкладваме душа в всяко събитие.'
-    },
-    {
-      icon: Users,
-      title: 'Екипност',
-      description: 'Работим като един екип за постигане на най-добрите резултати.'
-    },
-    {
-      icon: Award,
-      title: 'Качество',
-      description: 'Стремим се към най-високи стандарти в организацията на събития.'
-    }
-  ];
-
-  const team = [
-    {
-      name: 'Мария Петрова',
-      position: 'Основател и изпълнителен директор',
-      description: 'Визионер с амбиция да промени индустрията за събития. Магистър по мениджмънт.',
-      image: 'https://images.pexels.com/photos/3785104/pexels-photo-3785104.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      name: 'Георги Иванов',
-      position: 'Креативен директор',
-      description: 'Креативен ум със страст към иновативни концепции и дизайн.',
-      image: 'https://images.pexels.com/photos/3777931/pexels-photo-3777931.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      name: 'Елена Стоянова',
-      position: 'Мениджър клиентски отношения',
-      description: 'Експерт в комуникацията и изграждането на дългосрочни клиентски отношения.',
-      image: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      name: 'Димитър Николов',
-      position: 'Техническо координиране',
-      description: 'Технически специалист с внимание към детайлите и перфектното изпълнение.',
-      image: 'https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg?auto=compress&cs=tinysrgb&w=400'
-    }
-  ];
-
   return (
-<div className="min-h-screen bg-[#075994]">
-  <section className="relative min-h-[80vh] overflow-hidden isolate">
-    {/* Фонът – зад съдържанието */}
-    <div
-      aria-hidden="true"
-      className="absolute inset-0 left-[-4px] right-[-4px] bg-cover bg-center -z-10 pointer-events-none"
-      style={{ backgroundImage: "url('website A1 design EZV.svg')" }}
-    />
+    <div className="min-h-screen bg-[#075994] pb-10">
+      <section className="relative min-h-[80vh] overflow-hidden isolate">
+        {/* Фонът – зад съдържанието */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 left-[-4px] right-[-4px] bg-cover bg-center -z-10 pointer-events-none"
+          style={{ backgroundImage: "url('website A1 design EZV.svg')" }}
+        />
 
-    {/* Съдържание над фона */}
-    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h1 className="text-6xl md:text-7xl font-poppins font-semibold text-[#c1ff72] py-28 mb-16">
-          За <span className="text-white">нас</span>
-        </h1>
-        <p className="text-3xl font-playfair font-semibold text-[#c1ff72] py-28 mx-auto leading-relaxed">
-          Организацията на събития е <span className="text-white">изкуство</span>, в което всеки детайл има значение.
-          В <span className="text-white">Events Z Vision</span> предлагаме пълна гама услуги за <span className="text-white">корпоративни събития,
-          лични празници и нестандартни “Z Experience” формати.</span> Събитията,
-          които създаваме вдъхновяват, обединяват и оставят следа.
+        {/* Съдържание над фона */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h1 className="text-6xl md:text-7xl font-poppins font-semibold text-[#c1ff72] py-28 mb-16">
+              За <span className="text-white">нас</span>
+            </h1>
+            <p className="text-3xl font-playfair font-semibold text-[#c1ff72] py-28 mx-auto leading-relaxed">
+              Организацията на събития е <span className="text-white">изкуство</span>, в което всеки детайл има значение.
+              В <span className="text-white">Events Z Vision</span> предлагаме пълна гама услуги за <span className="text-white">корпоративни събития,
+              лични празници и нестандартни “Z Experience” формати.</span> Събитията,
+              които създаваме вдъхновяват, обединяват и оставят следа.
+            </p>
+          </div>
+        </div>
+      </section>
+
+<section className="mt-16">
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 className="text-7xl text-center text-[#c1ff72] font-caveat font-semibold py-10">
+      Екипът на Events Z Vision
+    </h1>
+
+    {/* Ред 1: Светозара вляво, плейсхолдър вдясно */}
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+      {/* Текст – лява колона */}
+      <div className="lg:col-span-6">
+        <h2 className="text-6xl text-white font-caveat font-semibold mb-6">
+          Светозара Манолова
+        </h2>
+        <p className="text-3xl text-[#c1ff72] font-inter font-normal leading-relaxed">
+          Светозара притежава образование по Международни икономически отношения и опит във финансовото
+          планиране и управлението на проекти, тя умее да превръща идеи в добре структурирани и ефективно
+          реализирани събития. Тя е силно ориентирана към изграждането на партньорства, логистиката и
+          цялостната концепция на проектите. Любопитството ѝ към нови подходи и интересът към психологията
+          на преживяването я правят двигател на нестандартните и авторски събития, които са запазената марка
+          на агенцията.
         </p>
       </div>
+
+      {/* Плейсхолдър/снимка – дясна колона */}
+          <img
+            src="website design N EZV.png"
+            alt="Декор"
+            className="pointer-events-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+          />
     </div>
-  </section>
+
+{/* Ред 2: декор отляво, текстът вдясно */}
+<div className="mt-20 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+  {/* декор (не променяме) */}
+  <img
+    src="website design N EZV.png"
+    alt="Декор"
+    className="pointer-events-none absolute left-1/2 top-2/3 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+  />
+
+  {/* Текстовата колона започва от колона 7 => вдясно */}
+  <div className="lg:col-span-6 lg:col-start-7">
+    <h2 className="text-6xl text-white font-caveat font-semibold mb-6 text-center lg:text-left">
+      Радослав Богоев
+    </h2>
+    <p className="text-3xl text-[#c1ff72] font-inter font-normal pb-20 leading-relaxed max-w-2xl ml-auto">
+      Радослав има опит в управлението и координацията на проекти, като се грижи организацията на всяко
+      събитие да протича гладко и безпроблемно. Завършил е Комуникационен мениджмънт в Софийски университет
+      и притежава силни умения в стратегическата комуникация. Неговият усет към добрите и работещи
+      концепции и международният му опит допълват професионализма, с който управлява цялостния процес
+      по организацията на събитията.
+    </p>
+   </div>
+  </div>
+  </div>
+</section>
+
+<section className='mt-16 relative isolate'>
+      <img 
+    src="website design N EZV.png" 
+    alt="Декор" 
+    className='pointer-events-none absolute left-1/2 top-3/4 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70'
+    />
+  <div className="lg:col-span-6 lg:col-start-7">
+    <h2 className="text-7xl text-[#c1ff72] font-caveat font-normal mb-6 text-center lg:text-center pb-20">
+      Нашата история
+    </h2>
+    <p className="text-3xl text-[#c1ff72] font-inter font-normal pb-20 leading-relaxed max-w-7xl mx-auto z-[10]">
+Всичко започна с разочарованието от скучните събития – онези, които завършват и сякаш никога не са се случили. Събирания без душа, конференции без вдъхновение, партита без емоция. Ние усещахме, че може да бъде различно. Че едно събитие не е просто дата в календара, а история, която трябва да се преживее.
+Решихме, че вместо да критикуваме, ще създаваме. Първо започнахме малко – със студентски инициативи, младежки проекти и обучения, където фокусът беше върху хората и връзките между тях. Видяхме колко много значение има вниманието към детайла, атмосферата, отношението. Там осъзнахме силата на преживяването – онзи момент, в който група непознати се превръща в общност.
+Това беше началото на пътя ни. Постепенно мечтата се разрасна – да изграждаме събития, които не просто се провеждат, а докосват, вдъхновяват и оставят следа. Да предлагаме новаторски подход, да разказваме истории чрез пространство, музика, светлина и детайли.
+Така се роди Events Z Vision – агенция от ново поколение, създадена да съчетава професионализъм и креативност с автентична човешка емоция. За нас събитията не са услуга, а съпреживяване. Слушаме внимателно, мечтаем заедно с клиента и надскачаме очакванията му.
+Днес стоим зад едно просто, но силно вярване: животът е по-красив, когато е споделен. И чрез всяко събитие, което създаваме, превръщаме това вярване в реалност. 
+    </p>
+   </div>
+   </section>
+
+<section className="mt-16 relative isolate">
+  {/* Декор отзад */}
+  <img
+    src="website design N EZV.png"
+    alt="Декор"
+    className="pointer-events-none absolute left-1/2 top-20 -translate-x-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+  />
+
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 lg:gap-x-4 pb-20">
+
+      {/* Лява колона */}
+      <div>
+        <h2 className="text-7xl text-[#c1ff72] font-caveat font-normal mb-8">
+          Нашата мисия
+        </h2>
+        <p className="text-3xl text-[#c1ff72] font-inter font-normal leading-relaxed">
+          Мисията ни е да превръщаме всяко ваше събитие в споделена история, като съчетаваме прецизност с емоция,
+          свежест с професионализъм, превръщайки всеки момент в значим и запомнящ се.
+        </p>
+      </div>
+
+      {/* Дясна колона */}
+      <div>
+        <h2 className="text-7xl text-[#c1ff72] font-caveat font-normal mb-8 lg:text-right pr-20">
+          Какво ни отличава?
+        </h2>
+        <p className="text-3xl text-[#c1ff72] font-inter font-normal leading-relaxed">
+          Не разглеждаме събитията просто като услуга, а като артистичен израз и личен наш ангажимент.
+          Слушаме внимателно. Мечтаем заедно с клиента. Надскачаме очакванията. Комбинираме достъпност
+          с безкомпромисно качество, smart решения и авторски почерк. Създаваме нови стандарти в 
+          мениджмънта на събития -корпоративни и лични.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
-        {/* Story */}
-        <div className="mb-16">
-          <div className="bg-white rounded-xl shadow-lg p-8 lg:p-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Нашата история</h2>
-                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  Events Z Vision е основана през 2025 година с амбицията да внесе нова енергия и 
-                  креативност в индустрията за събития. Въпреки че сме нови на пазара, екипът ни 
-                  има ясна визия и безграничен ентусиазъм.
-                </p>
-                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  Започваме като малък, но амбициозен екип от професионалисти с различен опит, 
-                  обединени от общата цел да създаваме изключителни събития и да надхвърляме очакванията.
-                </p>
-                <div className="space-y-3">
-                  {[
-                    'Млад и динамичен екип от специалисти',
-                    'Партньорства с водещи доставчици в България',
-                    'Свеж поглед върху организацията на събития',
-                    'Фокус върху иновации и персонализиране'
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-center space-x-3">
-                      <CheckCircle className="h-6 w-6 text-brand-lime flex-shrink-0" />
-                      <span className="text-gray-700">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="relative">
-                <img
-                  src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="Нашият екип"
-                  className="rounded-lg shadow-xl"
-                />
-                <div className="absolute inset-0 bg-blue-600 opacity-10 rounded-lg"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Mission & Vision */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          <div className="bg-gradient-to-r from-brand-blue to-blue-700 text-white p-8 rounded-xl">
-            <div className="flex items-center mb-4">
-              <Target className="h-8 w-8 mr-3" />
-              <h3 className="text-2xl font-bold">Нашата мисия</h3>
-            </div>
-            <p className="text-lg leading-relaxed">
-              Да превръщаме всяко ваше събитие в споделена история, като съчетаваме прецизност с емоция, свежест с професионализъм, превръщайки всеки момент в значим и запомнящ се.
-            </p>
-          </div>
-
-          <div className="bg-gradient-to-r from-brand-green to-green-700 text-white p-8 rounded-xl">
-            <div className="flex items-center mb-4">
-              <Eye className="h-8 w-8 mr-3" />
-              <h3 className="text-2xl font-bold">Нашата визия</h3>
-            </div>
-            <p className="text-lg leading-relaxed">
-              Да се утвърдим като иновативна агенция за събития, известна с креативния подход, 
-              високото качество и персонализираното отношение към всеки клиент.
-            </p>
-          </div>
-        </div>
-
-        {/* Values */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Нашите ценности</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => {
-              const IconComponent = value.icon;
-              return (
-                <div key={index} className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-                  <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="h-8 w-8 text-brand-green" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{value.title}</h3>
-                  <p className="text-gray-600">{value.description}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Team */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Нашият екип</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
-                  <p className="text-brand-blue font-medium mb-3">{member.position}</p>
-                  <p className="text-gray-600 text-sm">{member.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="bg-gradient-to-r from-brand-blue to-brand-green rounded-2xl p-8 text-white text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Готови ли сте да създадем нещо невероятно заедно?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Свържете се с нас днес и нека започнем работа по вашето следващо незабравимо събитие.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/inquiry"
-              className="bg-brand-lime hover:bg-green-400 text-brand-green px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200"
-            >
-              Изпратете запитване
-            </a>
-            <a
-              href="/contacts"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-brand-blue text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200"
-            >
-              Свържете се с нас
-            </a>
-          </div>
+         {/* Call to action */}
+      <div className="mt-20 bg-white rounded-2xl p-6 text-center max-w-3xl mx-auto relative z-[2]">
+        <h2 className="text-3xl font-inter font-bold mb-4 text-[#075994]">
+          Искате ли вашето събитие да бъде повече от формалност?
+        </h2>
+        <p className="text-2xl font-inter font-bold text-[#f96e0c] mb-8 max-w-2xl mx-auto">
+          Свържете се с нас и заедно ще създадем преживяване, което ще се помни.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            to="/inquiry"
+            className="bg-[#c1ff72] hover:bg-[#2f492f] text-[#075994] hover:text-[#c1ff72] px-8 py-4 rounded-lg text-lg font-poppins font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
+            Кликни тук, за да направиш запитване
+          </Link>
         </div>
       </div>
+
+    </div>
   );
 };
 

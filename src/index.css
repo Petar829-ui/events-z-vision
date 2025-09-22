@@ -26,7 +26,7 @@ html, body {
 
 .shape2 {
   width: 750px;
-  height: 90vh;
+  height: 78vh;
   background-color: #2f492f;
   border-radius: 20px;
   transform: rotate(20deg) skewY(10deg);
