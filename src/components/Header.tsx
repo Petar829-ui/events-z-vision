@@ -54,7 +54,7 @@ const Header = () => {
              <Link 
              key={item.path} 
              to={item.path} 
-            className={`text-sm font-medium transition-colors duration-200 px-3 py-2 rounded-lg ${
+            className={`text-sm font-inter font-medium transition-colors duration-200 px-3 py-2 rounded-lg ${
             isActivePage(item.path)
             ? "text-white bg-[#1f6da8]"
             : scrolled

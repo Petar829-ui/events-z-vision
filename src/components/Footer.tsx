@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Calendar className="h-8 w-8 text-[#c1ff72]" />
-              <span className="text-2xl font-bold">Events Z Vision</span>
+              <span className="text-2xl font-inter font-bold">Events Z Vision</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Ние сме новото поколение създатели на събития – с душа, посока и визия. Създаваме преживявания, които доказват, че животът е красив, когато се споделя с готини хора, в правилната среда и по вълнуващ, автентичен и неподправен начин. В основата ни стоят новаторството, страстта и професионализмът.
