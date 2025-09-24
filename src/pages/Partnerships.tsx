@@ -17,7 +17,7 @@ const Partnerships = () => {
       title: 'Кетъринг и ресторанти',
       description: 'Сътрудничество с най-добрите кулинарни специалисти за изискан гастрономически опит',
       partners: [
-        { name: 'Chef\'s Table Sofia', logo: 'https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=200', type: 'Fine Dining' },
+        { name: "Chef's Table Sofia", logo: 'https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=200', type: 'Fine Dining' },
         { name: 'Balkan Catering', logo: 'https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=200', type: 'Традиционна кухня' },
         { name: 'Fusion Events', logo: 'https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=200', type: 'Модерна кухня' },
         { name: 'Sweet Dreams', logo: 'https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&w=200', type: 'Сладкарница' }
@@ -46,48 +46,47 @@ const Partnerships = () => {
   ];
 
   const benefits = [
-    {
-      icon: Star,
-      title: 'Качествени услуги',
-      description: 'Работим само с най-добрите доставчици на пазара'
-    },
-    {
-      icon: CheckCircle,
-      title: 'Проверени партньори',
-      description: 'Всички наши партньори са тествани в реални условия'
-    },
-    {
-      icon: Handshake,
-      title: 'Дългосрочни отношения',
-      description: 'Изграждаме траен партньорски отношения за взаимна полза'
-    }
+    { icon: Star, title: 'Качествени услуги', description: 'Работим само с най-добрите доставчици на пазара' },
+    { icon: CheckCircle, title: 'Проверени партньори', description: 'Всички наши партньори са тествани в реални условия' },
+    { icon: Handshake, title: 'Дългосрочни отношения', description: 'Изграждаме траен партньорски отношения за взаимна полза' }
   ];
 
   return (
     <div className="min-h-screen py-12 bg-[#075994]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Партньорства
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Работим с най-добрите доставчици и партньори в индустрията, за да осигурим 
-            безупречно качество във всеки аспект от вашето събитие.
-          </p>
-        </div>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+  {/* Header с декор изображението, видимо със -z-10 */}
+<div className="relative isolate overflow-hidden">
+  <img
+    src="website design N EZV.png"
+    alt="Декор"
+    className="pointer-events-none absolute left-1/2 bottom-[-17rem] -translate-x-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+  />
+
+  <div className="relative text-center">
+    <h1 className="text-4xl md:text-5xl font-poppins font-semibold text-[#c1ff72] my-12 ">
+      Партньорства
+    </h1>
+    <p className="text-3xl font-playfair font-semibold text-[#c1ff72] max-w-7xl mx-auto mb-20">
+      Вярваме, че най-добрите събития се създават <span className="text-white">заедно</span> – когато креативни и отдадени професионалисти
+      обединят усилия. Ако сте <span className="text-white">фирма или специалист</span> в сферата на <span className="text-white">събитийната индустрия</span> – от ресторанти,
+      зали, кетъринг, бармани, музиканти и фотографи, до декоратори, флористи, трейнъри, медийни
+      партньори или др. – ние <span className="text-white">бихме се радвали да ви опознаем!</span>
+    </p>
+  </div>
+</div>
 
         {/* Benefits Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             return (
-              <div key={index} className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <div key={index} className="bg-[#1f6da8] p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
                 <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <IconComponent className="h-8 w-8 text-blue-600" />
+                  <IconComponent className="h-8 w-8 text-[#075994]" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{benefit.title}</h3>
+                <p className="text-[#c1ff72] font-inter font-semibold">{benefit.description}</p>
               </div>
             );
           })}
@@ -96,10 +95,10 @@ const Partnerships = () => {
         {/* Partner Categories */}
         <div className="space-y-16">
           {partnerCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="bg-white rounded-2xl shadow-lg p-8">
+            <div key={categoryIndex} className="bg-[#1f6da8] rounded-2xl shadow-lg p-8">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">{category.title}</h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">{category.description}</p>
+                <h2 className="text-3xl font-bold text-white mb-4">{category.title}</h2>
+                <p className="text-lg text-[#c1ff72] max-w-2xl mx-auto font-inter font-semibold">{category.description}</p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -109,12 +108,12 @@ const Partnerships = () => {
                       <img
                         src={partner.logo}
                         alt={partner.name}
-                        className="w-24 h-24 rounded-full mx-auto object-cover shadow-md group-hover:shadow-xl transition-shadow duration-300"
+                        className="w-24 h-24 rounded-full mx-auto object-cover shadow-md group-hover:shadow-xl transition-shadow transform transition-transform duration-300 hover:scale-105"
                       />
-                      <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-20 rounded-full transition-opacity duration-300"></div>
+                      <div className="absolute inset-0 opacity-0 group-hover:opacity-20 rounded-full transition-opacity duration-300"></div>
                     </div>
-                    <h3 className="font-semibold text-gray-900 mb-2">{partner.name}</h3>
-                    <p className="text-sm text-gray-500">{partner.type}</p>
+                    <h3 className="font-semibold text-white mb-2">{partner.name}</h3>
+                    <p className="text-sm text-[#c1ff72] font-inter font-semibold">{partner.type}</p>
                   </div>
                 ))}
               </div>
@@ -125,10 +124,10 @@ const Partnerships = () => {
         {/* Partnership Opportunities */}
         <div className="mt-20 bg-gradient-to-r from-[#5b9cc6] to-[#1f6da8] rounded-2xl p-12 text-white">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Искате да станете{""}
-              <span className='text-[#c1ff72]'> наш партньор?</span>
+            <h2 className="text-3xl font-bold mb-4">
+              Искате да станете <span className="text-[#c1ff72]">наш партньор?</span>
             </h2>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+            <p className="text-xl text-blue-100 max-w-2xl mx-auto font-inter font-semibold">
               Ако предлагате висококачествени услуги и търсите надеждни партньори за събития, 
               ще се радваме да се свържем с вас.
             </p>
@@ -147,7 +146,7 @@ const Partnerships = () => {
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-3">
                     <CheckCircle className="h-6 w-6 text-[#c1ff72] flex-shrink-0" />
-                    <span>{item}</span>
+                    <span className="font-inter font-semibold">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -207,23 +206,24 @@ const Partnerships = () => {
         </div>
 
         {/* Contact for Partnerships */}
-        <div className="mt-16 bg-white rounded-xl shadow-lg p-8 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            За партньорства се свържете директно с нас
+        <div className="mt-16 bg-[#1f6da8] rounded-xl shadow-lg p-8 text-center">
+          <h3 className="text-2xl font-poppins font-bold text-white mb-4">
+            За <span className="text-[#c1ff72]">партньорства се свържете</span> директно с <span className="text-[#c1ff72]">нас</span>
           </h3>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-            <div className="flex items-center space-x-2 text-gray-600">
-              <Mail className="h-5 w-5" />
+            <div className="flex items-center space-x-2 text-white">
+              <Mail className="h-5 w-5 text-[#c1ff72]" />
               <span>partnerships@eventpro.bg</span>
             </div>
-            <div className="flex items-center space-x-2 text-gray-600">
-              <Phone className="h-5 w-5" />
+            <div className="flex items-center space-x-2 text-white">
+              <Phone className="h-5 w-5 text-[#c1ff72]" />
               <span>+359 888 123 456</span>
             </div>
           </div>
         </div>
+
       </div>
-    </div>
+      </div>
   );
 };
 
