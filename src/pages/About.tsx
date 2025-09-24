@@ -144,6 +144,65 @@ const About = () => {
   </div>
 </section>
 
+<section className="mt-16 relative isolate">
+  <div className="max-w-7xl mx-auto">
+  <div className="pb-20">
+    <h2 className="text-7xl text-[#c1ff72] font-caveat font-normal mb-6 text-center lg:text-center pb-10">
+    Нашата социална ангажираност
+    </h2>
+    <p className="text-3xl text-[#c1ff72] font-inter font-normal leading-relaxed">
+     Екипът, който днес стои зад Events Z Vision, вече има изградена история на съвместна работа чрез Change, Explore and Grow by Exchange (CEGE) - младежка неправителствена организация, създадена от Светозара Манолова и Радослав Богоев, която работи активно за развитието на млади хора чрез неформално образование и международни инициативи.
+<br /><br />
+Светозара Манолова и Радослав Богоев, заедно със своите съмишленици, натрупаха ценен опит като екип в управлението и реализирането на международни обучения, младежки обмени и партньорски мрежи. Този общ опит в неправителствения сектор е стабилната основа, върху която днес се развива и дейността на агенцията – със същите ценности за отговорност, качество и социална ангажираност.
+    </p>
+      <img
+    src="website design N EZV.png"
+    alt="Декор"
+    className="pointer-events-none absolute left-[40%] md:left-[35%] bottom-[50%] md:bottom-[30%] -translate-x-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+  />
+
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-10">
+
+    {/* Снимката – голяма и изтеглена вляво */}
+    <figure className="lg:col-span-8 lg:-ml-8 xl:-ml-16 mt-10">
+      <img
+        src="website A2 design EZV.svg"
+        alt="CEGE"
+        className="block w-full max-w-none h-auto rounded-2xl shadow-2xl"
+      />
+    </figure>
+
+    {/* Текстът – по-широка колона вдясно */}
+    <div className="lg:col-span-4 lg:col-start-9 text-right">
+      {/* Ограничаваме дължината на реда да не се “счупва” по дума */}
+      <div className="max-w-[42ch] ml-auto">
+        <h2 className="text-5xl md:text-6xl text-[#c1ff72] text-center lg:text-center font-caveat font-normal leading-relaxed">
+          Научи повече за CEGE тук:
+        </h2>
+      <Link to="https://sites.google.com/view/cege-association/home-page?authuser=0" className="inline-block group">
+        <img
+        src="website CEGE Logo A1 design EZV.svg"
+        alt="CEGE страница"
+        className="w-[360px] md:w-[480px] mt-10 rounded-xl shadow-xl transition-transform duration-300 group-hover:scale-105"
+        />
+       </Link>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+  <img
+    src="website design N EZV.png"
+    alt="Декор"
+    className="pointer-events-none absolute left-[66%] md:left-[70%] top-[70%] md:top-[80%] -translate-x-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+  />
+  </div>
+</section>
+
 
          {/* Call to action */}
       <div className="mt-20 bg-white rounded-2xl p-6 text-center max-w-3xl mx-auto relative z-[2]">
