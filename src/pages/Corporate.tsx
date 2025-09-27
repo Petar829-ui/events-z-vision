@@ -94,7 +94,7 @@ const Corporate = () => {
   </div>
 </section>
 
-    <section className="mt-16">
+    <section className="mt-16 relative z-[10]">
        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid place-items-stretch p-6 rounded-3xl bg-[#f6f6f6]">
            <p className="text-3xl text-[#075994] font-inter font-semibold text-center">
@@ -107,8 +107,17 @@ const Corporate = () => {
        </div>
     </section>
 
-  <section className="mt-16">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section className="mt-16 relative isolate">
+  {/* Декор – зад всичко */}
+  <img
+    src="website design N EZV.png"
+    alt="Декор"
+    className="pointer-events-none absolute -z-10
+               left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+               w-[750px] h-auto object-contain opacity-70"
+  />
+
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     {/* ред: текст (ляво) + снимка (дясно) */}
     <div className="flex flex-col md:flex-row items-start md:items-center gap-10">
       <div className="max-w-2xl mr-auto text-left">
@@ -124,49 +133,53 @@ const Corporate = () => {
 
       {/* снимка вдясно, без absolute */}
       <div className="mx-auto w-[720px] h-[520px] rounded-full overflow-hidden bg-[#075994] ring-8 ring-[#075994]">
-      <img
-        src="website Co3 design EZV.svg"
-        alt="Корпоративни събития"
-        className="block w-full h-full object-cover select-none"
-      />
+        <img
+          src="website Co3 design EZV.svg"
+          alt="Корпоративни събития"
+          className="block w-full h-full object-cover select-none"
+        />
       </div>
     </div>
   </div>
 </section>
 
-  <section className="mt-16">
+
+<section className="mt-16 relative isolate">
+  {/* Декор – зад всичко */}
+  <img
+    src="website design N EZV.png"
+    alt="Декор"
+    className="pointer-events-none absolute -z-10 
+               left-[50%] top-1/2 -translate-x-1/2 -translate-y-1/2
+               w-[750px] h-auto object-contain opacity-70"
+  />
+
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    {/* ред: текст (ляво) + снимка (дясно) */}
-    <div className="flex flex-col md:flex-row items-start md:items-center gap-10">
-            {/* снимка вдясно, без absolute */}
+    {/* ред: снимка (ляво) + текст (дясно) */}
+    <div className="flex flex-col md:flex-row items-start md:items-center gap-10 relative">
+      {/* снимка в кръг (без absolute) */}
       <div className="mx-auto w-[720px] h-[520px] rounded-full overflow-hidden bg-[#075994] ring-8 ring-[#075994]">
-      <img
-        src="website Co4 design EZV.svg"
-        alt="Корпоративни събития"
-        className="block w-full h-full object-cover select-none"
-      />
+        <img
+          src="website Co4 design EZV.svg"
+          alt="Корпоративни събития"
+          className="block w-full h-full object-cover select-none"
+        />
       </div>
-<div className="max-w-2xl mr-auto text-left pl-16">
-  <h2 className="font-poppins font-bold text-4xl text-[#c1ff72] mb-6">
-    Нашият подход
-  </h2>
 
-  <p className="font-inter text-3xl text-[#c1ff72] leading-snug mb-6">
-    Нашият подход съчетава прецизност и креативност:
-  </p>
-
-  <ul className="list-disc pl-6 marker:text-white font-inter text-3xl text-[#c1ff72] leading-snug space-y-6">
-    <li>
-      професионална организация, която освобождава вас и екипа ви от стреса;
-    </li>
-    <li>
-      авторски идеи и storytelling елементи, които придават уникален характер на всяко събитие;
-    </li>
-    <li>
-      баланс между елегантност и свежест
-    </li>
-  </ul>
-</div>
+      {/* текст – над декора */}
+      <div className="max-w-2xl mr-auto text-left pl-16 relative z-10">
+        <h2 className="font-poppins font-bold text-4xl text-[#c1ff72] mb-6">
+          Нашият подход
+        </h2>
+        <p className="font-inter text-3xl text-[#c1ff72] leading-snug mb-6">
+          Нашият подход съчетава прецизност и креативност:
+        </p>
+        <ul className="list-disc pl-6 marker:text-white font-inter text-3xl text-[#c1ff72] leading-snug space-y-6">
+          <li>професионална организация, която освобождава вас и екипа ви от стреса;</li>
+          <li>авторски идеи и storytelling елементи, които придават уникален характер на всяко събитие;</li>
+          <li>баланс между елегантност и свежест</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
