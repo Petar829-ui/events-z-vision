@@ -174,22 +174,28 @@ const About = () => {
     </figure>
 
     {/* Текстът – по-широка колона вдясно */}
-    <div className="lg:col-span-4 lg:col-start-9 text-right">
-      {/* Ограничаваме дължината на реда да не се “счупва” по дума */}
-      <div className="max-w-[42ch] ml-auto">
-        <h2 className="text-5xl md:text-6xl text-[#c1ff72] text-center lg:text-center font-caveat font-normal leading-relaxed">
-          Научи повече за CEGE тук:
-        </h2>
-      <Link to="https://sites.google.com/view/cege-association/home-page?authuser=0" className="inline-block group">
-        <img
+<div className="max-w-[42ch] ml-auto">
+  <h2 className="text-5xl md:text-6xl text-[#c1ff72] text-center lg:text-center font-caveat font-normal leading-relaxed">
+    Научи повече за CEGE тук:
+  </h2>
+
+  <div
+    className="
+      mx-auto mt-10
+      w-[260px] sm:w-[320px] md:w-[380px] lg:w-[480px]
+      aspect-square rounded-full overflow-hidden
+      bg-[#075994] ring-8 ring-[#075994]
+    "
+  >
+    <Link to="https://sites.google.com/view/cege-association/home-page?authuser=0" className="block h-full w-full group">
+      <img
         src="website CEGE Logo A1 design EZV.svg"
         alt="CEGE страница"
-        className="w-[360px] md:w-[480px] mt-10 rounded-xl shadow-xl transition-transform duration-300 group-hover:scale-105"
-        />
-       </Link>
-      </div>
-    </div>
-
+        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+      />
+    </Link>
+  </div>
+  </div>
   </div>
 </div>
 

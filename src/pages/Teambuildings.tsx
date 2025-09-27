@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom";
 
-const Corporate = () => {
+const Teambuildings = () => {
   return (
     <div className="min-h-screen bg-[#075994] pb-10">
         <section className="relative min-h-[80vh] overflow-hidden isolate">
@@ -207,4 +207,4 @@ const Corporate = () => {
   );
 };
 
-export default Corporate;
+export default Teambuildings;
