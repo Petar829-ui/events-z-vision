@@ -7,6 +7,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Partnerships from './pages/Partnerships';
+import Corporate from './pages/Corporate';
 import Contacts from './pages/Contacts';
 import Inquiry from './pages/Inquiry';
 import ScrollToTop from './components/ScrollToTop';
@@ -24,6 +25,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/partnerships" element={<Partnerships />} />
+          <Route path='/corporate' element={<Corporate />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/inquiry" element={<Inquiry />} />
         </Routes>

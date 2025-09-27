@@ -25,6 +25,7 @@ const Header = () => {
     { name: 'За нас', path: '/about' },
     { name: 'Блог', path: '/blog' },
     { name: 'Партньори', path: '/partnerships' },
+    { name: 'Корпоративни', path: '/corporate'},
     { name: 'Контакти', path: '/contacts' },
     { name: 'Запитване', path: '/inquiry' },
   ];

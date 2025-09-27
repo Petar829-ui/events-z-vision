@@ -6,6 +6,13 @@ html, body {
   overflow-x:hidden
 }
 
+html { scrollbar-gutter: stable; }
+
+/* Fallback за браузъри без scrollbar-gutter */
+@supports not (scrollbar-gutter: stable) {
+  html { overflow-y: scroll; }
+}
+
 .shape1 {
   width: 280px;
   height: 575px;
