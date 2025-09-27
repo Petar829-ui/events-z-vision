@@ -58,7 +58,7 @@ const Services = () => {
                 доверете се на нас – <span className="font-bold">в сигурни ръце сте!</span>
               </p>
               <img
-                src="website 5 design EZV.svg"
+                src="1.svg"
                 alt="Корпоративни събития"
                 className="absolute bottom-0 left-1/2 -translate-x-1/2 w-60 md:w-72"
               />
@@ -106,9 +106,9 @@ const Services = () => {
                 Отпразнувайте <span className='font-bold'>мечтаният<br /> си празник,</span> като му се насладите напълно <span className='font-bold'>без да<br /> се притеснявате</span> за организацията и логистиката!
               </p>
               <img
-                src="website S2 design EZV.png"
+                src="2.svg"
                 alt="Лични празници"
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-60 md:w-72"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-80 md:w-96 h-auto"
               />
             </div>
           </div>
@@ -131,9 +131,9 @@ const Services = () => {
                 в нито една от горните две категории, мястото ви е<br /> тук в <span className='font-bold'>Z Experience!</span>
               </p>
               <img
-                src="website S3 design EZV.png"
+                src="3.svg"
                 alt="Z Experience"
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-60 md:w-72"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-80 md:w-96 h-auto"
               />
             </div>
           </div>

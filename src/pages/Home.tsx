@@ -52,19 +52,45 @@ const Home = () => {
               свързани с организиране на:
             </h2>
             <div className='font-playfair font-normal text-2xl flex justify-center gap-12 my-12'>
-              <div className='text-center'>
-              <img src="website H2 design EZV.png" alt="Img" className='w-[400px] h-auto' />
-              <h2 className='text-[#c1ff72]'>Корпоративни събития</h2>
-              </div>
-              <div className='text-center'>
-              <img src="website 3 design EZV.png" alt="Img" className='w-[400px] h-auto' />
-              <h2 className='text-[#c1ff72]'>Лични събития</h2>
-              </div>
-              <div className='text-center'>
-              <img src="website 4 design EZV.png" alt="Img" className='w-[400px] h-auto' />
-              <h2 className='text-[#c1ff72]'>Нестандартни Z Experience събития</h2>
-              </div>
-            </div>
+
+  {/* Корпоративни събития – svg вътре в зелена карта, по-голямо и центрирано */}
+  <div className='flex flex-col items-center text-center'>
+    <div className='w-[400px] h-[190px] bg-[#c1ff72] rounded-2xl overflow-hidden flex items-center justify-center'>
+      <img
+        src="1.svg"
+        alt="Img"
+        className="w-[115%] h-full object-contain"
+      />
+    </div>
+    <h2 className="text-[#c1ff72] mt-3">Корпоративни събития</h2>
+    </div>
+    
+  {/* Лични събития */}
+  <div className='flex flex-col items-center text-center'>
+  <div className='w-[400px] h-[190px] bg-[#c1ff72] rounded-2xl overflow-hidden flex items-center justify-center'>
+    <img
+      src="2.svg"
+      alt="Img"
+      className="w-[115%] h-full object-contain"
+    />
+    </div>
+    <h2 className="text-[#c1ff72] mt-3">Лични събития</h2>
+    </div>
+
+  {/* Нестандартни Z Experience събития */}
+  <div className='flex flex-col items-center text-center'>
+  <div className='w-[400px] h-[190px] bg-[#c1ff72] rounded-2xl overflow-hidden flex items-center justify-center'>
+    <img
+      src="3.svg"
+      alt="Img"
+      className="w-[115%] h-full object-contain"
+    />
+    </div>
+    <h2 className="text-[#c1ff72] mt-3">Нестандартни Z Experience събития</h2>
+    </div>
+
+</div>
+
            </div>
 
           <div className="text-center mt-12 relative z-[10]">

@@ -187,7 +187,7 @@ const About = () => {
       bg-[#075994] ring-8 ring-[#075994]
     "
   >
-    <Link to="https://sites.google.com/view/cege-association/home-page?authuser=0" className="block h-full w-full group">
+    <Link to="https://www.cegeassociation.org/" className="block h-full w-full group">
       <img
         src="website CEGE Logo A1 design EZV.svg"
         alt="CEGE страница"

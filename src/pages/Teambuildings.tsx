@@ -8,15 +8,15 @@ const Teambuildings = () => {
         <div
           aria-hidden="true"
           className="absolute inset-0 left-[-8px] right-[-8px] bg-cover bg-center -z-10 pointer-events-none"
-          style={{ backgroundImage: "url('website C1 design EZV.svg')" }}
+          style={{ backgroundImage: "url('B13.svg')" }}
         />
         <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-64 pb-16">
             <h2 className="text-6xl font-poppins font-semibold text-[#c1ff72] text-center mt-20">
-                Корпоративни <span className="text-white">събития</span>
+                Тийм<span className="text-white">билдинги</span>
             </h2>
-            <p className="text-4xl font-poppins font-semibold text-[#c1ff72] text-center mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
-            Знаем, че бизнесът не се измерва само в цифри, а и в <span className="text-white">преживяванията</span>, които сплотяват хората зад него.
-            Затова <span className="text-white">създаваме събития</span>, които оставят следа – не само във вашите колеги, гости, но и във вашия бранд.
+            <p className="text-3xl font-poppins font-semibold text-[#c1ff72] text-center mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
+            Един <span className="text-white">екип</span> е силен тогава, когато споделя повече от работни задачи – <span className="text-white">когато членовети му заедно
+            преживяват моменти</span>, които ги сближават, усъвършенстват и вдъхновяват.
             </p>
             </div>
         </section>
@@ -33,16 +33,16 @@ const Teambuildings = () => {
         />
         <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
           <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] mb-[114px]">
-            Тиймбилдинги
+            Обучения
           </h3>
           <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] leading-relaxed mb-[32px] max-w-[34ch] md:max-w-none mx-auto">
-            Ако искаш да стигнеш <span className="font-bold">бързо</span> - тръгни сам, но ако искаш да стигнеш
-             <span className="font-bold">далеч</span> тръгнете <span className="font-bold">заедно...</span>
+            Основните две <br />съставки на <span className="font-bold">успешният екип </span> са
+             <span className="font-bold">успешните <br />хора</span> и <span className="font-bold">доверието</span> <br />между тях
           </p>
           <img
-            src="website Co2 design EZV.svg"
+            src="2.svg"
             alt="Корпоративни събития"
-            className="absolute bottom-0 left-1/2 -translate-x-1/2 w-60 md:w-72"
+            className="absolute bottom-0 left-1/2 -translate-x-1/2 w-80 md:w-96 h-auto"
           />
         </div>
       </div>
@@ -55,14 +55,14 @@ const Teambuildings = () => {
           className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] mb-24 leading-relaxed">
-            Фирмени <br />партита
+          <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] mb-28 leading-relaxed">
+            Развлекателни
           </h3>
-          <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] mb-[90px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
-           Отпразнувайте <span className="font-bold">успехите</span> заедно!
+          <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] mb-[94px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
+           <span className="font-bold">Опознайте</span> колегите си <span className="font-bold">извън офиса...</span> работата ще почака
           </p>
           <img
-            src="website Co1 design EZV.svg"
+            src="3.svg"
             alt="Корпоративни събития"
             className="absolute bottom-0 left-1/2 -translate-x-1/2 w-80 md:w-96 lg:w-[28rem] h-auto pointer-events-none"
           />
@@ -77,14 +77,15 @@ const Teambuildings = () => {
           className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <h3 className="text-3xl font-montserrat font-bold text-[#2f492f] mb-20 leading-relaxed">
-            Конферинции Семинари <span className="whitespace-nowrap">Работни срещи</span>
+          <h3 className="text-4xl font-montserrat font-bold text-[#2f492f] mb-24 leading-relaxed">
+           Смесени
           </h3>
-          <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] mb-[32px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
-            Недей да ги мислиш толкова <span className="font-bold">- ние ще се погрижим!</span>
+          <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] mb-[39px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
+            <span className="font-bold">Балансът</span> е в основата на успеха...балансирай заедно с екипа си между
+            <span className="font-bold">готино ново обучение</span> и <span className="font-bold">релакс</span>
           </p>
           <img
-            src="website 5 design EZV.svg"
+            src="1.svg"
             alt="Корпоративни събития"
             className="absolute bottom-0 left-1/2 -translate-x-1/2 w-60 md:w-72"
           />
@@ -98,10 +99,9 @@ const Teambuildings = () => {
        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid place-items-stretch p-6 rounded-3xl bg-[#f6f6f6]">
            <p className="text-3xl text-[#075994] font-inter font-semibold text-center">
-            Всяко <span className="text-[#f96e0c]">корпоративно събитие</span> е повече от дата в календара – то е момент, който обединява хората зад
-            една обща идея. Независимо дали става дума за <span className="text-[#f96e0c]">тиймбилдинг, фирмено парти или бизнес конференция</span>,
-            то носи възможност да изградите връзки, да вдъхновите екипа си и да <span className="text-[#f96e0c]">оставите</span> <span className="text-[#f96e0c]">впечатление</span>, което
-            се помни дълго!
+            Тиймбилдингите са <span className="text-[#f96e0c]">много повече</span> от приятна пауза в работния ритъм – те са <span className="text-[#f96e0c]">стратегически инструмент</span>
+            за развитие на екипа и работната динамика, като същевременно могат и да <span className="text-[#f96e0c]">обогатят и подобрят знанията
+            и уменията</span> на служителите
           </p>
           </div>
        </div>
@@ -122,19 +122,21 @@ const Teambuildings = () => {
     <div className="flex flex-col md:flex-row items-start md:items-center gap-10">
       <div className="max-w-2xl mr-auto text-left">
         <h2 className="font-poppins font-bold text-4xl text-[#c1ff72] pb-6">
-          Защо ние?
+          Обучителни 
         </h2>
         <p className="font-inter font-normal text-3xl text-[#c1ff72] leading-relaxed">
-          В <span className="font-bold">Events Z Vision</span> подхождаме към корпоративните събития като към преживявания със смисъл. За нас те не са
-          просто добре изпълнена програма, а внимателно изградена история, в която всеки детайл има значение – от
-          атмосферата и пространството, до усещането, което хората ще носят със себе си след края му.
+        Тиймбилдингите с цел обучение развиват умения, които пряко влияят върху ефективността на работата.
+        Комуникация, лидерство, креативност, способност за работа под напрежение и др. се упражняват в среда,
+        която е стимулираща и вдъхновяваща. Така служителите не само усвояват нови личностни и работни умения,
+        но и започват да ги прилагат в работната си среда, което води до по-добри резултати и по-силно усещане за
+        сплотеност.
         </p>
       </div>
 
       {/* снимка вдясно, без absolute и без overflow-hidden */}
       <div className="mx-auto w-[720px] h-[520px] rounded-full bg-[#075994] ring-8 ring-[#075994] relative z-10">
         <img
-          src="website Co3 design EZV.svg"
+          src="10.svg"
           alt="Корпоративни събития"
           className="block w-full h-full object-cover select-none rounded-full [clip-path:circle(50%_at_50%_50%)]"
         />
@@ -160,7 +162,7 @@ const Teambuildings = () => {
       {/* снимка в кръг (без absolute и без overflow-hidden) */}
       <div className="mx-auto w-[720px] h-[520px] rounded-full bg-[#075994] ring-8 ring-[#075994] relative z-10">
         <img
-          src="website Co4 design EZV.svg"
+          src="11.svg"
           alt="Корпоративни събития"
           className="block w-full h-full object-cover select-none rounded-full [clip-path:circle(50%_at_50%_50%)]"
         />
@@ -169,16 +171,14 @@ const Teambuildings = () => {
       {/* текст – над декора */}
       <div className="max-w-2xl mr-auto text-left pl-16 relative z-10">
         <h2 className="font-poppins font-bold text-4xl text-[#c1ff72] mb-6">
-          Нашият подход
+          Развлекателни
         </h2>
         <p className="font-inter text-3xl text-[#c1ff72] leading-snug mb-6">
-          Нашият подход съчетава прецизност и креативност:
+        Развлекателните тиймбилдинги, от своя страна, носят лекота, смях и енергия, които сближават хората и
+        укрепват връзките помежду им. Те създават атмосфера на доверие, в която колегите се виждат не само като
+        професионалисти, а и като личности. Това прави ежедневната работа по-естествена и хармонична, а екипът –<br /> 
+        по-мотивиран и готов да върви напред заедно.
         </p>
-        <ul className="list-disc pl-6 marker:text-white font-inter text-3xl text-[#c1ff72] leading-snug space-y-6">
-          <li>професионална организация, която освобождава вас и екипа ви от стреса;</li>
-          <li>авторски идеи и storytelling елементи, които придават уникален характер на всяко събитие;</li>
-          <li>баланс между елегантност и свежест</li>
-        </ul>
       </div>
     </div>
   </div>

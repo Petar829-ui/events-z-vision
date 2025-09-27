@@ -40,9 +40,9 @@ const Corporate = () => {
              <span className="font-bold">далеч</span> тръгнете <span className="font-bold">заедно...</span>
           </p>
           <img
-            src="website Co2 design EZV.svg"
+            src="2.svg"
             alt="Корпоративни събития"
-            className="absolute bottom-0 left-1/2 -translate-x-1/2 w-60 md:w-72"
+            className="absolute bottom-0 left-1/2 -translate-x-1/2 w-80 md:w-96 lg:w-[28rem] h-auto pointer-events-none"
           />
         </div>
       </div>
@@ -62,7 +62,7 @@ const Corporate = () => {
            Отпразнувайте <span className="font-bold">успехите</span> заедно!
           </p>
           <img
-            src="website Co1 design EZV.svg"
+            src="3.svg"
             alt="Корпоративни събития"
             className="absolute bottom-0 left-1/2 -translate-x-1/2 w-80 md:w-96 lg:w-[28rem] h-auto pointer-events-none"
           />
@@ -84,7 +84,7 @@ const Corporate = () => {
             Недей да ги мислиш толкова <span className="font-bold">- ние ще се погрижим!</span>
           </p>
           <img
-            src="website 5 design EZV.svg"
+            src="1.svg"
             alt="Корпоративни събития"
             className="absolute bottom-0 left-1/2 -translate-x-1/2 w-60 md:w-72"
           />
