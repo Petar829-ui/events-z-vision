@@ -146,6 +146,14 @@ const Header = () => {
                     >
                       Тиймбилдинги
                     </Link>
+
+                    <Link
+                      to="/Company"
+                      onClick={() => setSvcOpen(false)}
+                      className="block px-4 py-2.5 text-sm font-inter font-medium text-gray-800 hover:bg-[#075994] hover:text-[#c1ff72] rounded-lg"
+                    >
+                      Фирмени партита
+                    </Link>
                   </div>
                 </div>
               </div>
