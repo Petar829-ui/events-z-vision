@@ -10,6 +10,9 @@ import Partnerships from './pages/Partnerships';
 import Corporate from './pages/Corporate';
 import Teambuildings from './pages/Teambuildings';
 import Company from './pages/Company';
+import Conferences from './pages/Conferences';
+import Training from './pages/Training';
+import Entertainment from './pages/Entertainment';
 import Contacts from './pages/Contacts';
 import Inquiry from './pages/Inquiry';
 import ScrollToTop from './components/ScrollToTop';
@@ -30,6 +33,9 @@ function App() {
           <Route path='/corporate' element={<Corporate />} />
           <Route path='/Teambuildings' element={<Teambuildings />} />
           <Route path='/Company' element={<Company />} />
+          <Route path='/Conferences' element={<Conferences />} />
+          <Route path='/Training' element={<Training />} />
+          <Route path='/Entertainment' element={<Entertainment />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/inquiry" element={<Inquiry />} />
         </Routes>

@@ -15,7 +15,7 @@ const Company = () => {
             Фирмени <span className="text-white">партита</span>
           </h2>
 
-          <div className="mx-auto w-[400px] aspect-square rounded-full border-2 border-[#c1ff72] grid place-items-center p-6 md:p-10">
+          <div className="mx-auto w-[400px] aspect-square backdrop-blur-md rounded-full border-2 border-[#c1ff72] grid place-items-center p-6 md:p-10">
             <p className="text-3xl font-inter font-normal text-[#c1ff72] text-center leading-relaxed">
               Всичко за вашето<br />
               <span className="text-white">фирмено парти</span> на<br />
