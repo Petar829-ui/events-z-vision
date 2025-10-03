@@ -197,6 +197,7 @@ const Header = () => {
                           {/* постави своите подлинкове тук, оставям примерни */}
                           <Link to="/Training" className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72]">Обучения</Link>
                           <Link to="/Entertainment" className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72]">Развлекателни</Link>
+                          <Link to="/MixedTeambuildings" className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72]">Смесени тиймбилдинги</Link>
                         </div>
                       </div>
 

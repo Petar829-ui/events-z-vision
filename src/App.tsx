@@ -13,6 +13,8 @@ import Company from './pages/Company';
 import Conferences from './pages/Conferences';
 import Training from './pages/Training';
 import Entertainment from './pages/Entertainment';
+import MixedTeambuildings from './pages/MixedTeambuildings';
+import Blog2 from './pages/Blog2';
 import Contacts from './pages/Contacts';
 import Inquiry from './pages/Inquiry';
 import ScrollToTop from './components/ScrollToTop';
@@ -36,6 +38,8 @@ function App() {
           <Route path='/Conferences' element={<Conferences />} />
           <Route path='/Training' element={<Training />} />
           <Route path='/Entertainment' element={<Entertainment />} />
+          <Route path='/MixedTeambuildings' element={<MixedTeambuildings />} />
+          <Route path='/Blog2' element={<Blog2 />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/inquiry" element={<Inquiry />} />
         </Routes>
