@@ -38,9 +38,9 @@ const Services = () => {
         <div className="relative flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-32">
           {/* Декоративен бекграунд */}
           <img
-            src="website design N EZV.png"
+            src="43.svg"
             alt="Декор"
-            className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+            className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-auto object-contain -z-10 opacity-70"
           />
 
           {/* Лява колона */}
@@ -153,9 +153,9 @@ const Services = () => {
 
           {/* Декор зад реда */}
           <img
-            src="website design N EZV.png"
+            src="43.svg"
             alt="Декор"
-            className="pointer-events-none absolute left-2/2 top-3/3 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+            className="pointer-events-none absolute left-2/2 top-3/3 -translate-x-1/2 -translate-y-1/2 w-[850px] h-auto object-contain -z-10 opacity-70"
           />
         </div>
       </section>
@@ -211,9 +211,9 @@ const Services = () => {
         </p>
         
         <img
-        src="website design N EZV.png"
+        src="43.svg"
         alt="Декор"
-        className="pointer-events-none absolute left-1/2 top-1/1 -translate-x-2/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70 rotate-90" 
+        className="pointer-events-none absolute left-1/2 top-1/1 -translate-x-2/2 -translate-y-1/2 w-[850px] h-auto object-contain -z-10 opacity-70 rotate-90" 
         />
         </div>
       </section>

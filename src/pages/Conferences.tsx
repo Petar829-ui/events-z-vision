@@ -203,11 +203,11 @@ const Conferences = () => {
        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <div className="grid place-items-stretch p-6 rounded-3xl bg-[#f6f6f6]">
             <img
-            src="website design N EZV.png"
+            src="43.svg"
             alt="Декор"
             className="pointer-events-none absolute z-[-10]
                left-1/2 top-[130%] -translate-x-1/2 -translate-y-1/2
-               w-[750px] h-auto object-contain opacity-70"
+               w-[850px] h-auto object-contain opacity-70"
             />
            <p className="text-3xl text-[#075994] font-inter font-semibold text-center">
             Всяка бизнес среща е <span className="text-[#f96e0c]">възможност</span> – да споделите знания, да представите идеи и да изградите нови партньорства. Успешното събитие не се измерва само в добре подредена програма, а в
@@ -253,11 +253,11 @@ const Conferences = () => {
             </div>
         </div>
            <img
-            src="website design N EZV.png"
+            src="43.svg"
             alt="Декор"
             className="pointer-events-none absolute z-[-10]
                left-1/2 top-[100%] -translate-x-1/2 -translate-y-1/2
-               w-[750px] h-auto object-contain opacity-70"
+               w-[850px] h-auto object-contain opacity-70"
             />
       </div>
     </section>

@@ -22,8 +22,8 @@ const Contacts = () => {
             <span className="text-[#c1ff72]">Следваш ли нашите<br /> профили</span>
             <span className="text-white"> в социалните<br /> мрежи?</span>
           </p>
-          <img src="website design N EZV.png" alt="Image" 
-         className="pointer-events-none absolute left-1/2 top-[30rem] -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain z-[0] opacity-70" />
+          <img src="43.svg" alt="Image" 
+         className="pointer-events-none absolute left-1/2 top-[30rem] -translate-x-1/2 -translate-y-1/2 w-[850px] h-auto object-contain z-[0] opacity-70" />
         </div>
 
         {/* Две колони */}

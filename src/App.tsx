@@ -15,6 +15,7 @@ import Training from './pages/Training';
 import Entertainment from './pages/Entertainment';
 import MixedTeambuildings from './pages/MixedTeambuildings';
 import Blog2 from './pages/Blog2';
+import Personal from './pages/Personal';
 import Contacts from './pages/Contacts';
 import Inquiry from './pages/Inquiry';
 import ScrollToTop from './components/ScrollToTop';
@@ -40,6 +41,7 @@ function App() {
           <Route path='/Entertainment' element={<Entertainment />} />
           <Route path='/MixedTeambuildings' element={<MixedTeambuildings />} />
           <Route path='/Blog2' element={<Blog2 />} />
+          <Route path='/Personal' element={<Personal />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/inquiry" element={<Inquiry />} />
         </Routes>

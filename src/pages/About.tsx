@@ -53,9 +53,9 @@ const About = () => {
 
       {/* Плейсхолдър/снимка – дясна колона */}
           <img
-            src="website design N EZV.png"
+            src="43.svg"
             alt="Декор"
-            className="pointer-events-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+            className="pointer-events-none absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[850px] h-auto object-contain -z-10 opacity-70"
           />
     </div>
 
@@ -63,9 +63,9 @@ const About = () => {
 <div className="mt-20 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
   {/* декор (не променяме) */}
   <img
-    src="website design N EZV.png"
+    src="43.svg"
     alt="Декор"
-    className="pointer-events-none absolute left-1/2 top-2/3 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+    className="pointer-events-none absolute left-1/2 top-2/3 -translate-x-1/2 -translate-y-1/2 w-[850px] h-auto object-contain -z-10 opacity-70"
   />
 
   {/* Текстовата колона започва от колона 7 => вдясно */}
@@ -87,9 +87,9 @@ const About = () => {
 
 <section className='mt-16 relative isolate'>
       <img 
-    src="website design N EZV.png" 
+    src="43.svg" 
     alt="Декор" 
-    className='pointer-events-none absolute left-1/2 top-3/4 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain -z-10 opacity-70'
+    className='pointer-events-none absolute left-1/2 top-3/4 -translate-x-1/2 -translate-y-1/2 w-[850px] h-auto object-contain -z-10 opacity-70'
     />
   <div className="lg:col-span-6 lg:col-start-7">
     <h2 className="text-7xl text-[#c1ff72] font-caveat font-normal mb-6 text-center lg:text-center pb-20">
@@ -108,9 +108,9 @@ const About = () => {
 <section className="mt-16 relative isolate">
   {/* Декор отзад */}
   <img
-    src="website design N EZV.png"
+    src="43.svg"
     alt="Декор"
-    className="pointer-events-none absolute left-1/2 top-20 -translate-x-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+    className="pointer-events-none absolute left-1/2 top-20 -translate-x-1/2 w-[850px] h-auto object-contain -z-10 opacity-70"
   />
 
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -156,9 +156,9 @@ const About = () => {
 Светозара Манолова и Радослав Богоев, заедно със своите съмишленици, натрупаха ценен опит като екип в управлението и реализирането на международни обучения, младежки обмени и партньорски мрежи. Този общ опит в неправителствения сектор е стабилната основа, върху която днес се развива и дейността на агенцията – със същите ценности за отговорност, качество и социална ангажираност.
     </p>
       <img
-    src="website design N EZV.png"
+    src="43.svg"
     alt="Декор"
-    className="pointer-events-none absolute left-[40%] md:left-[35%] bottom-[50%] md:bottom-[30%] -translate-x-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+    className="pointer-events-none absolute left-[40%] md:left-[35%] bottom-[50%] md:bottom-[30%] -translate-x-1/2 w-[850px] h-auto object-contain -z-10 opacity-70"
   />
 
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -202,9 +202,9 @@ const About = () => {
 
   </div>
   <img
-    src="website design N EZV.png"
+    src="43.svg"
     alt="Декор"
-    className="pointer-events-none absolute left-[66%] md:left-[70%] top-[70%] md:top-[80%] -translate-x-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+    className="pointer-events-none absolute left-[66%] md:left-[70%] top-[70%] md:top-[80%] -translate-x-1/2 w-[850px] h-auto object-contain -z-10 opacity-70"
   />
   </div>
 </section>

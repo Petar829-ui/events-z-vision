@@ -110,11 +110,11 @@ const Corporate = () => {
 <section className="mt-16 relative isolate">
   {/* Декор – зад всичко */}
   <img
-    src="website design N EZV.png"
+    src="43.svg"
     alt="Декор"
     className="pointer-events-none absolute z-[-10]
                left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
-               w-[750px] h-auto object-contain opacity-70"
+               w-[850px] h-auto object-contain opacity-70"
   />
 
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -147,11 +147,11 @@ const Corporate = () => {
 <section className="mt-16 relative isolate">
   {/* Декор – зад всичко */}
   <img
-    src="website design N EZV.png"
+    src="43.svg"
     alt="Декор"
     className="pointer-events-none absolute z-[-10] 
                left-[50%] top-2/3 -translate-x-1/2 -translate-y-1/2
-               w-[750px] h-auto object-contain opacity-70"
+               w-[850px] h-auto object-contain opacity-70"
   />
 
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

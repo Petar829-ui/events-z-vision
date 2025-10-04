@@ -58,9 +58,9 @@ const Partnerships = () => {
   {/* Header с декор изображението, видимо със -z-10 */}
 <div className="relative isolate overflow-hidden">
   <img
-    src="website design N EZV.png"
+    src="43.svg"
     alt="Декор"
-    className="pointer-events-none absolute left-1/2 bottom-[-17rem] -translate-x-1/2 w-[750px] h-auto object-contain -z-10 opacity-70"
+    className="pointer-events-none absolute left-1/2 bottom-[-17rem] -translate-x-1/2 w-[850px] h-auto object-contain -z-10 opacity-70"
   />
 
   <div className="relative text-center">

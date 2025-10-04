@@ -130,9 +130,9 @@ const Home = () => {
       {/* Mission & Vision */}
       <section className="py-16 bg-[#075994]">
         <img
-          src="website design N EZV.png"
+          src="43.svg"
           alt="Image"
-          className="pointer-events-none absolute left-1/2 top-2/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-auto object-contain z-0 opacity-70"
+          className="pointer-events-none absolute left-1/2 top-2/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-auto object-contain z-0 opacity-70"
         />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-7xl font-caveat Display bont-serif text-[#c1ff72] mb-6 text-center relative z-[10]">
