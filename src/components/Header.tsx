@@ -256,7 +256,7 @@ const Header = () => {
                         className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72] rounded-lg"
                         onClick={() => setPrivOpen(false)}
                       >
-                        Обучения
+                        Сватби
                       </Link>
                     </div>
                   </div>
