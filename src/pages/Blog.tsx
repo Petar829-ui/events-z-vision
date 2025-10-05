@@ -59,25 +59,25 @@ const Blog = () => {
 
         {filteredPosts.length > 0 && (
           <div className="mb-16">
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div className="bg-[#c1ff72] rounded-2xl shadow-xl overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="relative">
                   <img src={filteredPosts[0].image} alt={filteredPosts[0].title} className="w-full h-80 lg:h-full object-cover" />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-[#1f6da8] text-white px-3 py-1 rounded-full text-xs font-inter font-medium">Препоръчано</span>
+                    <span className="bg-[#1f6da8] text-[#c1ff72] px-3 py-1 rounded-full text-xs font-inter font-medium">Препоръчано</span>
                   </div>
                 </div>
                 {/* featured content вече е с Inter */}
                 <div className="p-8 lg:p-12 flex flex-col justify-center font-inter">
-                  <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
+                  <div className="flex items-center space-x-4 text-sm text-[#075994] mb-4">
                     <div className="flex items-center"><Calendar className="h-4 w-4 mr-1" /><span>{filteredPosts[0].date}</span></div>
                     <div className="flex items-center"><User className="h-4 w-4 mr-1" /><span>{filteredPosts[0].author}</span></div>
                     <div className="flex items-center"><Tag className="h-4 w-4 mr-1" /><span>{filteredPosts[0].category}</span></div>
                   </div>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">{filteredPosts[0].title}</h2>
-                  <p className="text-lg text-gray-600 mb-6 leading-relaxed">{filteredPosts[0].excerpt}</p>
+                  <h2 className="text-3xl font-bold text-[#075994] mb-4">{filteredPosts[0].title}</h2>
+                  <p className="text-lg text-[#075994] mb-6 leading-relaxed">{filteredPosts[0].excerpt}</p>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">{filteredPosts[0].readTime}</span>
+                    <span className="text-sm text-[#075994]">{filteredPosts[0].readTime}</span>
                     <button className="inline-flex items-center text-[#3b84b6] hover:text-[#075994] font-inter font-semibold transition-colors">
                       Прочетете повече <ArrowRight className="ml-2 h-4 w-4" />
                     </button>
@@ -92,19 +92,19 @@ const Blog = () => {
           {filteredPosts.slice(1).map(post => (
             <article
               key={post.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 font-inter"
+              className="bg-[#c1ff72] rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 font-inter"
             >
               <div className="relative">
                 <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
                 <div className="absolute top-3 left-3">
-                  <span className="bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs font-medium">
+                  <span className="bg-[#075994] bg-opacity-70 text-[#c1ff72] px-2 py-1 rounded text-xs font-medium">
                     {post.category}
                   </span>
                 </div>
               </div>
 
               <div className="p-6">
-                <div className="flex items-center text-xs text-gray-500 mb-3">
+                <div className="flex items-center text-xs text-[#075994] mb-3">
                   <Calendar className="h-3 w-3 mr-1" />
                   <span className="mr-3">{post.date}</span>
                   <User className="h-3 w-3 mr-1" />
@@ -112,11 +112,11 @@ const Blog = () => {
                   <span>{post.readTime}</span>
                 </div>
 
-                <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
+                <h3 className="text-xl font-bold text-[#075994] mb-3 line-clamp-2">
                   {post.title}
                 </h3>
 
-                <p className="text-gray-600 mb-4 line-clamp-3">
+                <p className="text-[#075994] mb-4 line-clamp-3">
                   {post.excerpt}
                 </p>
 

@@ -17,6 +17,11 @@ import MixedTeambuildings from './pages/MixedTeambuildings';
 import Blog2 from './pages/Blog2';
 import Weddings from './pages/Weddings';
 import Personal from './pages/Personal';
+import PersonalCelebrations from './pages/PersonalCelebrations';
+import ZExperience from './pages/ZExperience';
+import AuthorsZ from './pages/AuthorsZ';
+import Personalized from './pages/Personalized';
+import Product from './pages/Product';
 import Contacts from './pages/Contacts';
 import Inquiry from './pages/Inquiry';
 import ScrollToTop from './components/ScrollToTop';
@@ -27,7 +32,7 @@ function App() {
       <ScrollToTop />
       <div className="min-h-screen bg-gray-50">
         <Header />
-        <Routes>
+        <Routes>Product
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
@@ -44,6 +49,11 @@ function App() {
           <Route path='/Blog2' element={<Blog2 />} />
           <Route path='/Weddings' element={<Weddings />} />
           <Route path='/Personal' element={<Personal />} />
+          <Route path='/PersonalCelebrations' element={<PersonalCelebrations />} />
+          <Route path='/ZExperience' element={<ZExperience />} />
+          <Route path='/AuthorsZ' element={<AuthorsZ />} />
+          <Route path='/Personalized' element={<Personalized />} />
+          <Route path='/Product' element={<Product />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/inquiry" element={<Inquiry />} />
         </Routes>

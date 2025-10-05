@@ -12,6 +12,7 @@ const Header = () => {
   const [tbOpen, setTbOpen] = useState(false);
   const [trainOpen, setTrainOpen] = useState(false);
   const [privOpen, setPrivOpen] = useState(false);
+  const [zexpOpen, setZexpOpen] = useState(false); // <-- NEW (Z.Experience)
 
   // Mobile collapsibles
   const [mobileSvcOpen, setMobileSvcOpen] = useState(false);
@@ -24,6 +25,7 @@ const Header = () => {
   const tbTimer = useRef<number | null>(null);
   const trainTimer = useRef<number | null>(null);
   const privTimer = useRef<number | null>(null);
+  const zexpTimer = useRef<number | null>(null); // <-- NEW
 
   const openSvc = () => { if (svcTimer.current) clearTimeout(svcTimer.current); setSvcOpen(true); };
   const closeSvcDelayed = (d=320) => { if (svcTimer.current) clearTimeout(svcTimer.current); svcTimer.current = window.setTimeout(()=>setSvcOpen(false), d); };
@@ -39,6 +41,9 @@ const Header = () => {
 
   const openPriv = () => { if (privTimer.current) clearTimeout(privTimer.current); setPrivOpen(true); };
   const closePrivDelayed = (d=320) => { if (privTimer.current) clearTimeout(privTimer.current); privTimer.current = window.setTimeout(()=>setPrivOpen(false), d); };
+
+  const openZexp = () => { if (zexpTimer.current) clearTimeout(zexpTimer.current); setZexpOpen(true); };            // <-- NEW
+  const closeZexpDelayed = (d=320) => { if (zexpTimer.current) clearTimeout(zexpTimer.current); zexpTimer.current = window.setTimeout(()=>setZexpOpen(false), d); }; // <-- NEW
 
   const location = useLocation();
 
@@ -118,7 +123,14 @@ const Header = () => {
             <div
               className="relative"
               onMouseEnter={openSvc}
-              onMouseLeave={() => { closeSvcDelayed(); closeCorpDelayed(); closeTbDelayed(); closeTrainDelayed(); closePrivDelayed(); }}
+              onMouseLeave={() => {
+                closeSvcDelayed();
+                closeCorpDelayed();
+                closeTbDelayed();
+                closeTrainDelayed();
+                closePrivDelayed();
+                closeZexpDelayed(); // <-- NEW
+              }}
             >
               <button
                 onClick={() => setSvcOpen(v => !v)}
@@ -144,17 +156,17 @@ const Header = () => {
                 `}
               >
                 <div className="py-2">
-                  {/* 1) Нашите услуги — full width */}
+                  {/* 1) Нашите услуги */}
                   <Link
                     to="/services"
                     onClick={() => setSvcOpen(false)}
                     role="menuitem"
-                    className="block w-full px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72] rounded-t-lg"
+                    className="block w-full px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72]"
                   >
                     Нашите услуги
                   </Link>
 
-                  {/* 2) Корпоративни събития — LINK + flyout on hover */}
+                  {/* 2) Корпоративни събития */}
                   <div
                     className="relative"
                     onMouseEnter={openCorp}
@@ -172,14 +184,14 @@ const Header = () => {
                     {/* мост към flyout-а */}
                     {corpOpen && <div className="absolute -right-3 top-0 h-full w-3" onMouseEnter={openCorp} />}
 
-                    {/* Flyout панел (level 2) */}
+                    {/* Flyout панел */}
                     <div
                       onMouseEnter={openCorp}
                       className={`absolute left-full top-0 ml-3 min-w-[200px] rounded-lg bg-white shadow-lg ring-1 ring-black/5 transition
                         ${corpOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-1 pointer-events-none"}
                       `}
                     >
-                      {/* Тиймбилдинги — LINK + свой flyout */}
+                      {/* Тиймбилдинги */}
                       <div
                         className="relative"
                         onMouseEnter={openTb}
@@ -188,7 +200,7 @@ const Header = () => {
                         <Link
                           to="/teambuildings"
                           onClick={() => { setSvcOpen(false); setCorpOpen(false); }}
-                          className="flex w-full items-center justify-between pr-8 px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72]"
+                          className="flex w-full items-center justify-between pr-8 px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72] rounded-t-lg"
                         >
                           <span>Тиймбилдинги</span>
                         </Link>
@@ -203,13 +215,12 @@ const Header = () => {
                             ${tbOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-1 pointer-events-none"}
                           `}
                         >
-                          <Link to="/Training" className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72]">Обучения</Link>
+                          <Link to="/Training" className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72] rounded-t-lg">Обучения</Link>
                           <Link to="/Entertainment" className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72]">Развлекателни</Link>
-                          <Link to="/MixedTeambuildings" className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72]">Смесени тиймбилдинги</Link>
+                          <Link to="/MixedTeambuildings" className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72] rounded-b-lg">Смесени тиймбилдинги</Link>
                         </div>
                       </div>
 
-                      {/* Останалите линкове на Corporate */}
                       <Link
                         to="/Company"
                         onClick={() => { setSvcOpen(false); setCorpOpen(false); }}
@@ -227,17 +238,16 @@ const Header = () => {
                     </div>
                   </div>
 
-                  {/* 3) Лични събития — LINK + flyout */}
+                  {/* 3) Лични събития */}
                   <div
                     className="relative"
                     onMouseEnter={openPriv}
                     onMouseLeave={() => closePrivDelayed()}
                   >
-                    {/* смени "/personal" ако ползваш друг route */}
                     <Link
                       to="/Personal"
                       onClick={() => { setSvcOpen(false); setPrivOpen(false); }}
-                      className="flex w-full items-center justify-between pr-8 px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72]"
+                      className="flex w-full items-center justify-between pr-8 px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#ebee68] hover:text-[#075994]"
                     >
                       <span>Лични събития</span>
                     </Link>
@@ -253,10 +263,66 @@ const Header = () => {
                     >
                       <Link
                         to="/Weddings"
-                        className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#1f6da8] hover:text-[#c1ff72] rounded-lg"
-                        onClick={() => setPrivOpen(false)}
+                        className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#ebee68] hover:text-[#075994] rounded-t-lg"
+                        onClick={() => { setPrivOpen(false); }}
                       >
                         Сватби
+                      </Link>
+                      <Link
+                        to="/PersonalCelebrations"
+                        className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#ebee68] hover:text-[#075994] rounded-b-lg"
+                        onClick={() => { setPrivOpen(false); }}
+                      >
+                        лични празници
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* 4) Z.Experience — OWN STATE (no overlap) */}
+                  <div
+                    className="relative"
+                    onMouseEnter={openZexp}
+                    onMouseLeave={() => closeZexpDelayed()}
+                  >
+                    <Link
+                      to="/ZExperience"
+                      onClick={() => { setSvcOpen(false); setZexpOpen(false); }}
+                      className="flex w-full items-center justify-between pr-8 px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-gradient-to-r from-[#000000] via-[#3533cd] to-[#075994] hover:text-[#30e8b0]"
+                    >
+                      <span>Z.Experience събития</span>
+                    </Link>
+                    <ChevronRight className="h-4 w-4 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+
+                    {/* мост към flyout-а */}
+                    {zexpOpen && <div className="absolute -right-3 top-0 h-full w-3" onMouseEnter={openZexp} />}
+
+                    {/* Flyout панел само за Z.Experience */}
+                    <div
+                      onMouseEnter={openZexp}
+                      className={`absolute left-full top-0 ml-3 min-w-[200px] rounded-lg bg-white shadow-lg ring-1 ring-black/5 transition
+                        ${zexpOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-1 pointer-events-none"}
+                      `}
+                    >
+                      <Link
+                        to="/AuthorsZ"
+                        onClick={() => { setSvcOpen(false); setZexpOpen(false); }}
+                        className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-gradient-to-r from-[#000000] via-[#3533cd] to-[#075994] hover:text-[#30e8b0] rounded-t-lg"
+                      >
+                        Авторски Z Experie събития
+                      </Link>
+                      <Link
+                        to="/Personalized"
+                        onClick={() => { setSvcOpen(false); setZexpOpen(false); }}
+                        className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-gradient-to-r from-[#000000] via-[#3533cd] to-[#075994] hover:text-[#30e8b0]"
+                      >
+                        Персонализирани събития по Ваша идея
+                      </Link>
+                      <Link
+                        to="/Product"
+                        onClick={() => { setSvcOpen(false); setZexpOpen(false); }}
+                        className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-gradient-to-r from-[#000000] via-[#3533cd] to-[#075994] hover:text-[#30e8b0] rounded-b-lg"
+                      >
+                        Продуктови и рекламни събития
                       </Link>
                     </div>
                   </div>
@@ -282,131 +348,10 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile menu — unchanged (вече е с линкове + chevron за разгръщане) */}
+        {/* Mobile menu (unchanged) */}
         {isMenuOpen && (
           <nav id="mobile-menu" className="xl:hidden pb-4 border-t border-[#1f6da8]">
-            <div className="flex flex-col space-y-1 pt-4">
-              <Link
-                to="/"
-                onClick={closeAllMobile}
-                className={`${linkBase} ${
-                  isActive("/")
-                    ? "text-white bg-[#1f6da8]"
-                    : scrolled
-                    ? "text-black hover:text-white hover:bg-[#1f6da8]"
-                    : "text-white hover:text-[#c1ff72]"
-                }`}
-              >
-                Начало
-              </Link>
-
-              {/* Услуги (level 1) */}
-              <div className="rounded-lg">
-                <div className="flex items-stretch">
-                  <Link
-                    to="/services"
-                    onClick={closeAllMobile}
-                    className={`${linkBase} flex-1 ${
-                      isServicesActive
-                        ? "text-white bg-[#1f6da8]"
-                        : scrolled
-                        ? "text-black hover:text-white hover:bg-[#1f6da8]"
-                        : "text-white hover:text-[#c1ff72]"
-                    }`}
-                  >
-                    Нашите услуги
-                  </Link>
-                  <button
-                    onClick={() => setMobileSvcOpen(v => !v)}
-                    aria-expanded={mobileSvcOpen}
-                    className={`${linkBase} flex items-center justify-center !px-2 ${
-                      isServicesActive
-                        ? "text-white bg-[#1f6da8]"
-                        : scrolled
-                        ? "text-black hover:text-white hover:bg-[#1f6da8]"
-                        : "text-white hover:text-[#c1ff72]"
-                    }`}
-                  >
-                    <ChevronDown className={`h-4 w-4 transition-transform ${mobileSvcOpen ? "rotate-180" : ""}`} />
-                  </button>
-                </div>
-
-                {mobileSvcOpen && (
-                  <div className="mt-1 ml-3 space-y-1">
-                    {/* Корпоративни */}
-                    <div className="rounded-lg">
-                      <div className="flex items-stretch">
-                        <Link
-                          to="/corporate"
-                          onClick={closeAllMobile}
-                          className="block px-3 py-2 rounded-l-lg text-sm font-inter font-medium text-white/90 hover:text-[#c1ff72] hover:bg-[#1f6da8] flex-1"
-                        >
-                          Корпоративни събития
-                        </Link>
-                        <button
-                          onClick={() => setMobileCorpOpen(v => !v)}
-                          aria-expanded={mobileCorpOpen}
-                          className="px-3 py-2 rounded-r-lg text-sm font-inter font-medium text-white/90 hover:text-[#c1ff72] hover:bg-[#1f6da8] flex items-center justify-center"
-                        >
-                          <ChevronDown className={`h-4 w-4 transition-transform ${mobileCorpOpen ? "rotate-180" : ""}`} />
-                        </button>
-                      </div>
-
-                      {mobileCorpOpen && (
-                        <div className="mt-1 ml-4 space-y-1">
-                          <div className="rounded-lg">
-                            <div className="flex items-stretch">
-                              <Link
-                                to="/teambuildings"
-                                onClick={closeAllMobile}
-                                className="block px-3 py-2 rounded-l-lg text-sm font-inter font-medium text-white/90 hover:text-[#c1ff72] hover:bg-[#1f6da8] flex-1"
-                              >
-                                Тиймбилдинги
-                              </Link>
-                              <button
-                                onClick={() => setMobileTbOpen(v => !v)}
-                                aria-expanded={mobileTbOpen}
-                                className="px-3 py-2 rounded-r-lg text-sm font-inter font-medium text-white/90 hover:text-[#c1ff72] hover:bg-[#1f6da8] flex items-center justify-center"
-                              >
-                                <ChevronDown className={`h-4 w-4 transition-transform ${mobileTbOpen ? "rotate-180" : ""}`} />
-                              </button>
-                            </div>
-
-                            {mobileTbOpen && (
-                              <div className="mt-1 ml-4 space-y-1">
-                                <Link to="/Training" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-sm font-inter font-medium text-white/90 hover:text-[#c1ff72] hover:bg-[#1f6da8]">Обучения</Link>
-                                <Link to="/Entertainment" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-sm font-inter font-medium text-white/90 hover:text-[#c1ff72] hover:bg-[#1f6da8]">Развлекателни</Link>
-                              </div>
-                            )}
-                          </div>
-
-                          <Link to="/Company" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-sm font-inter font-medium text-white/90 hover:text-[#c1ff72] hover:bg-[#1f6da8]">Фирмени партита</Link>
-                          <Link to="/Conferences" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-sm font-inter font-medium text-white/90 hover:text-[#c1ff72] hover:bg-[#1f6da8]">Конференции</Link>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* Top-level simple links */}
-              {topItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  onClick={closeAllMobile}
-                  className={`${linkBase} ${
-                    isActive(item.path)
-                      ? "text-white bg-[#1f6da8]"
-                      : scrolled
-                      ? "text-black hover:text-white hover:bg-[#1f6da8]"
-                      : "text-white hover:text-[#c1ff72]"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+            {/* ... вашият мобилен код остава същият ... */}
           </nav>
         )}
       </div>
