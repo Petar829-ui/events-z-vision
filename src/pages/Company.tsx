@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Company = () => {
   return (
     <div className="min-h-screen bg-[#075994] pb-10">
-      <section className="relative min-h-[80vh] overflow-hidden isolate">
+      <section className="relative h-[119ch] overflow-hidden isolate">
         <div
           aria-hidden="true"
           className="absolute inset-0 left-[-8px] right-[-8px] bg-cover bg-center -z-10 pointer-events-none"

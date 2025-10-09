@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 const Teambuildings = () => {
   return (
     <div className="min-h-screen bg-[#075994] pb-10">
-        <section className="relative min-h-[80vh] overflow-hidden isolate">
+        <section className="relative bg-cover bg-center overflow-hidden h-full isolate py-10 sm:py-12 md:py-20 lg:py-24 isolate">
         <div
           aria-hidden="true"
           className="absolute inset-0 left-[-8px] right-[-8px] bg-cover bg-center -z-10 pointer-events-none"
           style={{ backgroundImage: "url('B13.svg')" }}
         />
         <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-64 pb-16">
-            <h2 className="text-6xl font-poppins font-semibold text-[#c1ff72] text-center mt-20">
+            <h2 className="text-[44px] sm:text-5xl md:text-6xl lg:text-6xl font-poppins font-semibold text-[#c1ff72] text-center -mt-[40px]">
                 Тийм<span className="text-white">билдинги</span>
             </h2>
-            <p className="text-3xl font-poppins font-semibold text-[#c1ff72] text-center mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
+            <p className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl font-poppins font-semibold text-[#c1ff72] text-center mt-24 sm:mt-36 md:mt-46 lg:mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
             Един <span className="text-white">екип</span> е силен тогава, когато споделя повече от работни задачи – <span className="text-white">когато членовети му заедно
             преживяват моменти</span>, които ги сближават, усъвършенстват и вдъхновяват.
             </p>
@@ -134,7 +134,7 @@ const Teambuildings = () => {
       </div>
 
       {/* снимка вдясно, без absolute и без overflow-hidden */}
-      <div className="mx-auto w-[720px] h-[520px] rounded-full bg-[#075994] ring-8 ring-[#075994] relative z-10">
+      <div className="mx-auto w-[82vw] h-[84vw] max-w-[720px] max-h-[520px] md:w-[720px] md:h-[520px] rounded-full bg-[#075994] ring-8 ring-[#075994] relative z-10">
         <img
           src="10.svg"
           alt="Корпоративни събития"
@@ -159,17 +159,8 @@ const Teambuildings = () => {
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     {/* ред: снимка (ляво) + текст (дясно) */}
     <div className="flex flex-col md:flex-row items-start md:items-center gap-10 relative">
-      {/* снимка в кръг (без absolute и без overflow-hidden) */}
-      <div className="mx-auto w-[720px] h-[520px] rounded-full bg-[#075994] ring-8 ring-[#075994] relative z-10">
-        <img
-          src="11.svg"
-          alt="Корпоративни събития"
-          className="block w-full h-full object-cover select-none rounded-full [clip-path:circle(50%_at_50%_50%)]"
-        />
-      </div>
-
-      {/* текст – над декора */}
-      <div className="max-w-2xl mr-auto text-left pl-16 relative z-10">
+      <div className="order-1 md:order-2 max-w-2xl mr-auto text-left md:pl-16 relative z-10">
+              {/* текст – над декора */}
         <h2 className="font-poppins font-bold text-4xl text-[#c1ff72] mb-6">
           Развлекателни
         </h2>
@@ -180,10 +171,17 @@ const Teambuildings = () => {
         по-мотивиран и готов да върви напред заедно.
         </p>
       </div>
+            {/* снимка в кръг (без absolute и без overflow-hidden) */}
+      <div className="order-2 md:order-1 mx-auto w-[82vw] h-[84vw] max-w-[720px] max-h-[520px] md:w-[720px] md:h-[520px] rounded-full bg-[#075994] ring-8 ring-[#075994] relative z-10">
+        <img
+          src="11.svg"
+          alt="Корпоративни събития"
+          className="block w-full h-full object-cover select-none rounded-full [clip-path:circle(50%_at_50%_50%)]"
+        />
+      </div>
     </div>
   </div>
 </section>
-
 
 
              {/* Call to action */}

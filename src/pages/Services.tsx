@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-[#075994] pb-10">
       {/* Hero */}
-      <section className="relative min-h-[80vh] overflow-hidden">
+      <section className="relative h-full py-16 md:py-20 lg:py-24 overflow-hidden">
         {/* Фон – overscan с 4px, за да няма бели линии */}
         <div
           aria-hidden="true"

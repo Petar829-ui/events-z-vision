@@ -1,80 +1,59 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { ArrowRight, CheckCircle } from "lucide-react";
 
 const Home = () => {
-  // Responsive TSX стилистики за формите
-  const shape1Style: React.CSSProperties = {
-    position: 'absolute',
-    // 280x575 пропорция, но responsive
-    width: 'clamp(160px, 18vw, 320px)',
-    aspectRatio: '280 / 575',
-    backgroundColor: '#c1ff72',
-    transform: 'rotate(190deg) skewY(10deg)',
-    borderRadius: '60% 60% 0 0 / 100% 100% 0 0',
-    // оригиналът беше right: 63vh; top: 5vh;
-    right: 'min(60vh, 40vw)',
-    top: 'clamp(8px, 5vh, 10rem)',
-    clipPath: 'polygon(29% 0%, 64% 0%, 100% 82%, 0% 100%)',
-    pointerEvents: 'none',
-    zIndex: 0,
-  };
-
-  const shape2Style: React.CSSProperties = {
-    position: 'absolute',
-    // оригиналът беше 750px x 78vh — правим го fluid
-    width: 'clamp(320px, 40vw, 750px)',
-    height: 'min(78vh, 1220px)',
-    backgroundColor: '#2f492f',
-    borderRadius: 20,
-    transform: 'rotate(20deg) skewY(10deg)',
-    right: 'clamp(8px, 7vh, 12rem)',   // оригинал: 10vh
-    top: 'clamp(12px, 12vh, 12rem)',    // оригинал: 12vh
-    clipPath: 'polygon(0% 15%, 67% 0%, 100% 60%, 0% 95%)',
-    pointerEvents: 'none',
-    zIndex: 0,
-  };
-
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#075994]">
       {/* Hero Section */}
       <section
-        className="text-white py-20 bg-cover bg-center min-h-[80vh] overflow-hidden bg-cover bg-center"
+        className="text-white bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24"
         style={{ backgroundImage: "url('website design EZV.png')" }}
       >
-        <section className="relative text-white ... hero-is-relative">
-          {/* responsive форми – оставям класовете, но inline стиловете доминират */}
-          <div className="shape1" style={shape1Style}></div>
-          <div className="shape2" style={shape2Style}></div>
-          <div className="relative z-[2]"></div>
+        <section className="relative">
+          <img 
+          src="test.svg" 
+          alt="img"
+          className="
+      absolute hidden md:block pointer-events-none z-0 max-w-none h-auto
+      /* ширина: между 480px и 980px, според ширината на вюпорта */
+      [width:clamp(480px,45vw,850px)]
+      /* позиция: плавно приближаване към центъра при по-големи екрани */
+      [right:clamp(8px,8vw,140px)]
+      [top:clamp(16px,6vh,64px)]
+      /* малки корекции по breakpoint, ако искаш */
+      lg:[right:clamp(24px,9vw,160px)]
+      xl:[right:clamp(32px,10vw,180px)]
+      xl:top-10
+    "
+          />
         </section>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32">
-          <div className="md:text-left max-w-3x1">
-            <h1 className="font-poppins font-semibold [font-size:100px] tracking-normal leading-[1.1]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 md:pt-28">
+          <div className="relative z-[5]">
+          <div className="text-center md:text-left max-w-3x1">
+            <h1 className="font-poppins font-semibold text-[47px] md:text-6xl lg:text-7xl tracking-normal leading-[1.1] mb-6">
               <span className="text-[#c1ff72]">Създаваме </span>
               <br /> незабравими <br />
               <span className="text-[#c1ff72]">преживявания</span>
             </h1>
-            <p className="font-inter font-normal text-2xl md:text-3xl mb-8 text-blue-100 leading-relaxed">
-              Агенция за цялостно професионално организиране на <br /> събития,
-              готова да превърне Вашите идеи в реалност с <br /> креативност, 
-              професионализъм и внимание към <br /> детайлите.
+            <p className="font-inter font-normal text-base md:text-3xl max-w-xl mb-8 text-blue-100 leading-relaxed">
+              Агенция за цялостно професионално организиране на събития,
+              готова да превърне Вашите идеи в реалност с креативност,
+              професионализъм и внимание към детайлите.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-start">
-              <Link
-                to="/inquiry"
-                className="bg-[#c1ff72] hover:bg-[#2f492f] text-[#075994] hover:text-[#c1ff72] px-8 py-4 rounded-lg text-lg font-poppins font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
-              >
-                ИЗПРАТИ ЗАПИТВАНЕ
-              </Link>
-              {/*<Link
-                to="/portfolio"
-                className="bg[#075994] border-2 border-white hover:bg-white hover:text-[#075994] text-white px-11 py-4 rounded-lg text-lg font-poppins font-semibold transition-all duration-300"
-              >
-                ВИЖ УСЛУГИТЕ НИ
-              </Link>*/}
+<div className="flex flex-col sm:flex-row gap-4 justify-start items-start">
+  <Link
+    to="/inquiry"
+    className="inline-flex w-fit self-center
+               bg-[#c1ff72] hover:bg-[#2f492f]
+               text-[#075994] hover:text-[#c1ff72]
+               px-8 py-4 rounded-lg text-lg font-poppins font-semibold
+               transition-all duration-300 hover:scale-105 shadow-lg"
+  >
+    ИЗПРАТИ ЗАПИТВАНЕ
+  </Link>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -89,27 +68,28 @@ const Home = () => {
               </span>
               свързани с организиране на:
             </h2>
-            <div className="font-playfair font-normal text-2xl flex justify-center gap-12 my-12">
-              {/* Корпоративни събития */}
+
+            <div className="font-playfair font-normal text-2xl grid grid-cols-1 md:grid-cols-3 gap-10 my-12 justify-items-center">
+              {/* Карта 1 */}
               <div className="flex flex-col items-center text-center">
-                <div className="w-[400px] h-[190px] bg-[#c1ff72] rounded-2xl overflow-hidden flex items-center justify-center">
-                  <img src="1.svg" alt="Img" className="w-[115%] h-full object-contain" />
+                <div className="w-full max-w-[380px] aspect-[16/7] bg-[#c1ff72] rounded-2xl overflow-hidden flex items-center justify-center">
+                  <img src="1.svg" alt="Img" className="w-full h-full object-contain" />
                 </div>
                 <h2 className="text-[#c1ff72] mt-3">Корпоративни събития</h2>
               </div>
 
-              {/* Лични събития */}
+              {/* Карта 2 */}
               <div className="flex flex-col items-center text-center">
-                <div className="w-[400px] h-[190px] bg-[#c1ff72] rounded-2xl overflow-hidden flex items-center justify-center">
-                  <img src="2.svg" alt="Img" className="w-[115%] h-full object-contain" />
+                <div className="w-full max-w-[390px] aspect-[16/7] bg-[#c1ff72] rounded-2xl overflow-hidden flex items-center justify-center">
+                  <img src="2.svg" alt="Img" className="w-full h-full object-contain" />
                 </div>
                 <h2 className="text-[#c1ff72] mt-3">Лични събития</h2>
               </div>
 
-              {/* Нестандартни Z Experience събития */}
+              {/* Карта 3 */}
               <div className="flex flex-col items-center text-center">
-                <div className="w-[400px] h-[190px] bg-[#c1ff72] rounded-2xl overflow-hidden flex items-center justify-center">
-                  <img src="3.svg" alt="Img" className="w-[115%] h-full object-contain" />
+                <div className="w-full max-w-[380px] aspect-[16/7] bg-[#c1ff72] rounded-2xl overflow-hidden flex items-center justify-center">
+                  <img src="3.svg" alt="Img" className="w-full h-full object-contain" />
                 </div>
                 <h2 className="text-[#c1ff72] mt-3">Нестандартни Z Experience събития</h2>
               </div>
@@ -142,7 +122,7 @@ const Home = () => {
             <div className="z-[10]">
               <div className="space-y-6">
                 <div>
-                  <p className="text-lg text-[#c1ff72] font-inter font-normal leading-relaxed">
+                  <p className="text-2xl text-[#c1ff72] font-inter font-normal leading-relaxed mt-10">
                     Ние сме новото поколение създатели на събития – с душа, посока и визия. Създаваме
                     преживявания, които доказват, че животът е красив, когато се споделя с готини хора, в правилната
                     среда и по вълнуващ, автентичен и неподправен начин. В основата ни стоят новаторството, страстта и
@@ -152,7 +132,7 @@ const Home = () => {
 
                 <div>
                   <h3 className="text-5xl font-caveat font-normal text-[#c1ff72] mb-3">Нашата мисия</h3>
-                  <p className="text-lg text-[#c1ff72] leading-relaxed font-inter font-normal">
+                  <p className="text-2xl text-[#c1ff72] leading-relaxed font-inter font-normal">
                     Мисията ни е да превръщаме всяко ваше събитие в споделена история, като съчетаваме прецизност с
                     емоция,свежест с професионализъм, превръщайки всеки момент в значим и запомнящ се.
                   </p>
@@ -162,9 +142,9 @@ const Home = () => {
 
             <div className="bg-[#c1ff72] p-8 rounded-xl z-[10]">
               <h3 className="text-5xl font-caveat font-normal text-[#075994] mb-6">Какво ни отличава?</h3>
-              <ul className="font-inter font-normal">
+              <ul className="font-inter font-normal text-lg">
                 {[
-                  'Не разглеждаме събитията просто като услуга, а като артистичен израз и личен наш ангажимент. Слушаме внимателно. Мечтаем заедно с клиента. Надскачаме очакванията. Комбинираме достъпност с безкомпромисно качество, smart решения и авторски почерк. Създаваме нови стандарти в мениджмънта на събития -корпоративни и лични.',
+                  "Не разглеждаме събитията просто като услуга, а като артистичен израз и личен наш ангажимент. Слушаме внимателно. Мечтаем заедно с клиента. Надскачаме очакванията. Комбинираме достъпност с безкомпромисно качество, smart решения и авторски почерк. Създаваме нови стандарти в мениджмънта на събития -корпоративни и лични.",
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-3">
                     <CheckCircle className="h-6 w-6 text-[#c1ff72] flex-shrink-0" />
@@ -184,7 +164,9 @@ const Home = () => {
             <h2 className="text-3xl md:text-3xl font-inter font-semibold text-[#075994] mb-4">
               Готов ли си да изживееш <span className="text-[#f96e0c]">мечтаното събитие</span>?
             </h2>
-            <p className="font-inter font-normal text-xl text-[#075994] m-6">Свържете се с нас за безплатна консултация</p>
+            <p className="font-inter font-normal text-xl text-[#075994] m-6">
+              Свържете се с нас за безплатна консултация
+            </p>
             <div className="mt-8">
               <Link
                 to="/inquiry"

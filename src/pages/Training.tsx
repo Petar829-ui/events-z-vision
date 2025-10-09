@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 const Training = () => {
     return (
         <div className="min-h-screen bg-[#075994] pb-10">
-        <section className="relative min-h-[80vh] overflow-hidden isolate">
+        <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 overflow-hidden isolate">
         <div
           aria-hidden="true"
           className="absolute inset-0 left-[-8px] right-[-8px] bg-cover bg-center -z-10 pointer-events-none"
           style={{ backgroundImage: "url('B16.svg')" }}
         />
-        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-64 pb-16">
-            <h2 className="text-6xl font-poppins font-semibold text-[#c1ff72] text-center mt-20">
+        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-44 pb-16">
+            <h2 className="text-5xl md:text-6xl lg:text-6xl font-poppins font-semibold text-[#c1ff72] text-center mt-10 md:mt-20">
                 Обучителни <span className="text-white">тиймбилдинги</span>
             </h2>
-            <p className="text-4xl font-playfair font-semibold text-[#c1ff72] text-center mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
+            <p className="text-2xl md:text-4xl lg:text-4xl font-playfair font-semibold text-[#c1ff72] text-center mt-24 md:mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
             Фокусът при <span className="text-white">обучителните тиймбилдинги</span> е върху придобиването на 
             <span className="text-white"> реални и практически приложими знания умения</span> от служителите, които правят работата по-ефективна и отношенията в екипа по-силни
             </p>
@@ -25,7 +25,7 @@ const Training = () => {
   {/* 2 реда: горе (фон + снимка), долу (текст) */}
   <div className="grid grid-cols-1 md:grid-cols-2 items-start">
     {/* Фон горе вляво – контролираш височината тук */}
-    <div className="relative w-[900px] h-[300px] sm:h-[320px] md:h-[160px] mt-6 md:mt-10">
+    <div className="relative w-[300px] md:w-[400px] lg:w-[700px] xl:w-[900px] h-[100px] sm:h-[320px] md:h-[160px] justify-self-center md:justify-self-start mt-6 md:mt-10">
       {/* Малко „изместен“ фон зад картата (може и да го махнеш) */}
       <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border-4 border-[#c1ff72] bg-white"></div>
 
@@ -37,7 +37,7 @@ const Training = () => {
     </div>
 
     {/* Снимка горе вдясно – без absolute */}
-    <div className="flex justify-self-end">
+    <div className="flex justify-self-center md:justify-self-end mt-6 md:mt-0 lg:mt-0">
       <img
         src="23.svg"
         alt="Корпоративни събития"
@@ -63,7 +63,7 @@ const Training = () => {
   {/* 2 реда: горе (фон + снимка), долу (текст) */}
   <div className="grid grid-cols-1 md:grid-cols-2 items-start">
     {/* Фон горе вляво – контролираш височината тук */}
-    <div className="relative w-[900px] h-[300px] sm:h-[320px] md:h-[160px] mt-6 md:mt-10 md:translate-y-34 lg:translate-y-44 md:col-start-2 md:col-end-3 justify-self-end">
+    <div className="relative w-[300px] md:w-[400px] lg:w-[700px] xl:w-[900px] h-[200px] sm:h-[320px] md:h-[160px] md:translate-y-34 lg:translate-y-44 md:col-start-2 md:col-end-3 justify-self-center md:justify-self-end mt-6 md:mt-10">
       {/* Малко „изместен“ фон зад картата (може и да го махнеш) */}
       <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border-4 border-[#c1ff72] bg-white"></div>
 
@@ -75,7 +75,7 @@ const Training = () => {
     </div>
 
     {/* Снимка горе вдясно – без absolute */}
-    <div className="flex justify-self-start">
+    <div className="flex justify-self-center md:justify-self-start mt-6 md:mt-0 lg:mt-0">
       <img
         src="2.svg"
         alt="Корпоративни събития"
@@ -97,7 +97,7 @@ const Training = () => {
   {/* 2 реда: горе (фон + снимка), долу (текст) */}
   <div className="grid grid-cols-1 md:grid-cols-2 items-start">
     {/* Фон горе вляво – контролираш височината тук */}
-    <div className="relative w-[900px] h-[300px] sm:h-[320px] md:h-[160px] mt-6 md:mt-10">
+    <div className="relative w-[315px] sm:w-[900px] md:w-[400px] lg:w-[700px] xl:w-[900px] h-[115px] sm:h-[320px] md:h-[160px] justify-self-center md:justify-self-start mt-6 md:mt-10">
       {/* Малко „изместен“ фон зад картата (може и да го махнеш) */}
       <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border-4 border-[#c1ff72] bg-white"></div>
 
@@ -109,7 +109,7 @@ const Training = () => {
     </div>
 
     {/* Снимка горе вдясно – без absolute */}
-    <div className="flex justify-self-end">
+    <div className="flex justify-self-center md:justify-self-end mt-6 md:mt-0 lg:mt-0">
       <img
         src="1.svg"
         alt="Корпоративни събития"
@@ -130,7 +130,7 @@ const Training = () => {
   {/* 2 реда: горе (фон + снимка), долу (текст) */}
   <div className="grid grid-cols-1 md:grid-cols-2 items-start">
     {/* Фон горе вляво – контролираш височината тук */}
-    <div className="relative w-[900px] h-[300px] sm:h-[320px] md:h-[160px] mt-6 md:mt-10 md:translate-y-34 lg:translate-y-44 md:col-start-2 md:col-end-3 justify-self-end">
+    <div className="relative w-[300px] md:w-[400px] lg:w-[700px] xl:w-[900px] h-[200px] sm:h-[320px] md:h-[160px] md:translate-y-34 lg:translate-y-44 md:col-start-2 md:col-end-3 justify-self-center md:justify-self-end mt-6 md:mt-10">
       {/* Малко „изместен“ фон зад картата (може и да го махнеш) */}
       <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border-4 border-[#c1ff72] bg-white"></div>
 
@@ -142,7 +142,7 @@ const Training = () => {
     </div>
 
     {/* Снимка горе вдясно – без absolute */}
-    <div className="flex justify-self-start">
+    <div className="flex justify-self-center md:justify-self-start mt-6 md:mt-0 lg:mt-0">
       <img
         src="7.svg"
         alt="Корпоративни събития"
@@ -163,7 +163,7 @@ const Training = () => {
   {/* 2 реда: горе (фон + снимка), долу (текст) */}
   <div className="grid grid-cols-1 md:grid-cols-2 items-start">
     {/* Фон горе вляво – контролираш височината тук */}
-    <div className="relative w-[900px] h-[300px] sm:h-[320px] md:h-[160px] mt-6 md:mt-10">
+    <div className="relative w-[300px] md:w-[400px] lg:w-[700px] xl:w-[900px] h-[300px] sm:h-[320px] md:h-[160px] justify-self-center md:justify-self-start mt-6 md:mt-10">
       {/* Малко „изместен“ фон зад картата (може и да го махнеш) */}
       <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border-4 border-[#c1ff72] bg-white"></div>
 
@@ -175,7 +175,7 @@ const Training = () => {
     </div>
 
     {/* Снимка горе вдясно – без absolute */}
-    <div className="flex justify-self-end">
+    <div className="flex justify-self-center md:justify-self-end mt-6 md:mt-0 lg:mt-0">
       <img
         src="3.svg"
         alt="Корпоративни събития"

@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 const Personalized = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#000000] via-[#3533cd] to-[#075994] pb-10">
-      <section className="relative min-h-[80vh] overflow-hidden isolate">
+      <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 overflow-hidden isolate">
         <div
           aria-hidden="true"
           className="absolute inset-0 left-[-8px] right-[-8px] bg-cover bg-center -z-10 pointer-events-none"
           style={{ backgroundImage: "url('B27.svg')" }}
         />
-        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-36 md:pt-40 pb-16">
-          <h2 className="text-6xl font-poppins font-semibold text-[#30e8b0] text-center mb-40">
+        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-36 md:pt-36 pb-16">
+          <h2 className="text-4xl md:text-6xl font-poppins font-semibold text-[#30e8b0] text-center mb-40">
             Персонализирани <span className="text-white">събития по ваша идея</span>
           </h2>
 {/*backdrop-blur-md*/}
-          <div className="mx-auto w-[600px] backdrop-blur-md aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center p-6 md:p-10">
-            <p className="text-3xl font-inter font-normal text-white text-center leading-relaxed">
+          <div className="mx-auto md:w-[600px] backdrop-blur-md aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center p-6 md:p-10">
+            <p className="text-1xl md:text-3xl font-inter font-normal text-white text-center leading-relaxed">
               Персонализираните <span className="text-[#30e8b0]">Z <br />Experience</span> събития са територията, където <span className="text-[#30e8b0]">вашите<br /> идеи оживяват.</span> Вие носите вдъхновението, креативността<br /> и уникалната концепция, а ние<br /> ви помагаме да я превърнете в реално преживяване
             </p>
           </div>
@@ -36,7 +36,7 @@ const Personalized = () => {
   </p>
 </div>
 
-                                  {/* IMG 6 */}
+                                  {/* IMG 6 mw-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center pb-8 pl-10 mt-22*/}
           <div className="justify-self-center md:justify-self-end self-start">
           <div className="w-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center pb-8 pl-10 mt-12">
               <figure className="mt-10 justify-center">
@@ -73,18 +73,8 @@ const Personalized = () => {
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     {/* ред: снимка (ляво) + текст (дясно) */}
     <div className="flex flex-col md:flex-row items-start md:items-center relative">
-      {/* снимка в кръг (без absolute и без overflow-hidden) */}
-      <div className="mw-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center pb-8 pl-10 mt-22">
-        <figure className="mt-10 justify-center">
-        <img
-          src="57.svg"
-          alt="Корпоративни събития"
-          className="w-[90%] h-auto object-contain"
-        />
-        </figure>
-      </div>
-
       {/* текст – над декора */}
+      <div className="order-1 md:order-2 max-w-2xl mr-auto text-left md:pl-16 relative z-10">
       <div className="max-w-2xl mr-auto text-left pl-16 relative z-10">
         <h2 className="font-poppins font-bold text-4xl text-[#30e8b0] mb-6">
           Нашият подход
@@ -92,6 +82,17 @@ const Personalized = () => {
         <p className="font-inter text-3xl text-white leading-snug mb-6">
         За нас няма „твърди рамки“ – именно вашият личен почерк, смели хрумвания и нестандартни желания са това, което превръща един формат в неповторимо преживяване. Вие определяте темата, посланието или атмосферата, която искате да създадете, а ние изграждаме структура, сценарий и логистика около нея, като се осланяме на най новите трендове сред Gen Z поколението.
         </p>
+      </div>
+      </div>
+      {/* снимка в кръг (без absolute и без overflow-hidden) */}
+      <div className="order-2 md:order-1 mw-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center pb-8 pl-10 mt-22">
+        <figure className="mt-10 justify-center">
+        <img
+          src="57.svg"
+          alt="Корпоративни събития"
+          className="w-[90%] h-auto object-contain"
+        />
+        </figure>
       </div>
     </div>
   </div>

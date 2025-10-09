@@ -18,7 +18,7 @@ const Blog = () => {
 
   return (
     <div className="bg-[#075994] min-h-screen pb-12">
-      <section className="relative isolate overflow-hidden min-h-[80vh] w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+      <section className="relative isolate overflow-hidden h-[119ch] w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
         <div aria-hidden="true" className="absolute inset-0 bg-cover bg-center -z-10 pointer-events-none" style={{ backgroundImage: "url('website B1 design EZV.svg')" }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 py-12">

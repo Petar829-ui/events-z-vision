@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 const PersonalCelebrations = () => {
   return (
     <div className="min-h-screen bg-[#3b84b6] pb-10">
-      <section className="relative min-h-[80vh] overflow-hidden isolate">
+      <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 overflow-hidden isolate">
         <div
           aria-hidden="true"
           className="absolute inset-0 left-[-8px] right-[-8px] bg-cover bg-center -z-10 pointer-events-none"
           style={{ backgroundImage: "url('B21.svg')" }}
         />
-        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-36 md:pt-40 pb-16">
-          <h2 className="text-6xl font-poppins font-semibold text-[#ebee68] text-center mb-40">
+        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-36 md:pt-40 pb-6 md:pb-16">
+          <h2 className="text-3xl md:text-6xl font-poppins font-semibold text-[#ebee68] text-center mb-16 md:mb-40">
             Организация на <span className="text-white">лични празници</span>
           </h2>
 {/*backdrop-blur-md*/}
-          <div className="mx-auto w-[600px] backdrop-blur-md aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center p-6 md:p-10">
-            <p className="text-3xl font-inter font-normal text-[#ebee68] text-center leading-relaxed">
+          <div className="mx-auto md:w-[600px] backdrop-blur-md aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center p-6 md:p-10">
+            <p className="text-1xl md:text-3xl font-inter font-normal text-[#ebee68] text-center leading-relaxed">
               Всеки <span className="text-white">личен празник</span> е <br />уникален – рожден ден, юбилей, кръщене или тематично парти. Това са моменти, които  остават в спомените за цял живот. За да бъдат <span className="text-white">наистина специални</span>, е важно организацията да съчетава атмосфера, стил и внимание <br />към детайлите.
             </p>
           </div>
@@ -75,7 +75,7 @@ const PersonalCelebrations = () => {
 
                                   {/* IMG 6 */}
           <div className="justify-self-center md:justify-self-end self-start">
-          <div className="w-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center pb-8 pl-10 mt-32">
+          <div className="w-[350px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center pb-8 pl-8 md:pl-10 md:mt-32">
               <figure className="mt-10 justify-center">
                 <img
                   src="51.svg"
@@ -111,17 +111,8 @@ const PersonalCelebrations = () => {
     {/* ред: снимка (ляво) + текст (дясно) */}
     <div className="flex flex-col md:flex-row items-start md:items-center relative">
       {/* снимка в кръг (без absolute и без overflow-hidden) */}
-      <div className="mw-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center pb-8 pl-10 mt-22">
-        <figure className="mt-10 justify-center">
-        <img
-          src="52.svg"
-          alt="Корпоративни събития"
-          className="w-[90%] h-auto object-contain"
-        />
-        </figure>
-      </div>
-
       {/* текст – над декора */}
+      <div className="order-1 md:order-2 max-w-2xl mr-auto text-left md:pl-16 relative z-10">
       <div className="max-w-2xl mr-auto text-left pl-16 relative z-10">
         <h2 className="font-poppins font-bold text-4xl text-[#ebee68] mb-6">
           Нашият подход
@@ -129,6 +120,16 @@ const PersonalCelebrations = () => {
         <p className="font-inter text-3xl text-[#ebee68] leading-snug mb-6">
         Вярваме, че личните събития са отражение на хората, които ги празнуват. Затова започваме с разговор, за да разберем какво е важно за вас – атмосферата, темата, изненадите. След това изграждаме концепция и координираме всички елементи: локация, декор, музика, програма, фото и видеозаснемане. Можете да изберете цялостна организация или да поверите на нас само определени части, докато останалото остане във ваши ръце.
         </p>
+      </div>
+      </div>
+        <div className="order-2 md:order-1 mx-auto mw-[420px] w-[350px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center pb-8 pl-8 md:pl-10 mt-22">
+        <figure className="mt-10 justify-center">
+        <img
+          src="52.svg"
+          alt="Корпоративни събития"
+          className="w-[90%] h-auto object-contain"
+        />
+        </figure>
       </div>
     </div>
   </div>
@@ -149,7 +150,7 @@ const PersonalCelebrations = () => {
 
                                   {/* IMG 6 */}
           <div className="justify-self-center md:justify-self-end self-start">
-          <div className="w-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center pb-8 pl-10 mt-[22px]">
+          <div className="w-[350px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center pb-8 pl-8 md:pl-10 mt-[22px]">
               <figure className="mt-10 justify-center">
                 <img
                   src="53.svg"

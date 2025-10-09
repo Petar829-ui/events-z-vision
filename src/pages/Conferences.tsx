@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 const Conferences = () => {
   return (
     <div className="min-h-screen bg-[#075994] pb-10">
-      <section className="relative min-h-[80vh] overflow-hidden isolate">
+      <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 isolate">
         <div
           aria-hidden="true"
           className="absolute inset-0 left-[-8px] right-[-8px] bg-cover bg-center -z-10 pointer-events-none"
           style={{ backgroundImage: "url('B15.svg')" }}
         />
-        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-36 md:pt-40 pb-16">
-          <h2 className="text-6xl font-poppins font-semibold text-[#c1ff72] text-center mb-40">
+        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-36 md:pt-30 pb-16">
+          <h2 className="text-[47px] md:text-5xl lg:text-6xl font-poppins font-semibold text-[#c1ff72] text-center mb-40">
             Конференции, семинари, <span className="text-white">работни срещи</span>
           </h2>
 {/*backdrop-blur-md*/}
-          <div className="mx-auto w-[430px] backdrop-blur-md aspect-square rounded-full border-2 border-[#c1ff72] grid place-items-center p-6 md:p-10">
-            <p className="text-3xl font-inter font-normal text-[#c1ff72] text-center leading-relaxed">
+          <div className="mx-auto w-[400px] md:w-[430px] lg:w-[430px] backdrop-blur-md aspect-square rounded-full border-2 border-[#c1ff72] grid place-items-center p-6 md:p-10">
+            <p className="text-[28px] md:text-3xl lg:text-3xl font-inter font-normal text-[#c1ff72] text-center leading-relaxed">
               Ние <span className="text-white">ще<br /> организираме</span> <br />вашата работна среща, конференция или семинар според вашите очаквания и желания
             </p>
           </div>

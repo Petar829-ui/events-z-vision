@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 const ZExperience = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#000000] via-[#3533cd] to-[#075994] pb-10">
-        <section className="relative min-h-[80vh] overflow-hidden isolate">
+        <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 overflow-hidden isolate">
         <div
           aria-hidden="true"
           className="absolute inset-0 left-[-8px] right-[-8px] bg-cover bg-center -z-10 pointer-events-none"
           style={{ backgroundImage: "url('B22.svg')" }}
         />
-        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-64 pb-16">
-            <h2 className="text-6xl font-poppins font-semibold text-[#30e8b0] text-center mt-20">
+        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-44 pb-16">
+            <h2 className="text-5xl md:text-6xl font-poppins font-semibold text-[#30e8b0] text-center md:mt-20">
                 Z Experience <span className="text-white">събития</span>
             </h2>
-            <p className="text-4xl font-playfair font-semibold text-[#30e8b0] text-center mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
+            <p className="text-3xl md:text-4xl font-playfair font-semibold text-[#30e8b0] text-center mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
             Z Experience е нашата <span className="text-white">най-смела и креативна категория</span> – пространство, в което стандартните формати отстъпват място на нестандартни идеи и смели концепции. Това са <span className="text-white">събития</span>, които не просто се случват, а се преживяват. Те ангажират всички сетива – зрение, слух, вкус, усещане – и <span className="text-white">превръщат един момент в многопластова история</span>, която остава завинаги в спомените.
             </p>
             </div>
@@ -116,8 +116,8 @@ Z Experience събитията се раждат от този нов начи�
         </p>
       </div>
 
-      {/* снимка вдясно, без absolute и без overflow-hidden */}
-      <div className="mx-auto w-[720px] h-[520px] rounded-full bg-[#075994] relative z-10">
+      {/* снимка вдясно, без absolute и без */}
+      <div className="mx-auto w-[82vw] h-[84vw] max-w-[720px] max-h-[520px] md:w-[720px] md:h-[520px] rounded-full relative z-10">
         <img
           src="54.svg"
           alt="Корпоративни събития"
@@ -150,16 +150,8 @@ Z Experience събитията се раждат от този нов начи�
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     {/* ред: снимка (ляво) + текст (дясно) */}
     <div className="flex flex-col md:flex-row items-start md:items-center gap-10 relative">
-      {/* снимка в кръг (без absolute и без overflow-hidden) */}
-      <div className="mx-auto w-[720px] h-[520px] rounded-full bg-[#075994] relative z-10">
-        <img
-          src="55.svg"
-          alt="Корпоративни събития"
-          className="block w-full h-full object-cover select-none rounded-full"
-        />
-      </div>
-
       {/* текст – над декора */}
+      <div className="order-1 md:order-2 max-w-2xl mr-auto text-left md:pl-16 relative z-10">
       <div className="max-w-2xl mr-auto text-left pl-16 relative z-10">
         <h2 className="font-poppins font-bold text-4xl text-[#30e8b0] mb-6">
           Нашият подход
@@ -173,6 +165,15 @@ Z Experience събитията се раждат от този нов начи�
           <li>Устойчивост и автентичност – събития с грижа към околната среда и с истински човешки елемент.</li>
           <li>Instagrammable моменти – детайли, които са създадени да се споделят и да живеят отвъд самото събитие.</li>
         </ul>
+      </div>
+      </div>
+      {/* снимка в кръг */}
+      <div className="order-2 md:order-1 mx-auto w-[82vw] h-[84vw] max-w-[520px] max-h-[520px] md:w-[720px] md:h-[520px] rounded-full relative z-10">
+        <img
+          src="55.svg"
+          alt="Корпоративни събития"
+          className="block w-full h-full object-cover select-none rounded-full"
+        />
       </div>
     </div>
   </div>

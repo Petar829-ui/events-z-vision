@@ -1,7 +1,6 @@
 import React from "react";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Music2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { SiTiktok } from "react-icons/si";
 
 const Contacts = () => {
   return (
@@ -18,12 +17,18 @@ const Contacts = () => {
             <span className="text-[#c1ff72]"><br />Информация</span>{" "}
             <span className="text-white">за контакт</span>
           </p>
-          <p className="text-2xl md:text-4xl font-poppins font-semibold text-center md:text-center relative z-[1]">
+
+          {/* Дясното заглавие за десктоп (горе вдясно) */}
+          <p className="hidden md:block text-2xl md:text-4xl font-poppins font-semibold text-center relative z-[1]">
             <span className="text-[#c1ff72]">Следваш ли нашите<br /> профили</span>
             <span className="text-white"> в социалните<br /> мрежи?</span>
           </p>
-          <img src="43.svg" alt="Image" 
-         className="pointer-events-none absolute left-1/2 top-[30rem] -translate-x-1/2 -translate-y-1/2 w-[850px] h-auto object-contain z-[0] opacity-70" />
+
+          <img
+            src="43.svg"
+            alt="Image"
+            className="pointer-events-none absolute left-1/2 top-[30rem] -translate-x-1/2 -translate-y-1/2 w-[850px] h-auto object-contain z-[0] opacity-70"
+          />
         </div>
 
         {/* Две колони */}
@@ -72,13 +77,17 @@ const Contacts = () => {
             </div>
           </div>
 
+          {/* Мобилно заглавие — извън картата, стои НАД социалките; скрито на md+ */}
+          <p className="md:hidden text-2xl font-poppins font-semibold text-center text-white">
+            <span className="text-[#c1ff72]">Следваш ли нашите</span><br />
+            профили в социалните<br /> мрежи?
+          </p>
+
           {/* Дясна карта – социалки */}
           <div className="relative bg-slate-100 rounded-3xl shadow-xl p-8">
-            {/* Плочки вътре в картата */}
             <div className="mt-2 flex flex-col items-left gap-4">
               {/* Facebook */}
-
-             <a
+              <a
                 href="https://facebook.com/eventszv"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -119,7 +128,7 @@ const Contacts = () => {
                 <span className="font-medium">LinkedIn @UserName</span>
               </a>
 
-              {/* TikTok – без външен пакет, ползваме Music2 като иконка */}
+              {/* TikTok (иконка Music2) */}
               <a
                 href="https://www.tiktok.com/@eventszv"
                 target="_blank"
@@ -132,7 +141,6 @@ const Contacts = () => {
                 <Music2 className="h-5 w-5 transition-transform group-hover:scale-110" />
                 <span className="font-medium">TikTok @UserName</span>
               </a>
-
             </div>
           </div>
         </div>

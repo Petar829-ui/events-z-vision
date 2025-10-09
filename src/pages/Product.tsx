@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 const Product = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#000000] via-[#3533cd] to-[#075994] pb-10">
-      <section className="relative min-h-[80vh] overflow-hidden isolate">
+      <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 overflow-hidden isolate">
         <div
           aria-hidden="true"
           className="absolute inset-0 left-[-8px] right-[-8px] bg-cover bg-center -z-10 pointer-events-none"
           style={{ backgroundImage: "url('B28.svg')" }}
         />
-        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-36 md:pt-40 pb-16">
-          <h2 className="text-6xl font-poppins font-semibold text-[#30e8b0] text-center mb-40">
+        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-36 md:pt-30 pb-16">
+          <h2 className="text-4xl md:text-6xl font-poppins font-semibold text-[#30e8b0] text-center mb-40">
             Продуктови и рекламни <span className="text-white">събития</span>
           </h2>
 {/*backdrop-blur-md*/}
-          <div className="mx-auto w-[600px] backdrop-blur-md aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center p-6 md:p-10">
-            <p className="text-3xl font-inter font-normal text-white text-center leading-relaxed">
+          <div className="mx-auto md:w-[600px] backdrop-blur-md aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center p-6 md:p-10">
+            <p className="text-1xl md:text-3xl font-inter font-normal text-white text-center leading-relaxed">
               Продуктовите и рекламни <span className="text-[#30e8b0]">Z Experience</span> събития превръщат представянето на марка или продукт в истинско изкуство. Те комбинират емоция, интерактивност и визуален ефект, за да създадат връзка с публиката, която остава дълго след финала на събитието.
             </p>
           </div>
@@ -40,7 +40,7 @@ const Product = () => {
 
                                   {/* IMG 6 */}
           <div className="justify-self-center md:justify-self-end self-start">
-          <div className="w-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center pb-8 pl-10 mt-12">
+          <div className="w-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center pb-8 pl-10 md:mt-12">
               <figure className="mt-10 justify-center">
                 <img
                   src="58.svg"
@@ -76,16 +76,8 @@ const Product = () => {
     {/* ред: снимка (ляво) + текст (дясно) */}
     <div className="flex flex-col md:flex-row items-start md:items-center relative">
       {/* снимка в кръг (без absolute и без overflow-hidden) */}
-      <div className="mw-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center pb-8 pl-10 mt-22">
-        <figure className="mt-10 justify-center">
-        <img
-          src="59.svg"
-          alt="Корпоративни събития"
-          className="w-[90%] h-auto object-contain"
-        />
-        </figure>
-      </div>
-
+      
+<div className="order-1 md:order-2 max-w-2xl mr-auto text-left md:pl-16 relative z-10">
       {/* текст – над декора */}
       <div className="max-w-2xl mr-auto text-left pl-16 relative z-10">
         <h2 className="font-poppins font-bold text-4xl text-[#30e8b0] mb-6">
@@ -94,6 +86,16 @@ const Product = () => {
         <p className="font-inter text-3xl text-white leading-snug mb-6">
         Нашият подход е да създаваме кампании и продуктови събития, които говорят на съвременната аудитория и потребители, които ценят автентичността и уникалните моменти. От брандирани подаръци и фотозони, до устойчиви концепции и Instagrammable детайли, всяко продуктово събитие се превръща в запомняща се история, която живее както офлайн, така и онлайн.
         </p>
+      </div>
+      </div>
+       <div className="order-2 md:order-1 mw-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center pb-8 pl-10 mt-22">
+        <figure className="mt-10 justify-center">
+        <img
+          src="59.svg"
+          alt="Корпоративни събития"
+          className="w-[90%] h-auto object-contain"
+        />
+        </figure>
       </div>
     </div>
   </div>

@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 const Weddings = () => {
   return (
     <div className="min-h-screen bg-[#3b84b6] pb-10">
-      <section className="relative min-h-[80vh] overflow-hidden isolate">
+      <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 isolate">
         <div
           aria-hidden="true"
           className="absolute inset-0 left-[-8px] right-[-8px] bg-cover bg-center -z-10 pointer-events-none"
           style={{ backgroundImage: "url('B21.svg')" }}
         />
-        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-36 md:pt-40 pb-16">
-          <h2 className="text-6xl font-poppins font-semibold text-[#ebee68] text-center mb-40">
+        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-24 md:pt-40 pb-7 md:pb-16">
+          <h2 className="text-4xl md:text-6xl font-poppins font-semibold text-[#ebee68] text-center mb-20 md:mb-40">
             Организация на <span className="text-white">сватби</span>
           </h2>
 {/*backdrop-blur-md*/}
-          <div className="mx-auto w-[600px] backdrop-blur-md aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center p-6 md:p-10">
-            <p className="text-3xl font-inter font-normal text-[#ebee68] text-center leading-relaxed">
+          <div className="mx-auto md:w-[600px] backdrop-blur-md aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center p-6 md:p-10">
+            <p className="text-1xl md:text-3xl font-inter font-normal text-[#ebee68] text-center leading-relaxed">
               <span className="text-white">Сватбата</span> е един от най-специалните дни в живота – момент, който остава завинаги в спомените. За да бъде всичко така, както сте мечтали, е нужно не само вдъхновение, но и <span className="text-white">професионална организация</span>, която да се погрижи за всеки детайл.
             </p>
           </div>
@@ -64,7 +64,7 @@ const Weddings = () => {
 
                                   {/* IMG 6 */}
           <div className="justify-self-center md:justify-self-end self-start">
-          <div className="w-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center pb-8 pl-10 mt-32">
+          <div className="w-[350px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center pb-8 pl-8 md:pl-10 md:mt-32">
               <figure className="mt-10 justify-center">
                 <img
                   src="48.svg"
@@ -95,22 +95,11 @@ const Weddings = () => {
                left-[40%] top-2/3 -translate-x-1/2 -translate-y-1/2
                w-[750px] h-auto object-contain opacity-70"
   />
-
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     {/* ред: снимка (ляво) + текст (дясно) */}
     <div className="flex flex-col md:flex-row items-start md:items-center relative">
-      {/* снимка в кръг (без absolute и без overflow-hidden) */}
-      <div className="mw-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center pb-8 pl-10 mt-22">
-        <figure className="mt-10 justify-center">
-        <img
-          src="49.svg"
-          alt="Корпоративни събития"
-          className="w-[90%] h-auto object-contain"
-        />
-        </figure>
-      </div>
-
       {/* текст – над декора */}
+      <div className="order-1 md:order-2 max-w-2xl mr-auto text-left md:pl-16 relative z-10">
       <div className="max-w-2xl mr-auto text-left pl-16 relative z-10">
         <h2 className="font-poppins font-bold text-4xl text-[#ebee68] mb-6">
           Нашият подход
@@ -118,6 +107,17 @@ const Weddings = () => {
         <p className="font-inter text-3xl text-[#ebee68] leading-snug mb-6">
         Всяко събитие започва с разговор – за вашите мечти, идеи и очаквания. Изслушваме ви внимателно и превръщаме желанията ви в конкретна концепция. След това поемаме цялата организация – от локацията и декорацията, до видеозаснемането и финалните детайли. Нашият подход съчетава креативност и прецизност, за да гарантира, че събитието ще бъде уникално и автентично, както е и вашата история.
         </p>
+      </div>
+      </div>
+            {/* снимка в кръг */}
+      <div className="order-2 md:order-1 w-[350px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center pb-8 pl-8 md:pl-10">
+        <figure className="mt-10 justify-center">
+        <img
+          src="49.svg"
+          alt="Корпоративни събития"
+          className="w-[90%] h-auto object-contain"
+        />
+        </figure>
       </div>
     </div>
   </div>
@@ -139,7 +139,7 @@ const Weddings = () => {
 
                                   {/* IMG 6 */}
           <div className="justify-self-center md:justify-self-end self-start">
-          <div className="w-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center pb-8 pl-10 mt-[22px]">
+          <div className="w-[350px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#ebee68] grid place-items-center pb-8 pl-8 md:pl-10 mt-[22px]">
               <figure className="mt-10 justify-center">
                 <img
                   src="50.svg"
