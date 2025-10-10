@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Personalized = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#000000] via-[#3533cd] to-[#075994] pb-10">
+      <Helmet>
+  <title>Персонализирани събития по Ваша идея | Events Z Vision</title>
+  <meta name="description" content="Имате конкретна визия за събитие? Ще я превърнем в реалност. От концепция и дизайн до логистика и техническо изпълнение – създаваме формати, които отразяват вашата индивидуалност." />
+</Helmet>
+
+<h1 className="sr-only">Вашата идея, нашата реализация</h1>
       <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 overflow-hidden isolate">
         <div
           aria-hidden="true"

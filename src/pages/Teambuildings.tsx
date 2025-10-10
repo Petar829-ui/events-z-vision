@@ -1,9 +1,16 @@
 import React from "react"
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Teambuildings = () => {
   return (
     <div className="min-h-screen bg-[#075994] pb-10">
+      <Helmet>
+  <title>Тиймбилдинг за компании | Идеи, формати и пълна организация</title>
+  <meta name="description" content="Искате тиймбилдинг с кауза, релакс или креативност? Ние създаваме и изпълняваме програми за сплотяване и вдъхновение – на открито, в СПА хотел или в природата, из цяла България." />
+</Helmet>
+
+<h1 className="sr-only">Тиймбилдинг преживявания за вдъхновяващи екипи</h1>
         <section className="relative bg-cover bg-center overflow-hidden h-full isolate py-10 sm:py-12 md:py-20 lg:py-24 isolate">
         <div
           aria-hidden="true"
@@ -32,9 +39,13 @@ const Teambuildings = () => {
           className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] mb-[114px]">
+          <Link 
+          to={"/training"}
+           >
+          <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-[114px]">
             Обучения
           </h3>
+          </Link>
           <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] leading-relaxed mb-[32px] max-w-[34ch] md:max-w-none mx-auto">
             Основните две <br />съставки на <span className="font-bold">успешният екип </span> са
              <span className="font-bold">успешните <br />хора</span> и <span className="font-bold">доверието</span> <br />между тях
@@ -55,9 +66,13 @@ const Teambuildings = () => {
           className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] mb-28 leading-relaxed">
+          <Link 
+          to={"/entertainment"}
+          >
+          <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-28 leading-relaxed">
             Развлекателни
           </h3>
+          </Link>
           <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] mb-[94px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
            <span className="font-bold">Опознайте</span> колегите си <span className="font-bold">извън офиса...</span> работата ще почака
           </p>
@@ -77,9 +92,13 @@ const Teambuildings = () => {
           className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <h3 className="text-4xl font-montserrat font-bold text-[#2f492f] mb-24 leading-relaxed">
+          <Link 
+          to={"/mixedteambuildings"}
+          >
+          <h3 className="text-4xl font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-24 leading-relaxed">
            Смесени
           </h3>
+          </Link>
           <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] mb-[39px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
             <span className="font-bold">Балансът</span> е в основата на успеха...балансирай заедно с екипа си между
             <span className="font-bold">готино ново обучение</span> и <span className="font-bold">релакс</span>

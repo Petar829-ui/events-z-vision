@@ -1,9 +1,19 @@
+import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-[#075994]">
+      {/* SEO */}
+<Helmet>
+  <title>Events Z Vision | Бутикова агенция за организиране на събития от ново поколение</title>
+  <meta name="description" content="Създаваме събития, които се запомнят. От корпоративни тиймбилдинги, фирмени партита и продуктови лансирания до лични събития, арт вечери и нестандартни Z Experience формати — превръщаме идеите в преживявания." />
+</Helmet>
+
+<h1 className="sr-only">Събития от ново поколение – креативни, смислени, запомнящи се</h1>
+
       {/* Hero Section */}
       <section
         className="text-white bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24"
@@ -11,49 +21,52 @@ const Home = () => {
       >
         <section className="relative">
           <img 
-          src="test.svg" 
-          alt="img"
-          className="
-      absolute hidden md:block pointer-events-none z-0 max-w-none h-auto
-      /* ширина: между 480px и 980px, според ширината на вюпорта */
-      [width:clamp(480px,45vw,850px)]
-      /* позиция: плавно приближаване към центъра при по-големи екрани */
-      [right:clamp(8px,8vw,140px)]
-      [top:clamp(16px,6vh,64px)]
-      /* малки корекции по breakpoint, ако искаш */
-      lg:[right:clamp(24px,9vw,160px)]
-      xl:[right:clamp(32px,10vw,180px)]
-      xl:top-10
-    "
+            src="test.svg" 
+            alt="img"
+            className="
+              absolute hidden md:block pointer-events-none z-0 max-w-none h-auto
+              [width:clamp(480px,45vw,850px)]
+              [right:clamp(8px,8vw,140px)]
+              [top:clamp(16px,6vh,64px)]
+              lg:[right:clamp(24px,9vw,160px)]
+              xl:[right:clamp(32px,10vw,180px)]
+              xl:top-10
+            "
           />
         </section>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 md:pt-28">
           <div className="relative z-[5]">
-          <div className="text-center md:text-left max-w-3x1">
-            <h1 className="font-poppins font-semibold text-[47px] md:text-6xl lg:text-7xl tracking-normal leading-[1.1] mb-6">
-              <span className="text-[#c1ff72]">Създаваме </span>
-              <br /> незабравими <br />
-              <span className="text-[#c1ff72]">преживявания</span>
-            </h1>
-            <p className="font-inter font-normal text-base md:text-3xl max-w-xl mb-8 text-blue-100 leading-relaxed">
-              Агенция за цялостно професионално организиране на събития,
-              готова да превърне Вашите идеи в реалност с креативност,
-              професионализъм и внимание към детайлите.
-            </p>
-<div className="flex flex-col sm:flex-row gap-4 justify-start items-start">
-  <Link
-    to="/inquiry"
-    className="inline-flex w-fit self-center
-               bg-[#c1ff72] hover:bg-[#2f492f]
-               text-[#075994] hover:text-[#c1ff72]
-               px-8 py-4 rounded-lg text-lg font-poppins font-semibold
-               transition-all duration-300 hover:scale-105 shadow-lg"
-  >
-    ИЗПРАТИ ЗАПИТВАНЕ
-  </Link>
+            <div className="text-center md:text-left max-w-3x1">
+              <h1 className="font-poppins font-semibold text-[47px] md:text-6xl lg:text-7xl tracking-normal leading-[1.1] mb-6">
+                <span className="text-[#c1ff72]">Създаваме </span>
+                <br /> незабравими <br />
+                <span className="text-[#c1ff72]">преживявания</span>
+              </h1>
+              <p className="font-inter font-normal text-base md:text-3xl max-w-xl mb-8 text-blue-100 leading-relaxed">
+                Агенция за цялостно професионално организиране на събития,
+                готова да превърне Вашите идеи в реалност с креативност,
+                професионализъм и внимание към детайлите.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-start items-start">
+                <Link
+                  to="/inquiry"
+                  className="inline-flex w-fit self-center
+                             bg-[#c1ff72] hover:bg-[#2f492f]
+                             text-[#075994] hover:text-[#c1ff72]
+                             px-8 py-4 rounded-lg text-lg font-poppins font-semibold
+                             transition-all duration-300 hover:scale-105 shadow-lg"
+                >
+                  ИЗПРАТИ ЗАПИТВАНЕ
+                </Link>
+                {/*da ne se trie tova <Link
+                 to="/portfolio"
+                  className="bg[#075994] border-2 border-white hover:bg-white hover:text-[#075994] text-white px-11 py-4 
+                  rounded-lg text-lg self-center font-poppins font-semibold transition-all duration-300" >
+                   ВИЖ УСЛУГИТЕ НИ 
+                   </Link>*/}
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
@@ -75,7 +88,9 @@ const Home = () => {
                 <div className="w-full max-w-[380px] aspect-[16/7] bg-[#c1ff72] rounded-2xl overflow-hidden flex items-center justify-center">
                   <img src="1.svg" alt="Img" className="w-full h-full object-contain" />
                 </div>
-                <h2 className="text-[#c1ff72] mt-3">Корпоративни събития</h2>
+                <Link to={"/corporate"}>
+                  <h2 className="text-[#c1ff72] hover:text-[#7fbf4f] mt-3">Корпоративни събития</h2>
+                </Link>
               </div>
 
               {/* Карта 2 */}
@@ -83,7 +98,9 @@ const Home = () => {
                 <div className="w-full max-w-[390px] aspect-[16/7] bg-[#c1ff72] rounded-2xl overflow-hidden flex items-center justify-center">
                   <img src="2.svg" alt="Img" className="w-full h-full object-contain" />
                 </div>
-                <h2 className="text-[#c1ff72] mt-3">Лични събития</h2>
+                <Link to={"/personal"}>
+                  <h2 className="text-[#c1ff72] hover:text-[#7fbf4f] mt-3">Лични събития</h2>
+                </Link>
               </div>
 
               {/* Карта 3 */}
@@ -91,7 +108,9 @@ const Home = () => {
                 <div className="w-full max-w-[380px] aspect-[16/7] bg-[#c1ff72] rounded-2xl overflow-hidden flex items-center justify-center">
                   <img src="3.svg" alt="Img" className="w-full h-full object-contain" />
                 </div>
-                <h2 className="text-[#c1ff72] mt-3">Нестандартни Z Experience събития</h2>
+                <Link to={"/ZExperience"}>
+                  <h2 className="text-[#c1ff72] hover:text-[#7fbf4f] mt-3">Нестандартни Z Experience събития</h2>
+                </Link>
               </div>
             </div>
           </div>

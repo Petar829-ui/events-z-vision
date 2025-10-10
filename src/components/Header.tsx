@@ -12,12 +12,14 @@ const Header = () => {
   const [tbOpen, setTbOpen] = useState(false);
   const [trainOpen, setTrainOpen] = useState(false);
   const [privOpen, setPrivOpen] = useState(false);
-  const [zexpOpen, setZexpOpen] = useState(false); // <-- NEW (Z.Experience)
+  const [zexpOpen, setZexpOpen] = useState(false);
 
   // Mobile collapsibles
   const [mobileSvcOpen, setMobileSvcOpen] = useState(false);
   const [mobileCorpOpen, setMobileCorpOpen] = useState(false);
   const [mobileTbOpen, setMobileTbOpen] = useState(false);
+  const [mobilePrivOpen, setMobilePrivOpen] = useState(false);
+  const [mobileZexpOpen, setMobileZexpOpen] = useState(false);
 
   // Hover-intent timers (desktop)
   const svcTimer = useRef<number | null>(null);
@@ -25,7 +27,7 @@ const Header = () => {
   const tbTimer = useRef<number | null>(null);
   const trainTimer = useRef<number | null>(null);
   const privTimer = useRef<number | null>(null);
-  const zexpTimer = useRef<number | null>(null); // <-- NEW
+  const zexpTimer = useRef<number | null>(null);
 
   const openSvc = () => { if (svcTimer.current) clearTimeout(svcTimer.current); setSvcOpen(true); };
   const closeSvcDelayed = (d=320) => { if (svcTimer.current) clearTimeout(svcTimer.current); svcTimer.current = window.setTimeout(()=>setSvcOpen(false), d); };
@@ -42,8 +44,8 @@ const Header = () => {
   const openPriv = () => { if (privTimer.current) clearTimeout(privTimer.current); setPrivOpen(true); };
   const closePrivDelayed = (d=320) => { if (privTimer.current) clearTimeout(privTimer.current); privTimer.current = window.setTimeout(()=>setPrivOpen(false), d); };
 
-  const openZexp = () => { if (zexpTimer.current) clearTimeout(zexpTimer.current); setZexpOpen(true); };            // <-- NEW
-  const closeZexpDelayed = (d=320) => { if (zexpTimer.current) clearTimeout(zexpTimer.current); zexpTimer.current = window.setTimeout(()=>setZexpOpen(false), d); }; // <-- NEW
+  const openZexp = () => { if (zexpTimer.current) clearTimeout(zexpTimer.current); setZexpOpen(true); };
+  const closeZexpDelayed = (d=320) => { if (zexpTimer.current) clearTimeout(zexpTimer.current); zexpTimer.current = window.setTimeout(()=>setZexpOpen(false), d); };
 
   const location = useLocation();
 
@@ -87,6 +89,8 @@ const Header = () => {
     setMobileSvcOpen(false);
     setMobileCorpOpen(false);
     setMobileTbOpen(false);
+    setMobilePrivOpen(false);
+    setMobileZexpOpen(false);
   };
 
   return (
@@ -113,13 +117,13 @@ const Header = () => {
             </span>
           </Link>
 
-          {/* Desktop nav */}
+          {/* Desktop nav (не пипам) */}
           <nav className="hidden xl:flex items-center space-x-6 absolute right-10">
             <Link to="/" className={linkClasses(isActive("/"))}>
               Начало
             </Link>
 
-            {/* Услуги (dropdown level 1) */}
+            {/* Услуги */}
             <div
               className="relative"
               onMouseEnter={openSvc}
@@ -129,7 +133,7 @@ const Header = () => {
                 closeTbDelayed();
                 closeTrainDelayed();
                 closePrivDelayed();
-                closeZexpDelayed(); // <-- NEW
+                closeZexpDelayed();
               }}
             >
               <button
@@ -144,10 +148,8 @@ const Header = () => {
                 </span>
               </button>
 
-              {/* мост между бутона и менюто */}
               {svcOpen && <div className="absolute left-0 right-0 top-full h-3" onMouseEnter={openSvc} />}
 
-              {/* dropdown panel */}
               <div
                 role="menu"
                 onMouseEnter={openSvc}
@@ -156,7 +158,6 @@ const Header = () => {
                 `}
               >
                 <div className="py-2">
-                  {/* 1) Нашите услуги */}
                   <Link
                     to="/services"
                     onClick={() => setSvcOpen(false)}
@@ -166,7 +167,7 @@ const Header = () => {
                     Нашите услуги
                   </Link>
 
-                  {/* 2) Корпоративни събития */}
+                  {/* Корпоративни */}
                   <div
                     className="relative"
                     onMouseEnter={openCorp}
@@ -180,11 +181,8 @@ const Header = () => {
                       <span>Корпоративни събития</span>
                     </Link>
                     <ChevronRight className="h-4 w-4 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
-
-                    {/* мост към flyout-а */}
                     {corpOpen && <div className="absolute -right-3 top-0 h-full w-3" onMouseEnter={openCorp} />}
 
-                    {/* Flyout панел */}
                     <div
                       onMouseEnter={openCorp}
                       className={`absolute left-full top-0 ml-3 min-w-[200px] rounded-lg bg-white shadow-lg ring-1 ring-black/5 transition
@@ -205,8 +203,6 @@ const Header = () => {
                           <span>Тиймбилдинги</span>
                         </Link>
                         <ChevronRight className="h-4 w-4 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
-
-                        {/* мост към level 3 */}
                         {tbOpen && <div className="absolute -right-3 top-0 h-full w-3" onMouseEnter={openTb} />}
 
                         <div
@@ -238,7 +234,7 @@ const Header = () => {
                     </div>
                   </div>
 
-                  {/* 3) Лични събития */}
+                  {/* Лични събития */}
                   <div
                     className="relative"
                     onMouseEnter={openPriv}
@@ -252,7 +248,6 @@ const Header = () => {
                       <span>Лични събития</span>
                     </Link>
                     <ChevronRight className="h-4 w-4 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
-
                     {privOpen && <div className="absolute -right-3 top-0 h-full w-3" onMouseEnter={openPriv} />}
 
                     <div
@@ -273,12 +268,12 @@ const Header = () => {
                         className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-[#ebee68] hover:text-[#075994] rounded-b-lg"
                         onClick={() => { setPrivOpen(false); }}
                       >
-                        лични празници
+                        Лични празници
                       </Link>
                     </div>
                   </div>
 
-                  {/* 4) Z.Experience — OWN STATE (no overlap) */}
+                  {/* Z Experience */}
                   <div
                     className="relative"
                     onMouseEnter={openZexp}
@@ -289,14 +284,11 @@ const Header = () => {
                       onClick={() => { setSvcOpen(false); setZexpOpen(false); }}
                       className="flex w-full items-center justify-between pr-8 px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-gradient-to-r from-[#000000] via-[#3533cd] to-[#075994] hover:text-[#30e8b0]"
                     >
-                      <span>Z.Experience събития</span>
+                      <span>Z Experience събития</span>
                     </Link>
                     <ChevronRight className="h-4 w-4 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
-
-                    {/* мост към flyout-а */}
                     {zexpOpen && <div className="absolute -right-3 top-0 h-full w-3" onMouseEnter={openZexp} />}
 
-                    {/* Flyout панел само за Z.Experience */}
                     <div
                       onMouseEnter={openZexp}
                       className={`absolute left-full top-0 ml-3 min-w-[200px] rounded-lg bg-white shadow-lg ring-1 ring-black/5 transition
@@ -308,7 +300,7 @@ const Header = () => {
                         onClick={() => { setSvcOpen(false); setZexpOpen(false); }}
                         className="block px-5 py-3 text-sm font-inter font-medium text-gray-800 hover:bg-gradient-to-r from-[#000000] via-[#3533cd] to-[#075994] hover:text-[#30e8b0] rounded-t-lg"
                       >
-                        Авторски Z Experie събития
+                        Авторски Z Experience събития
                       </Link>
                       <Link
                         to="/Personalized"
@@ -337,22 +329,196 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen((o) => !o)}
-            className={`xl:hidden p-2 ${scrolled ? "text-gray-700" : "text-white"} hover:text-[#1f6da8]`}
-            aria-expanded={isMenuOpen}
-            aria-controls="mobile-menu"
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+{/* Mobile Menu Button (RIGHT) */}
+<button
+  onClick={() => setIsMenuOpen((o) => !o)}
+  className={`xl:hidden absolute right-4 top-1/2 -translate-y-1/2 p-2 ${
+    scrolled ? "text-gray-700" : "text-white"
+  } hover:text-[#1f6da8]`}
+  aria-expanded={isMenuOpen}
+  aria-controls="mobile-menu"
+>
+  {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+</button>
         </div>
 
-        {/* Mobile menu (unchanged) */}
+        {/* MOBILE DRAWER (дясна страна) */}
         {isMenuOpen && (
-          <nav id="mobile-menu" className="xl:hidden pb-4 border-t border-[#1f6da8]">
-            {/* ... вашият мобилен код остава същият ... */}
-          </nav>
+          <>
+            {/* overlay */}
+            <button
+              aria-label="Close menu"
+              onClick={closeAllMobile}
+              className="fixed inset-0 bg-black/40 backdrop-blur-[1px] xl:hidden z-40"
+            />
+            {/* panel */}
+            <nav
+              id="mobile-menu"
+              className="fixed right-0 top-0 bottom-0 w-[85%] max-w-sm bg-white shadow-2xl xl:hidden z-50
+                         border-l border-slate-200 overflow-y-auto"
+            >
+              <div className="flex items-center justify-between px-4 py-4 border-b">
+                <span className="text-base font-semibold text-[#075994]">Меню</span>
+                <button onClick={closeAllMobile} className="p-2 text-slate-600 hover:text-slate-900">
+                  <X className="h-6 w-6" />
+                </button>
+              </div>
+
+              <div className="px-3 py-4 space-y-1">
+                <Link
+                  to="/"
+                  onClick={closeAllMobile}
+                  className="block px-3 py-2 rounded-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100"
+                >
+                  Начало
+                </Link>
+
+                {/* Нашите услуги (accordion level 1) */}
+                <div className="rounded-lg">
+                  <div className="flex items-stretch">
+                    <Link
+                      to="/services"
+                      onClick={closeAllMobile}
+                      className="flex-1 block px-3 py-2 rounded-l-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100"
+                    >
+                      Нашите услуги
+                    </Link>
+                    <button
+                      onClick={() => setMobileSvcOpen(v => !v)}
+                      aria-expanded={mobileSvcOpen}
+                      className="px-3 py-2 rounded-r-lg text-slate-700 hover:bg-slate-100"
+                    >
+                      <ChevronDown className={`h-4 w-4 transition-transform ${mobileSvcOpen ? "rotate-180" : ""}`} />
+                    </button>
+                  </div>
+
+                  {mobileSvcOpen && (
+                    <div className="mt-1 ml-2 space-y-1">
+                      {/* Корпоративни */}
+                      <div className="rounded-lg">
+                        <div className="flex items-stretch">
+                          <Link
+                            to="/corporate"
+                            onClick={closeAllMobile}
+                            className="flex-1 block px-3 py-2 rounded-l-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100"
+                          >
+                            Корпоративни събития
+                          </Link>
+                          <button
+                            onClick={() => setMobileCorpOpen(v => !v)}
+                            aria-expanded={mobileCorpOpen}
+                            className="px-3 py-2 rounded-r-lg text-slate-700 hover:bg-slate-100"
+                          >
+                            <ChevronDown className={`h-4 w-4 transition-transform ${mobileCorpOpen ? "rotate-180" : ""}`} />
+                          </button>
+                        </div>
+
+                        {mobileCorpOpen && (
+                          <div className="mt-1 ml-3 space-y-1">
+                            {/* Тиймбилдинги */}
+                            <div className="flex items-stretch">
+                              <Link
+                                to="/teambuildings"
+                                onClick={closeAllMobile}
+                                className="flex-1 block px-3 py-2 rounded-l-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100"
+                              >
+                                Тиймбилдинги
+                              </Link>
+                              <button
+                                onClick={() => setMobileTbOpen(v => !v)}
+                                aria-expanded={mobileTbOpen}
+                                className="px-3 py-2 rounded-r-lg text-slate-700 hover:bg-slate-100"
+                              >
+                                <ChevronDown className={`h-4 w-4 transition-transform ${mobileTbOpen ? "rotate-180" : ""}`} />
+                              </button>
+                            </div>
+
+                            {mobileTbOpen && (
+                              <div className="mt-1 ml-3 space-y-1">
+                                <Link to="/Training" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100">Обучения</Link>
+                                <Link to="/Entertainment" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100">Развлекателни</Link>
+                                <Link to="/MixedTeambuildings" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100">Смесени тиймбилдинги</Link>
+                              </div>
+                            )}
+
+                            <Link to="/Company" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100">Фирмени партита</Link>
+                            <Link to="/Conferences" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100">Конференции</Link>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Лични събития */}
+                      <div className="rounded-lg">
+                        <div className="flex items-stretch">
+                          <Link
+                            to="/Personal"
+                            onClick={closeAllMobile}
+                            className="flex-1 block px-3 py-2 rounded-l-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100"
+                          >
+                            Лични събития
+                          </Link>
+                          <button
+                            onClick={() => setMobilePrivOpen(v => !v)}
+                            aria-expanded={mobilePrivOpen}
+                            className="px-3 py-2 rounded-r-lg text-slate-700 hover:bg-slate-100"
+                          >
+                            <ChevronDown className={`h-4 w-4 transition-transform ${mobilePrivOpen ? "rotate-180" : ""}`} />
+                          </button>
+                        </div>
+
+                        {mobilePrivOpen && (
+                          <div className="mt-1 ml-3 space-y-1">
+                            <Link to="/Weddings" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100">Сватби</Link>
+                            <Link to="/PersonalCelebrations" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100">Лични празници</Link>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Z.Experience */}
+                      <div className="rounded-lg">
+                        <div className="flex items-stretch">
+                          <Link
+                            to="/ZExperience"
+                            onClick={closeAllMobile}
+                            className="flex-1 block px-3 py-2 rounded-l-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100"
+                          >
+                            Z.Experience събития
+                          </Link>
+                          <button
+                            onClick={() => setMobileZexpOpen(v => !v)}
+                            aria-expanded={mobileZexpOpen}
+                            className="px-3 py-2 rounded-r-lg text-slate-700 hover:bg-slate-100"
+                          >
+                            <ChevronDown className={`h-4 w-4 transition-transform ${mobileZexpOpen ? "rotate-180" : ""}`} />
+                          </button>
+                        </div>
+
+                        {mobileZexpOpen && (
+                          <div className="mt-1 ml-3 space-y-1">
+                            <Link to="/AuthorsZ" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100">Авторски Z Experie събития</Link>
+                            <Link to="/Personalized" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100">Персонализирани събития по Ваша идея</Link>
+                            <Link to="/Product" onClick={closeAllMobile} className="block px-3 py-2 rounded-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100">Продуктови и рекламни събития</Link>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* Simple top items */}
+                {topItems.map(item => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    onClick={closeAllMobile}
+                    className="block px-3 py-2 rounded-lg text-[15px] font-medium text-slate-800 hover:bg-slate-100"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </nav>
+          </>
         )}
       </div>
     </header>

@@ -1,9 +1,16 @@
 import React from "react"
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Personal = () => {
   return (
     <div className="min-h-screen bg-[#3b84b6] pb-10">
+      <Helmet>
+  <title>Лични празници и тематични партита | Events Z Vision</title>
+  <meta name="description" content="Организираме рождени дни, юбилеи и специални поводи с внимание към детайла. Концепция, декорация, музика и атмосфера – ние поемаме всичко, за да празнувате без грижи." />
+</Helmet>
+
+<h1 className="sr-only">Празници, които остават в сърцето</h1>
         <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 overflow-hidden isolate">
         <div
           aria-hidden="true"
@@ -31,9 +38,12 @@ const Personal = () => {
           className="absolute -bottom-3 -right-3 w-full h-full rounded-xl bg-white border-4 border-[#ebee68] bg:white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#ebee68] border-4 border-white rounded-xl shadow-xl text-center overflow-show px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <h3 className="text-[2rem] font-montserrat font-bold text-[#075994] mb-[40px]">
+          <Link to={"/weddings"}
+          >
+          <h3 className="text-[2rem] font-montserrat font-bold text-[#075994] hover:text-[#afb230] mb-[40px]">
             Сватби
           </h3>
+          </Link>
 {/* ляво позициониран блок, но текстът вътре е центриран */}
 <div className="w-full flex justify-start">
   <p className="text-center max-w-[24ch] md:max-w-[23ch]
@@ -61,9 +71,13 @@ const Personal = () => {
           className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-4 border-[#ebee68] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#ebee68] border-4 border-white rounded-xl shadow-xl text-center overflow-shown px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <h3 className="text-4xl font-montserrat font-bold text-[#075994] mb-24 leading-relaxed">
+          <Link 
+          to={"/personalcelebrations"}
+          >
+          <h3 className="text-4xl font-montserrat font-bold text-[#075994] hover:text-[#afb230] mb-24 leading-relaxed">
             Лични празници
           </h3>
+          </Link>
           <p className="text-lg md:text-2xl font-inter font-normal text-[#075994] mb-[71px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
             Вие <span className="font-bold">празнувате</span>, ние се грижим за всичко останало.
           </p>

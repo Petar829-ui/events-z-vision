@@ -1,9 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Training = () => {
     return (
         <div className="min-h-screen bg-[#075994] pb-10">
+          <Helmet>
+  <title>Корпоративни обучения и тренинги | Events Z Vision</title>
+  <meta name="description" content="Разработваме обучения, които развиват екипа – от лидерство и комуникация до креативно мислене и емоционална интелигентност. Всеки модул е практичен, измерим и съобразен с културата на компанията." />
+</Helmet>
+
+<h1 className="sr-only">Корпоративни обучения с реален ефект</h1>
+
         <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 overflow-hidden isolate">
         <div
           aria-hidden="true"

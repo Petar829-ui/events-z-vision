@@ -1,5 +1,6 @@
 import React from 'react';
 import { Handshake, Star, CheckCircle, Mail, Phone, ArrowRight } from 'lucide-react';
+import { Helmet } from "react-helmet-async";
 
 const Partnerships = () => {
   const partnerCategories = [
@@ -53,6 +54,12 @@ const Partnerships = () => {
 
   return (
     <div className="min-h-screen py-12 bg-[#075994]">
+      <Helmet>
+  <title>Нашите партньори | Доверени професионалисти и съмишленици</title>
+  <meta name="description" content="Работим с внимателно подбрана мрежа от партньори – локации, декоратори, фасилитатори, артисти и доставчици. Заедно гарантираме високо качество и безупречно изпълнение на всяко събитие." />
+</Helmet>
+
+<h1 className="sr-only">Партньорства, които изграждат стойност</h1>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
   {/* Header с декор изображението, видимо със -z-10 */}

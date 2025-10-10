@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Product = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#000000] via-[#3533cd] to-[#075994] pb-10">
+      <Helmet>
+  <title>Продуктови и рекламни събития | Лансирания, продуктови представяния и B2C срещи</title>
+  <meta name="description" content="Организираме продуктови представяния, бранд лансирания и employer branding събития. Визия, стратегия, детайл и изпълнение, които свързват марката с хората." />
+</Helmet>
+
+<h1 className="sr-only">Продуктови и бранд събития с концепция и стил</h1>
       <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 overflow-hidden isolate">
         <div
           aria-hidden="true"

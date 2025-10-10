@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const MixedTeambuildings = () => {
   return (
     <div className="min-h-screen bg-[#075994] pb-10">
+      <Helmet>
+  <title>Смесени събития | Бизнес и забавление в едно | Events Z Vision</title>
+  <meta name="description" content="Създаваме формати, които съчетават работни срещи, уелнес и забавление. Идеални за корпоративни уикенди и ретрийти, които стимулират вдъхновение, връзка и ефективност. Концепция, организация и изпълнение от А до Я." />
+</Helmet>
+
+<h1 className="sr-only">Комбинирани събития – баланс между бизнес и преживяване</h1>
       {/* HERO */}
       <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 isolate">
         <div

@@ -1,9 +1,16 @@
 import React from "react"
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const ZExperience = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#000000] via-[#3533cd] to-[#075994] pb-10">
+      <Helmet>
+  <title>Z Experience събития | Преживявания отвъд стандартното</title>
+  <meta name="description" content="Z Experience е нашият почерк – нестандартни и авторски формати, които съчетават технологии с изкуство, бизнес ценности с принадлежност и преживявания с въздействие. От рисуване с горещ шоколад до продуктови и рекламни събития, и други формати, които създават стойност." />
+</Helmet>
+
+<h1 className="sr-only">Z Experience – преживявания, които се усещат</h1>
         <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 overflow-hidden isolate">
         <div
           aria-hidden="true"
@@ -31,9 +38,13 @@ const ZExperience = () => {
           className="absolute -bottom-4 -right-6 w-full h-full rounded-3xl border-4 border-[#30e8b0] bg-[#6e67b4] shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#30e8b0] rounded-3xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <h3 className="text-[2rem] font-montserrat font-bold text-[#075994] mb-[20px]">
+          <Link 
+          to={"/authorsz"}
+          >
+          <h3 className="text-[2rem] font-montserrat font-bold text-[#075994] hover:text-[#6e67b4] mb-[20px]">
             Авторски Z Experience събития
           </h3>
+          </Link>
           <p className="text-lg md:text-2xl font-inter font-normal text-[#075994] leading-relaxed mb-[32px] max-w-[34ch] md:max-w-none mx-auto">
             Преоткрий себе си и <span className="font-bold">новото значение</span> на думите <span className="font-bold">“свободно време”!</span>
           </p>
@@ -53,9 +64,13 @@ const ZExperience = () => {
           className="absolute -bottom-4 -right-6 w-full h-full rounded-3xl border-4 border-[#30e8b0] bg-[#6e67b4] shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#30e8b0] rounded-3xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <h3 className="text-[2rem] font-montserrat font-bold text-[#075994] mb-14 leading-relaxed">
+          <Link 
+          to={"/personalized"}
+          >
+          <h3 className="text-[2rem] font-montserrat font-bold text-[#075994] hover:text-[#6e67b4] mb-14 leading-relaxed">
             Персонализирани събития
           </h3>
+          </Link>
           <p className="text-lg md:text-2xl font-inter font-normal text-[#075994] mb-[37px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
            Имаш идея за <span className="font-bold">нестнандартно и оригинално</span> събитие - на правилното място си
           </p>
@@ -75,9 +90,13 @@ const ZExperience = () => {
           className="absolute -bottom-4 -right-6 w-full h-full rounded-3xl border-4 border-[#30e8b0] bg-[#6e67b4] shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#30e8b0] rounded-3xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <h3 className="text-3xl font-montserrat font-bold text-[#075994] mb-[60px] leading-relaxed">
+          <Link 
+          to={"/product"}
+          >
+          <h3 className="text-3xl font-montserrat font-bold text-[#075994] hover:text-[#6e67b4] mb-[60px] leading-relaxed">
             Продуктови и рекламни събития
           </h3>
+          </Link>
           <p className="text-lg md:text-2xl font-inter font-normal text-[#075994] mb-[103px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
             <span className="font-bold">Надскачаме</span> стандартния PR формат
           </p>

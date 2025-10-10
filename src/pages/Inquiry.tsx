@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Send, FileText } from 'lucide-react';
+import { Helmet } from "react-helmet-async";
 
 const Inquiry = () => {
   const [formData, setFormData] = useState({
@@ -20,6 +21,12 @@ const Inquiry = () => {
 
   return (
     <div className="py-16 bg-[#075994]">
+      <Helmet>
+  <title>Изпрати запитване | Заяви своя идея за събитие | Events Z Vision</title>
+  <meta name="description" content="Имаш идея за събитие? Сподели я с нас. Изпрати запитване и ще ти върнем персонализирана оферта с концепция, локация и цялостна организация на събитието ти. Независимо дали ще е в града, планината или край морето." />
+</Helmet>
+
+<h1 className="sr-only">Разкажи ни за своето събитие</h1>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">

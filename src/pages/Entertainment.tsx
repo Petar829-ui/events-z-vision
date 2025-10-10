@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Entertainment = () => {
     return (
         <div className="min-h-screen bg-[#075994] pb-10">
+          <Helmet>
+  <title>Развлекателни тиймбилдинги и активности | Events Z Vision</title>
+  <meta name="description" content="От куиз вечери и лов на съкровища до кулинарни битки и спортни формати — създаваме енергични тиймбилдинг преживявания, които вдъхновяват, разтоварват и сближават екипите. Изпълняваме всичко до последния детайл." />
+</Helmet>
+
+<h1 className="sr-only">Забавни тиймбилдинги за енергия и сплотеност</h1>
         <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 overflow-hidden isolate">
         <div
           aria-hidden="true"

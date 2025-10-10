@@ -1,10 +1,17 @@
 import React from "react";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Music2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Contacts = () => {
   return (
-    <div className="pt-24 pb-9 bg-[#075994]">
+    <div className="pt-24 pb-20 bg-[#075994]">
+      <Helmet>
+  <title>Контакти | Events Z Vision</title>
+  <meta name="description" content="Имате въпроси или искате оферта? Пишете ни или ни се обадете – нашият екип ще ви върне персонализиран отговор до 48 часа. Намираме решения, предлагаме идеи и реализираме проекти в цяла България." />
+</Helmet>
+
+<h1 className="sr-only">Свържи се с нас</h1>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Заглавие */}
         <h1 className="text-4xl md:text-5xl font-poppins font-semibold text-[#c1ff72] text-center relative z-[1]">
@@ -70,8 +77,7 @@ const Contacts = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-[#f96e0c]">Имейл:</p>
-                  <p>info@eventszv.bg</p>
-                  <p>office@eventszv.bg</p>
+                  <p>contact@eventszvision.bg</p>
                 </div>
               </div>
             </div>

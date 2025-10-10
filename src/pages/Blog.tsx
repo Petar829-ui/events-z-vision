@@ -1,5 +1,6 @@
 import React from 'react';
 import { Calendar, User, ArrowRight, Tag } from 'lucide-react';
+import { Helmet } from "react-helmet-async";
 
 const Blog = () => {
   const blogPosts = [
@@ -18,6 +19,12 @@ const Blog = () => {
 
   return (
     <div className="bg-[#075994] min-h-screen pb-12">
+      <Helmet>
+  <title>Блог | Идеи, вдъхновения и съвети за събития | Events Z Vision</title>
+  <meta name="description" content="Прочетете вдъхновяващи статии с идеи за събития, тиймбилдинги и арт формати. Практични съвети, тенденции и примери от нашите Z Vision истории." />
+</Helmet>
+
+<h1 className="sr-only">Истории, вдъхновения и идеи от света на събитията</h1>
       <section className="relative isolate overflow-hidden h-[119ch] w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
         <div aria-hidden="true" className="absolute inset-0 bg-cover bg-center -z-10 pointer-events-none" style={{ backgroundImage: "url('website B1 design EZV.svg')" }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

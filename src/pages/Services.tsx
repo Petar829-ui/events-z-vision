@@ -1,9 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet-async";
 
 const Services = () => {
   return (
     <div className="min-h-screen bg-[#075994] pb-10">
+      <Helmet>
+        <title>Нашите услуги | Организация на корпоративни, лични и нестандартни Z Experience събития</title>
+        <meta
+          name="description"
+          content="Открийте нашите услуги – от тиймбилдинги и фирмени партита до авторски арт преживявания и бутикови частни събития. Изграждаме концепции, които оставят следа."
+        />
+      </Helmet>
+      <h1 className="sr-only">Какво правим – от идея до изживяване</h1>
+
       {/* Hero */}
       <section className="relative h-full py-16 md:py-20 lg:py-24 overflow-hidden">
         {/* Фон – overscan с 4px, за да няма бели линии */}
@@ -15,7 +25,7 @@ const Services = () => {
         {/* Съдържание */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-poppins font-semibold text-white pt-24 mb-64">
+            <h1 className="text-4xl md:text-6xl font-poppins font-semibold text-white pt-24 mb-32 md:mb-64">
               <span className="text-[#c1ff72]">Нашите</span> услуги
             </h1>
             <p className="text-3xl text-white max-w-6xl mx-auto leading-snug font-playfair font-semibold">
@@ -50,9 +60,11 @@ const Services = () => {
               className="absolute -bottom-3 -right-3 w-full h-full rounded-xl bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
             />
             <div className="relative bg-[#c1f772] rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px] md:min-h-[500px]">
-              <h3 className="text-4xl font-montserrat font-bold text-[#2f492f] mb-4">
+              <Link to={"/corporate"}>
+              <h3 className="text-4xl font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-4">
                 Корпоративни<br /> събития
               </h3>
+              </Link>
               <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
                 Планирате <span className="font-bold">тиймбилдинг, конференция</span> или друго фирмено събитие –
                 доверете се на нас – <span className="font-bold">в сигурни ръце сте!</span>
@@ -101,7 +113,11 @@ const Services = () => {
               className="absolute -bottom-3 -right-3 w-full h-full rounded-xl bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
             />
             <div className="relative bg-[#ebee68] rounded-xl shadow-xl text-center px-8 pt-10 pb-56 md:pb-64 min-h-[500px] z-20">
-              <h2 className="text-5xl font-montserrat font-bold text-[#2f492f] mb-7">Лични празници</h2>
+              <Link 
+              to={"/PersonalCelebrations"}>
+              <h2 className="text-5xl font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-7">
+                Лични празници
+                </h2></Link>
               <p className="text-2xl font-inter font-medium text-[#2f492f]">
                 Отпразнувайте <span className='font-bold'>мечтаният<br /> си празник,</span> като му се насладите напълно <span className='font-bold'>без да<br /> се притеснявате</span> за организацията и логистиката!
               </p>
@@ -125,7 +141,12 @@ const Services = () => {
               className="absolute -bottom-3 -right-3 w-full h-full rounded-xl bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
             />
             <div className="relative bg-[#30e8b0] rounded-xl shadow-xl text-center px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-              <h2 className="text-5xl font-montserrat font-bold text-[#2f492f] mb-4">Z Experience събития</h2>
+              <Link 
+              to={"/zexperience"}
+              >
+              <h2 className="text-5xl font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-4">
+                Z Experience събития
+                </h2></Link>
               <p className="text-2xl font-inter font-medium text-[#2f492f]">
                 Ако искате да усетите<br /> вкусът на <span className='font-bold'>авторските ни<br /> събития</span> или пък вашето желано събитие не попада<br />
                 в нито една от горните две категории, мястото ви е<br /> тук в <span className='font-bold'>Z Experience!</span>

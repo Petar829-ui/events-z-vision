@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Weddings = () => {
   return (
     <div className="min-h-screen bg-[#3b84b6] pb-10">
+      <Helmet>
+  <title>Организация на сватби и бутикови церемонии | Events Z Vision</title>
+  <meta name="description" content="Планираме и реализираме сватби с индивидуален почерк – от концепцията и декора до координацията в деня. Всяка сватба е история, която разказваме с вкус, емоция и безупречно изпълнение." />
+</Helmet>
+
+<h1 className="sr-only">Сватби с характер, класа и душа</h1>
       <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 isolate">
         <div
           aria-hidden="true"

@@ -33,17 +33,17 @@ const Blog2 = () => {
 
   return (
     <div className="min-h-screen bg-[#075994] pb-10">
-      <section className="relative h-[119ch] overflow-hidden isolate">
+      <section className="relative bg-cover bg-center overflow-hidden h-full py-16 md:py-20 lg:py-24 overflow-hidden isolate">
         <div
           aria-hidden="true"
           className="absolute inset-0 left-[-8px] right-[-8px] bg-cover bg-center -z-10 pointer-events-none"
           style={{ backgroundImage: "url('B19.svg')" }}
         />
-        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-64 pb-16">
-          <h2 className="text-6xl font-poppins font-semibold text-[#c1ff72] text-center mt-20">
+        <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-16">
+          <h2 className="text-4xl md:text-6xl font-poppins font-semibold text-[#c1ff72] text-center mt-20">
             Авторски групови активности на <span className="text-white">открито и <br />закрито</span>
           </h2>
-          <p className="text-4xl font-playfair font-semibold text-[#c1ff72] text-center mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
+          <p className="text-2xl md:text-4xl font-playfair font-semibold text-[#c1ff72] text-center mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
             Груповите активности са <span className="text-white">сърцето на развлекателните тиймбилдинги</span> – динамични, забавни и създадени да обединяват хората чрез споделено преживяване. Те могат да се провеждат
             <span className="text-white">както на открито</span>, сред природата, така <span className="text-white">и в закрити пространства</span>, превърнати в сцена за игри и предизвикателства.
           </p>
@@ -60,7 +60,7 @@ const Blog2 = () => {
         {/* ред 1: карта + снимка */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:min-h-[420px]">
           {/* карта (ляво) */}
-          <div className="relative w-[640px] h-[300px] sm:h-[320px] md:h-[160px] mt-6 md:mt-10">
+          <div className="relative w-[320px] sm:w-[400px] md:w-[400px] lg:w-[500px] xl:w-[650px] h-[150px] sm:h-[220px] md:h-[160px] justify-self-center md:justify-self-start mt-6 md:mt-10">
             <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border-4 border-[#c1ff72] bg-white" />
             <div className="relative h-full rounded-3xl border-4 border-white bg-[#c1f772] grid place-items-center">
               <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] text-center">
@@ -70,7 +70,7 @@ const Blog2 = () => {
           </div>
 
           {/* снимка (center-top) */}
-          <div className="md:col-start-2 md:row-start-2 h-full flex items-center justify-end md:-mt-16 lg:-mt-36">
+          <div className="md:col-start-2 md:row-start-2 h-full flex items-center justify-center md:justify-end  md:-mt-16 lg:-mt-36">
             <img
               src="31.svg"
               alt="Корпоративни събития"
@@ -79,7 +79,7 @@ const Blog2 = () => {
           </div>
 
           {/* снимка (center-bottom) */}
-          <div className="md:col-start-2 md:row-start-3 h-full flex items-center justify-end md:-mt-16 lg:-mt-48">
+          <div className="md:col-start-2 md:row-start-3 h-full flex items-center justify-center md:justify-end md:-mt-16 lg:-mt-48">
             <img
               src="32.svg"
               alt="Корпоративни събития"
@@ -113,8 +113,7 @@ const Blog2 = () => {
         {/* ред 1: карта + снимка */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:min-h-[420px]">
           {/* карта (ляво) */}
-          <div className="relative w-[640px] h-[300px] sm:h-[320px] md:h-[160px] mt-6 md:mt-10
-                    md:col-start-2 md:row-start-1 md:justify-self-end md:self-start">
+          <div className="relative w-[300px] md:w-[400px] lg:w-[700px] xl:w-[650px] h-[200px] sm:h-[200px] md:h-[160px] md:col-start-2 md:col-start-1 justify-self-center md:justify-self-end md:self-start">
             <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border-4 border-[#c1ff72] bg-white" />
             <div className="relative h-full rounded-3xl border-4 border-white bg-[#c1f772] grid place-items-center">
               <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] text-center">
@@ -124,7 +123,7 @@ const Blog2 = () => {
           </div>
 
           {/* снимка (center-top) */}
-          <div className="md:col-start-1 md:row-start-2 h-full flex items-center justify-end md:-mt-16 lg:-mt-[540px]">
+          <div className="md:col-start-1 md:row-start-2 h-full flex items-center justify-center md:justify-end md:-mt-16 lg:-mt-[540px]">
             <img
               src="33.svg"
               alt="Корпоративни събития"
@@ -133,7 +132,7 @@ const Blog2 = () => {
           </div>
 
           {/* снимка (center-center) */}
-          <div className="md:col-start-1 md:row-start-2 h-full flex items-center justify-end md:-mt-16 lg: -mt-[100px]">
+          <div className="md:col-start-1 md:row-start-2 h-full flex items-center justify-center md:justify-end md:-mt-16 -mt-[190px] lg:-mt-[70px]">
             <img
               src="34.svg"
               alt="Корпоративни събития"
@@ -142,7 +141,7 @@ const Blog2 = () => {
           </div>
 
           {/* снимка (center-bottom) */}
-          <div className="md:col-start-1 md:row-start-3 h-full flex items-center justify-end md:-mt-16 lg:-mt-[390px]">
+          <div className="md:col-start-1 md:row-start-3 h-full flex items-center justify-center md:justify-end md:-mt-16 -mt-[340px] lg:-mt-[390px]">
             <img
               src="35.svg"
               alt="Корпоративни събития"
@@ -152,7 +151,7 @@ const Blog2 = () => {
 
           {/* ред 2: текст долу вляво */}
           <div className="md:col-end-3 md:row-start-2 md:justify-self-start">
-            <p className="font-inter font-normal text-[#c1ff72] text-3xl leading-tight mt-6 md:mt-8 max-w-[46ch] text-left">
+            <p className="font-inter font-normal text-[#c1ff72] text-3xl leading-tight -mt-56 md:mt-8 max-w-[46ch] text-left">
               Уникално тиймбилдинг преживяване, което комбинира история, приключение и игри.
               Провежда се в исторически обекти, крепости, пещери или природни забележителности.
               Участниците се впускат в мисия – да открият артефакти, да решат загадки и да преминат
@@ -206,8 +205,7 @@ const Blog2 = () => {
         {/* ред 1: карта + снимка */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:min-h-[420px]">
           {/* карта (ляво) */}
-          <div className="relative w-[640px] h-[300px] sm:h-[320px] md:h-[160px] mt-6 md:mt-10
-                    md:col-start-2 md:row-start-1 md:justify-self-end md:self-start">
+          <div className="relative w-[300px] md:w-[400px] lg:w-[700px] xl:w-[650px] h-[200px] sm:h-[200px] md:h-[160px] md:col-start-2 md:col-start-1 justify-self-center md:justify-self-end md:self-start">
             <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border-4 border-[#c1ff72] bg-white" />
             <div className="relative h-full rounded-3xl border-4 border-white bg-[#c1f772] grid place-items-center">
               <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] text-center">
@@ -217,7 +215,7 @@ const Blog2 = () => {
           </div>
 
           {/* снимка (center-top) */}
-          <div className="md:col-start-1 md:row-start-2 h-full flex items-center justify-end md:-mt-16 lg:-mt-[520px]">
+          <div className="md:col-start-1 md:row-start-2 h-full flex items-center justify-center md:justify-end md:-mt-16 lg:-mt-[520px]">
             <img
               src="39.svg"
               alt="Корпоративни събития"
@@ -226,11 +224,11 @@ const Blog2 = () => {
           </div>
 
           {/* снимка (center-center) */}
-          <div className="md:col-start-1 md:row-start-2 h-full flex items-center justify-end md:-mt-16 lg:mt-[90px]">
+          <div className="md:col-start-1 md:row-start-2 h-full flex items-center justify-center md:justify-end md:-mt-16 lg:mt-[90px]">
             <img
               src="40.svg"
               alt="Корпоративни събития"
-              className="w-72 h-[800px] sm:w-80 md:w-[26rem] lg:w-[40rem] rounded-xl"
+              className="w-72 md:h-[800px] sm:w-80 md:w-[26rem] lg:w-[40rem] rounded-xl"
             />
           </div>
 
@@ -277,7 +275,7 @@ const Blog2 = () => {
         {/* ред 1: карта + снимка */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:min-h-[420px]">
           {/* карта (ляво) */}
-          <div className="relative w-[640px] h-[300px] sm:h-[320px] md:h-[160px] mt-6 md:mt-10">
+          <div className="relative w-[315px] sm:w-[400px] md:w-[400px] lg:w-[500px] xl:w-[640px] h-[135px] sm:h-[220px] md:h-[160px] justify-self-center md:justify-self-start mt-6 md:mt-10">
             <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border-4 border-[#c1ff72] bg-white" />
             <div className="relative h-full rounded-3xl border-4 border-white bg-[#c1f772] grid place-items-center">
               <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] text-center">
@@ -287,7 +285,7 @@ const Blog2 = () => {
           </div>
 
           {/* снимка (center-right) */}
-          <div className="md:col-start-2 md:row-start-2 h-full flex items-center justify-end md:-mt-16 lg:-mt-[20px]">
+          <div className="md:col-start-2 md:row-start-2 h-full flex items-center justify-center md:justify-end md:-mt-16 lg:-mt-[20px]">
             <img
               src="41.svg"
               alt="Корпоративни събития"
@@ -307,8 +305,7 @@ const Blog2 = () => {
         {/* ред 1: карта + снимка */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:min-h-[420px]">
           {/* карта (ляво) */}
-          <div className="relative w-[640px] h-[300px] sm:h-[320px] md:h-[160px] mt-6 md:mt-10
-                    md:col-start-2 md:row-start-1 md:justify-self-end md:self-start">
+          <div className="relative w-[300px] md:w-[400px] lg:w-[700px] xl:w-[650px] h-[150px] sm:h-[200px] md:h-[160px] md:col-start-2 md:col-start-1 justify-self-center md:justify-self-end md:self-start">
             <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border-4 border-[#c1ff72] bg-white" />
             <div className="relative h-full rounded-3xl border-4 border-white bg-[#c1f772] grid place-items-center">
               <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] text-center">
@@ -318,7 +315,7 @@ const Blog2 = () => {
           </div>
 
           {/* снимка (center-right) */}
-          <div className="md:col-start-1 md:row-start-2 h-full flex items-center justify-end md:-mt-16 lg:-mt-[20px]">
+          <div className="md:col-start-1 md:row-start-2 h-full flex items-center justify-center md:justify-end md:-mt-16 lg:-mt-[20px]">
             <img
               src="42.svg"
               alt="Корпоративни събития"
