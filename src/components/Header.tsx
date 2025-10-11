@@ -102,7 +102,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4 min-h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 absolute left-10">
+          <Link to="/" className="flex items-center space-x-3 absolute md:left-10 lg:left-10 xl:left-10">
             <img
               src="Events Z visioN logo1.pdf.png"
               alt="Events Z Vision Logo"
