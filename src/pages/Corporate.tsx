@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { ArrowRight, CheckCircle } from "lucide-react";
 
 const Corporate = () => {
   return (
@@ -43,16 +44,19 @@ const Corporate = () => {
                 className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
               />
               <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-6 md:px-8 pt-8 md:pt-10 pb-40 md:pb-64 min-h-[420px] md:min-h-[500px]">
-                <Link
-                to={"/teambuildings"}>
-                <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-16 md:mb-[114px]">
+                <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] mb-16 md:mb-[114px]">
                   Тиймбилдинги
                 </h3>
-                </Link>
                 <p className="text-base md:text-2xl font-inter font-normal text-[#2f492f] leading-relaxed mb-6 md:mb-[32px] max-w-[34ch] md:max-w-none mx-auto">
                   Ако искаш да стигнеш <span className="font-bold">бързо</span> - тръгни сам, но ако искаш да стигнеш
                   <span className="font-bold">далеч</span> тръгнете <span className="font-bold">заедно...</span>
                 </p>
+                <Link
+                to={"/teambuildings"}>
+              <h3 className="inline-flex items-center text-xl font-playfair font-semibold text-[#2f492f] hover:text-[#075994] mt-5">
+              Вижте още <ArrowRight className="ml-2 h-5 w-5" />
+              </h3>
+              </Link>
                 <img
                   src="2.svg"
                   alt="Корпоративни събития"
@@ -68,14 +72,17 @@ const Corporate = () => {
                 className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
               />
               <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-6 md:px-8 pt-8 md:pt-10 pb-40 md:pb-64 min-h-[420px] md:min-h-[500px]">
-                <Link to={"/company"}>
-                <h3 className="text-[2rem] font-mонтserrat font-bold text-[#2f492f] hover:text-[#075994] mb-10 md:mb-24 leading-relaxed">
+                <h3 className="text-[2rem] font-mонтserrat font-bold text-[#2f492f] mb-10 md:mb-24 leading-relaxed">
                   Фирмени <br />партита
                 </h3>
-                </Link>
                 <p className="text-base md:text-2xl font-inter font-normal text-[#2f492f] mb-12 md:mb-[90px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
                   Отпразнувайте <span className="font-bold">успехите</span> заедно!
                 </p>
+                <Link to={"/company"}>
+                <h3 className="inline-flex items-center text-xl font-playfair font-semibold text-[#2f492f] hover:text-[#075994] mt-5">
+              Вижте още <ArrowRight className="ml-2 h-5 w-5" />
+              </h3>
+              </Link>
                 <img
                   src="3.svg"
                   alt="Корпоративни събития"
@@ -91,14 +98,19 @@ const Corporate = () => {
                 className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
               />
               <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-6 md:px-8 pt-8 md:pt-10 pb-36 md:pb-64 min-h-[420px] md:min-h-[500px]">
-                <Link to={"/conferences"}>
-                <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-10 md:mb-20 leading-relaxed">
+                
+                <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-[#2f492f] mb-10 md:mb-20 leading-relaxed">
                   Конферинции Семинари <span className="whitespace-nowrap">Работни срещи</span>
                 </h3>
-                </Link>
+                
                 <p className="text-base md:text-2xl font-inter font-normal text-[#2f492f] mb-6 md:mb-[70px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
                   Недей да ги мислиш толкова <span className="font-bold">- ние ще се погрижим!</span>
                 </p>
+                <Link to={"/conferences"}>
+                <h3 className="inline-flex items-center text-xl font-playfair font-semibold text-[#2f492f] hover:text-[#075994] mt-5">
+              Вижте още <ArrowRight className="ml-2 h-5 w-5" />
+              </h3>
+              </Link>
                 <img
                   src="1.svg"
                   alt="Корпоративни събития"

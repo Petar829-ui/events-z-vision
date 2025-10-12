@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet-async";
+import { ArrowRight, CheckCircle } from "lucide-react";
 
 const Services = () => {
   return (
@@ -60,15 +61,20 @@ const Services = () => {
               className="absolute -bottom-3 -right-3 w-full h-full rounded-xl bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
             />
             <div className="relative bg-[#c1f772] rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px] md:min-h-[500px]">
-              <Link to={"/corporate"}>
-              <h3 className="text-4xl font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-4">
+             
+              <h3 className="text-4xl font-montserrat font-bold text-[#2f492f] mb-4">
                 Корпоративни<br /> събития
               </h3>
-              </Link>
+              
               <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
                 Планирате <span className="font-bold">тиймбилдинг, конференция</span> или друго фирмено събитие –
                 доверете се на нас – <span className="font-bold">в сигурни ръце сте!</span>
               </p>
+               <Link to={"/corporate"}>
+               <h3 className="inline-flex items-center text-xl font-playfair font-semibold text-[#2f492f] hover:text-[#075994] mt-5">
+              Вижте още <ArrowRight className="ml-2 h-5 w-5" />
+              </h3>
+              </Link>
               <img
                 src="1.svg"
                 alt="Корпоративни събития"
@@ -113,14 +119,19 @@ const Services = () => {
               className="absolute -bottom-3 -right-3 w-full h-full rounded-xl bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
             />
             <div className="relative bg-[#ebee68] rounded-xl shadow-xl text-center px-8 pt-10 pb-56 md:pb-64 min-h-[500px] z-20">
-              <Link 
-              to={"/PersonalCelebrations"}>
-              <h2 className="text-5xl font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-7">
+              
+              <h2 className="text-5xl font-montserrat font-bold text-[#2f492f] mb-7">
                 Лични празници
-                </h2></Link>
+                </h2>
               <p className="text-2xl font-inter font-medium text-[#2f492f]">
                 Отпразнувайте <span className='font-bold'>мечтаният<br /> си празник,</span> като му се насладите напълно <span className='font-bold'>без да<br /> се притеснявате</span> за организацията и логистиката!
               </p>
+              <Link 
+              to={"/PersonalCelebrations"}>
+              <h3 className="inline-flex items-center text-xl font-playfair font-semibold text-[#2f492f] hover:text-[#075994] mt-5">
+              Вижте още <ArrowRight className="ml-2 h-5 w-5" />
+              </h3>
+              </Link>
               <img
                 src="2.svg"
                 alt="Лични празници"
@@ -141,16 +152,21 @@ const Services = () => {
               className="absolute -bottom-3 -right-3 w-full h-full rounded-xl bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
             />
             <div className="relative bg-[#30e8b0] rounded-xl shadow-xl text-center px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-              <Link 
-              to={"/zexperience"}
-              >
-              <h2 className="text-5xl font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-4">
+              
+              <h2 className="text-5xl font-montserrat font-bold text-[#2f492f] mb-4">
                 Z Experience събития
-                </h2></Link>
+                </h2>
               <p className="text-2xl font-inter font-medium text-[#2f492f]">
                 Ако искате да усетите<br /> вкусът на <span className='font-bold'>авторските ни<br /> събития</span> или пък вашето желано събитие не попада<br />
                 в нито една от горните две категории, мястото ви е<br /> тук в <span className='font-bold'>Z Experience!</span>
               </p>
+              <Link 
+              to={"/zexperience"}
+              >
+              <h3 className="inline-flex items-center text-xl font-playfair font-semibold text-[#2f492f] hover:text-[#075994] mt-5">
+              Вижте още <ArrowRight className="ml-2 h-5 w-5" />
+              </h3>
+              </Link>
               <img
                 src="3.svg"
                 alt="Z Experience"

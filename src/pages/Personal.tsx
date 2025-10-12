@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { ArrowRight, CheckCircle } from "lucide-react";
 
 const Personal = () => {
   return (
@@ -31,38 +32,46 @@ const Personal = () => {
   <div className="max-w-[80rem] mx-auto px-4 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 md:grid-cols-2  gap-y-20 gap-x-10 md:gap-x-16 lg:gap-x-24 xl:gap-x-28 place-items-stretch">
       
-      {/* Карта 1 */}
-      <div className="relative w-full z-20">
-        <div
-          aria-hidden="true"
-          className="absolute -bottom-3 -right-3 w-full h-full rounded-xl bg-white border-4 border-[#ebee68] bg:white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
-        />
-        <div className="relative bg-[#ebee68] border-4 border-white rounded-xl shadow-xl text-center overflow-show px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <Link to={"/weddings"}
-          >
-          <h3 className="text-[2rem] font-montserrat font-bold text-[#075994] hover:text-[#afb230] mb-[40px]">
-            Сватби
-          </h3>
-          </Link>
-{/* ляво позициониран блок, но текстът вътре е центриран */}
-<div className="w-full flex justify-start">
-  <p className="text-center max-w-[24ch] md:max-w-[23ch]
-                 text-1xl md:text-2xl font-inter font-normal text-[#075994]
-                 leading-relaxed -mb-[54px] pr-2 md:pr-0">
-    Всеки детайл е част от <span className="font-bold">приказката</span>. 
-    Нека я създадем <span className="font-bold">заедно</span>! <br /><br />
-    Перфектната сватба не е мит — просто ви трябва добър сватбен агент 
-    (<span className="font-bold">за щастие сте на правилното място</span>)
-  </p>
-</div>
+{/* Карта 1 */}
+<div className="relative w-full z-20">
+  <div
+    aria-hidden="true"
+    className="absolute -bottom-3 -right-3 w-full h-full rounded-xl bg-white border-4 border-[#ebee68] shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
+  />
+  <div className="relative bg-[#ebee68] border-4 border-white rounded-xl shadow-xl text-center overflow-visible px-8 pt-10 pb-56 md:pb-[178px] min-h-[500px]">
 
-          <img
-            src="47.svg"
-            alt="Корпоративни събития"
-            className="absolute bottom-0 left-1/2 -translate-x-2/2 ml-8 w-80 md:w-96 h-auto"
-          />
-        </div>
-      </div>
+      <h3 className="text-[2rem] font-montserrat font-bold text-[#075994] transition-colors duration-150 mb-10">
+        Сватби
+      </h3>
+
+    {/* текст + линк в една колона, подравнени вляво */}
+    <div className="w-full flex flex-col items-start">
+      <p className="text-center max-w-[24ch] md:max-w-[23ch]
+                    text-xl md:text-2xl font-inter font-normal text-[#075994]
+                    leading-relaxed mb-6">
+        Всеки детайл е част от <span className="font-bold">приказката</span>. 
+        Нека я създадем <span className="font-bold">заедно</span>! <br /><br />
+        Перфектната сватба не е мит — просто ви трябва добър сватбен агент 
+        (<span className="font-bold">за щастие сте на правилното място</span>)
+      </p>
+
+      {/* бутон/линк „Вижте още“ */}
+      <Link
+        to="/weddings"
+        className="group inline-flex items-center text-xl font-playfair font-semibold
+                   text-[#075994] hover:text-[#afb230]">
+        <span>Вижте още</span>
+        <ArrowRight className="ml-2 h-5 w-5" />
+      </Link>
+    </div>
+
+    <img
+      src="47.svg"
+      alt="Корпоративни събития"
+      className="absolute bottom-0 left-1/2 -translate-x-2/2 ml-8 w-80 md:w-96 h-auto pointer-events-none select-none"
+    />
+  </div>
+</div>
 
       {/* Карта 2 */}
       <div className="relative w-full z-20 ml-auto md:justify-self-end">
@@ -71,27 +80,30 @@ const Personal = () => {
           className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-4 border-[#ebee68] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#ebee68] border-4 border-white rounded-xl shadow-xl text-center overflow-shown px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <Link 
-          to={"/personalcelebrations"}
-          >
-          <h3 className="text-4xl font-montserrat font-bold text-[#075994] hover:text-[#afb230] mb-24 leading-relaxed">
+          <h3 className="text-4xl font-montserrat font-bold text-[#075994] mb-24 leading-relaxed">
             Лични празници
           </h3>
-          </Link>
           <p className="text-lg md:text-2xl font-inter font-normal text-[#075994] mb-[71px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
             Вие <span className="font-bold">празнувате</span>, ние се грижим за всичко останало.
           </p>
+        <Link
+        to="/personalcelebrations"
+        className="group inline-flex items-center -mr-[00px] text-xl font-playfair font-semibold
+                   text-[#075994] hover:text-[#afb230]">
+        <span>Вижте още</span>
+        <ArrowRight className="ml-2 h-5 w-5" />
+      </Link>
 
           {/* двете изображения вдясно */}
           <img
             src="46.svg"
             alt="Корпоративни събития"
-            className="absolute bottom-0 left-[-30px] w-60 md:w-72"
+            className="absolute bottom-0 left-[-30px] w-60 md:w-72 pointer-events-none select-none"
           />
           <img
             src="46.svg"
             alt="Корпоративни събития"
-            className="absolute bottom-0 right-[-32px] w-60 md:w-72"
+            className="absolute bottom-0 right-[-32px] w-60 md:w-72 pointer-events-none select-none"
           />
         </div>
       </div>

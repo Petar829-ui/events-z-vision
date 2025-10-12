@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { ArrowRight, CheckCircle } from "lucide-react";
 
 const Teambuildings = () => {
   return (
@@ -39,17 +40,20 @@ const Teambuildings = () => {
           className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <Link 
-          to={"/training"}
-           >
-          <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-[114px]">
+          <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] mb-[114px]">
             Обучения
           </h3>
-          </Link>
           <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] leading-relaxed mb-[32px] max-w-[34ch] md:max-w-none mx-auto">
             Основните две <br />съставки на <span className="font-bold">успешният екип </span> са
              <span className="font-bold">успешните <br />хора</span> и <span className="font-bold">доверието</span> <br />между тях
           </p>
+          <Link 
+          to={"/training"}
+           >
+          <h3 className="inline-flex items-center text-xl font-playfair font-semibold text-[#2f492f] hover:text-[#075994] mt-5">
+              Вижте още <ArrowRight className="ml-2 h-5 w-5" />
+          </h3>
+          </Link>
           <img
             src="2.svg"
             alt="Корпоративни събития"
@@ -66,16 +70,19 @@ const Teambuildings = () => {
           className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <Link 
-          to={"/entertainment"}
-          >
-          <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-28 leading-relaxed">
+          <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] mb-28 leading-relaxed">
             Развлекателни
           </h3>
-          </Link>
           <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] mb-[94px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
            <span className="font-bold">Опознайте</span> колегите си <span className="font-bold">извън офиса...</span> работата ще почака
           </p>
+          <Link 
+          to={"/entertainment"}
+          >
+           <h3 className="inline-flex items-center text-xl font-playfair font-semibold text-[#2f492f] hover:text-[#075994] mt-5">
+            Вижте още <ArrowRight className="ml-2 h-5 w-5" />
+          </h3>
+          </Link>
           <img
             src="3.svg"
             alt="Корпоративни събития"
@@ -92,17 +99,20 @@ const Teambuildings = () => {
           className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
         />
         <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 min-h-[500px]">
-          <Link 
-          to={"/mixedteambuildings"}
-          >
-          <h3 className="text-4xl font-montserrat font-bold text-[#2f492f] hover:text-[#075994] mb-24 leading-relaxed">
+          <h3 className="text-4xl font-montserrat font-bold text-[#2f492f] mb-24 leading-relaxed">
            Смесени
           </h3>
-          </Link>
           <p className="text-lg md:text-2xl font-inter font-normal text-[#2f492f] mb-[39px] leading-relaxed max-w-[34ch] md:max-w-none mx-auto">
             <span className="font-bold">Балансът</span> е в основата на успеха...балансирай заедно с екипа си между
             <span className="font-bold">готино ново обучение</span> и <span className="font-bold">релакс</span>
           </p>
+          <Link 
+          to={"/mixedteambuildings"}
+          >
+           <h3 className="inline-flex items-center text-xl font-playfair font-semibold text-[#2f492f] hover:text-[#075994] mt-5">
+              Вижте още <ArrowRight className="ml-2 h-5 w-5" />
+          </h3>
+          </Link>
           <img
             src="1.svg"
             alt="Корпоративни събития"

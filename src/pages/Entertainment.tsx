@@ -31,7 +31,7 @@ const Entertainment = () => {
 
 <section className="max-w-7xl mx-auto mt-16">
   <div className="mx-auto text-3xl text-[#c1ff72] font-monsterrat font-normal pb-20">
-    <h2 className="text-center leading-tight">
+    <h2 className="text-center leading-tight px-6 sm:px-8 md:px-10">
       В Events Z Vision предлагаме широка гама от развликателни тиймбилдинг активности като авторски разработени игри и предизвикателства на открито и закрито, кулинарни, спортни и парти активности, с които вашият екип ще изживее незабравими и стойностни споделени преживявания!
     </h2>
   </div>
@@ -58,7 +58,7 @@ const Entertainment = () => {
       </div>
     {/* ред 2: текст долу вляво */}
     <div className="md:col-end-2 md:justify-self-start">
-      <p className="font-inter font-normal text-[#c1ff72] text-3xl leading-tight mt-6 md:mt-8 max-w-[46ch] text-left">
+      <p className="font-inter font-normal text-[#c1ff72] text-3xl leading-tight mt-6 md:mt-8 max-w-[46ch] text-left px-6 sm:px-8 md:px-10">
         Разгледайте някои от специално разработените ни формати, които комбинират игри, креативни предизвикателства
         и активности, вдъхновени от спецификата на екипа. Подходящи са както за малки групи, така и за големи компании,
         като винаги се адаптират към мястото и сезона.
@@ -91,7 +91,7 @@ const Entertainment = () => {
 
     {/* ред 2: текст долу вляво */}
     <div className="md:col-end-3 md:row-start-2 md:justify-self-start">
-      <p className="font-inter font-normal text-[#c1ff72] text-3xl leading-tight mt-6 md:mt-8 max-w-[46ch] text-left">
+      <p className="font-inter font-normal text-[#c1ff72] text-3xl leading-tight mt-6 md:mt-8 px-6 sm:px-8 md:px-10 max-w-[46ch] text-left">
         Леки и интелигентни формати, които развиват бързата мисъл и сплотяват екипа чрез съревнование и смях. Те са особено подходящи за офиси, които търсят забавление в по-неформална среда. Темите могат да бъдат както предложени от нас, така и разработени по ваши желание
       </p>
     </div>
@@ -121,7 +121,7 @@ const Entertainment = () => {
       </div>
     {/* ред 2: текст долу вляво */}
     <div className="md:col-end-2 md:justify-self-start">
-      <p className="font-inter font-normal text-[#c1ff72] text-3xl leading-tight mt-6 md:mt-8 max-w-[46ch] text-left">
+      <p className="font-inter font-normal text-[#c1ff72] text-3xl leading-tight mt-6 md:mt-8 px-6 sm:px-8 md:px-10 max-w-[46ch] text-left">
         Готвенето заедно е едно от най-естествените средства за изграждане на екип. Кулинарните програми насърчават креативност, сътрудничество и чувство за общо постижение, а резултатът е вкусен и споделен.
       </p>
     </div>
@@ -152,7 +152,7 @@ const Entertainment = () => {
 
     {/* ред 2: текст долу вляво */}
     <div className="md:col-end-3 md:row-start-2 md:justify-self-start">
-      <p className="font-inter font-normal text-[#c1ff72] text-3xl leading-tight mt-6 md:mt-8 max-w-[46ch] text-left">
+      <p className="font-inter font-normal text-[#c1ff72] text-3xl leading-tight mt-6 md:mt-8 px-6 sm:px-8 md:px-10 max-w-[46ch] text-left">
         Динамични активности, които развиват екипния дух чрез движение, спортни игри и състезателни предизвикателства. Подходящи са за компании, които искат да мотивират служителите си и да насърчат здравословен начин на живот.
       </p>
     </div>
@@ -182,7 +182,7 @@ const Entertainment = () => {
       </div>
     {/* ред 2: текст долу вляво */}
     <div className="md:col-end-2 md:justify-self-start">
-      <p className="font-inter font-normal text-[#c1ff72] text-3xl leading-tight mt-6 md:mt-8 max-w-[46ch] text-left">
+      <p className="font-inter font-normal text-[#c1ff72] text-3xl leading-tight mt-6 md:mt-8 px-6 sm:px-8 md:px-10 max-w-[46ch] text-left">
         За компаниите и екипите, които искат да отпразнуват постижения или просто да създадат добро настроение, парти форматите съчетават музика, танци и непринудено забавление. Този тип тиймбилдинг създава връзки чрез радостта от споделеното време.
       </p>
     </div>
