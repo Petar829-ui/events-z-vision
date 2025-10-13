@@ -43,7 +43,7 @@ const Corporate = () => {
                 aria-hidden="true"
                 className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
               />
-              <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-6 md:px-8 pt-8 md:pt-10 pb-40 md:pb-64 min-h-[420px] md:min-h-[500px]">
+              <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 md:px-8 min-h-[420px] md:min-h-[500px]">
                 <h3 className="text-[2rem] font-montserrat font-bold text-[#2f492f] mb-16 md:mb-[114px]">
                   Тиймбилдинги
                 </h3>
@@ -71,7 +71,7 @@ const Corporate = () => {
                 aria-hidden="true"
                 className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
               />
-              <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-6 md:px-8 pt-8 md:pt-10 pb-40 md:pb-64 min-h-[420px] md:min-h-[500px]">
+              <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 md:px-8 min-h-[420px] md:min-h-[500px]">
                 <h3 className="text-[2rem] font-mонтserrat font-bold text-[#2f492f] mb-10 md:mb-24 leading-relaxed">
                   Фирмени <br />партита
                 </h3>
@@ -97,7 +97,7 @@ const Corporate = () => {
                 aria-hidden="true"
                 className="absolute -bottom-3 -right-3 w-full h-full rounded-xl border-2 border-[#c1ff72] bg-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] -z-10"
               />
-              <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-6 md:px-8 pt-8 md:pt-10 pb-36 md:pb-64 min-h-[420px] md:min-h-[500px]">
+              <div className="relative bg-[#c1f772] border-2 border-white rounded-xl shadow-xl text-center overflow-hidden px-8 pt-10 pb-56 md:pb-64 md:px-8 min-h-[420px] md:min-h-[500px]">
                 
                 <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-[#2f492f] mb-10 md:mb-20 leading-relaxed">
                   Конферинции Семинари <span className="whitespace-nowrap">Работни срещи</span>
@@ -107,7 +107,7 @@ const Corporate = () => {
                   Недей да ги мислиш толкова <span className="font-bold">- ние ще се погрижим!</span>
                 </p>
                 <Link to={"/conferences"}>
-                <h3 className="inline-flex items-center text-xl font-playfair font-semibold text-[#2f492f] hover:text-[#075994] mt-5">
+                <h3 className="inline-flex items-center text-xl font-playfair font-semibold text-[#2f492f] hover:text-[#075994] mt-5 mb-7 sm:mb-0 relative">
               Вижте още <ArrowRight className="ml-2 h-5 w-5" />
               </h3>
               </Link>
