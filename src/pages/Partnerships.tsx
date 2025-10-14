@@ -70,11 +70,11 @@ const Partnerships = () => {
     className="pointer-events-none absolute left-1/2 bottom-[-17rem] -translate-x-1/2 w-[850px] h-auto object-contain -z-10 opacity-70"
   />
 
-  <div className="relative text-center">
+  <div className="relative text-center mt-20">
     <h1 className="text-4xl md:text-5xl font-poppins font-semibold text-[#c1ff72] my-12 ">
       Партньорства
     </h1>
-    <p className="text-3xl font-playfair font-semibold text-[#c1ff72] max-w-7xl mx-auto mb-20">
+    <p className="text-xl md:text-3xl font-playfair font-semibold text-[#c1ff72] max-w-7xl mx-auto mb-20">
       Вярваме, че най-добрите събития се създават <span className="text-white">заедно</span> – когато креативни и отдадени професионалисти
       обединят усилия. Ако сте <span className="text-white">фирма или специалист</span> в сферата на <span className="text-white">събитийната индустрия</span> – от ресторанти,
       зали, кетъринг, бармани, музиканти и фотографи, до декоратори, флористи, трейнъри, медийни
@@ -220,11 +220,11 @@ const Partnerships = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
             <div className="flex items-center space-x-2 text-white">
               <Mail className="h-5 w-5 text-[#c1ff72]" />
-              <span>partnerships@eventpro.bg</span>
+              <span className='text-xl'><span className='text-[#c1ff72]'>contact</span>@eventszvision.bg</span>
             </div>
             <div className="flex items-center space-x-2 text-white">
               <Phone className="h-5 w-5 text-[#c1ff72]" />
-              <span>+359 888 123 456</span>
+              <span className='text-xl'><span className='text-[#c1ff72]'>+359</span> 885928422</span>
             </div>
           </div>
         </div>

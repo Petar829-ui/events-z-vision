@@ -191,6 +191,7 @@ const Personal = () => {
 </section>
 
              {/* Call to action */}
+             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mt-20 bg-white rounded-2xl p-6 text-center max-w-3xl mx-auto relative z-[2]">
         <p className="text-2xl font-inter font-bold text-[#075994] mb-8 max-w-2xl mx-auto">
         Вашият специален ден заслужава повече от организация – заслужава магия. 
@@ -203,6 +204,7 @@ const Personal = () => {
           >
             Кликни тук, за да направиш запитване
           </Link>
+          </div>
         </div>
       </div>
 

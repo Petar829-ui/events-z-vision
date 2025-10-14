@@ -42,7 +42,6 @@ const Contacts = () => {
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 opacity-85">
           {/* Лява карта */}
           <div className="bg-white rounded-3xl shadow-xl p-8">
-            <h2 className="text-2xl font-bold text-[#f96e0c] mb-6 relative z-[1]">Информация за контакт</h2>
 
             <div className="space-y-8">
               {/* Адрес */}
@@ -94,7 +93,7 @@ const Contacts = () => {
             <div className="mt-2 flex flex-col items-left gap-4">
               {/* Facebook */}
               <a
-                href="https://facebook.com/eventszv"
+                href="https://www.facebook.com/share/1EvZYx8e4S/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-5 py-4 rounded-xl
@@ -103,12 +102,12 @@ const Contacts = () => {
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5 transition-transform group-hover:scale-110" />
-                <span className="font-medium">Facebook @UserName</span>
+                <span className="font-medium">Facebook @Events Z Vision Agency </span>
               </a>
 
               {/* Instagram */}
               <a
-                href="https://instagram.com/eventszv"
+                href="https://www.instagram.com/eventszvision/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-5 py-4 rounded-xl
@@ -117,12 +116,12 @@ const Contacts = () => {
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5 transition-transform group-hover:scale-110" />
-                <span className="font-medium">Instagram @UserName</span>
+                <span className="font-medium">Instagram @eventszvision </span>
               </a>
 
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com/company/eventszv"
+                href="https://www.linkedin.com/company/events-z-vision/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-5 py-4 rounded-xl
@@ -131,12 +130,12 @@ const Contacts = () => {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5 transition-transform group-hover:scale-110" />
-                <span className="font-medium">LinkedIn @UserName</span>
+                <span className="font-medium">LinkedIn @Events Z Vision </span>
               </a>
 
               {/* TikTok (иконка Music2) */}
               <a
-                href="https://www.tiktok.com/@eventszv"
+                href="https://www.tiktok.com/@events_z_vision"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-5 py-4 rounded-xl
@@ -145,7 +144,7 @@ const Contacts = () => {
                 aria-label="TikTok"
               >
                 <Music2 className="h-5 w-5 transition-transform group-hover:scale-110" />
-                <span className="font-medium">TikTok @UserName</span>
+                <span className="font-medium">TikTok @events_z_vision</span>
               </a>
             </div>
           </div>

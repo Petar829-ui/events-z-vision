@@ -256,6 +256,7 @@ const Services = () => {
       </section>
 
       {/* Call to action */}
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mt-20 bg-white rounded-2xl p-6 text-center max-w-3xl mx-auto relative z-[2]">
         <h2 className="text-3xl font-inter font-bold mb-4 text-[#075994]">
           Искате ли вашето събитие да бъде повече от формалност?
@@ -270,6 +271,7 @@ const Services = () => {
           >
             Кликни тук, за да направиш запитване
           </Link>
+          </div>
         </div>
       </div>
     </div>

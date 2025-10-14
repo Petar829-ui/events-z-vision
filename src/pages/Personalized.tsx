@@ -106,6 +106,7 @@ const Personalized = () => {
 </section>
 
              {/* Call to action */}
+             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mt-20 bg-[#f6f6f6] rounded-2xl p-6 text-center max-w-3xl mx-auto relative z-[2]">
         <p className="text-2xl font-inter font-bold text-[#075994] mb-8 max-w-2xl mx-auto">
         Z Experience е смела стъпка отвъд класическата организация – <span className="text-[#6e67b4]">това е начин да създадеш паметно преживяване, което говори на езика на съвременната публика и определено остава забелязано.</span>
@@ -117,6 +118,7 @@ const Personalized = () => {
           >
             Кликни тук, за да направиш запитване
           </Link>
+          </div>
         </div>
       </div>
 

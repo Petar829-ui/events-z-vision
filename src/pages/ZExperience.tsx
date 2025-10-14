@@ -22,7 +22,7 @@ const ZExperience = () => {
             <h2 className="text-5xl md:text-6xl font-poppins font-semibold text-[#30e8b0] text-center md:mt-20">
                 Z Experience <span className="text-white">събития</span>
             </h2>
-            <p className="text-3xl md:text-4xl font-playfair font-semibold text-[#30e8b0] text-center mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
+            <p className="text-xl md:text-4xl font-playfair font-semibold text-[#30e8b0] text-center mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
             Z Experience е нашата <span className="text-white">най-смела и креативна категория</span> – пространство, в което стандартните формати отстъпват място на нестандартни идеи и смели концепции. Това са <span className="text-white">събития</span>, които не просто се случват, а се преживяват. Те ангажират всички сетива – зрение, слух, вкус, усещане – и <span className="text-white">превръщат един момент в многопластова история</span>, която остава завинаги в спомените.
             </p>
             </div>
@@ -139,10 +139,10 @@ const ZExperience = () => {
     {/* ред: текст (ляво) + снимка (дясно) */}
     <div className="flex flex-col md:flex-row items-start md:items-center gap-10">
       <div className="max-w-2xl mr-auto text-left">
-        <h2 className="font-poppins font-bold text-4xl text-[#30e8b0] pb-6">
+        <h2 className="font-poppins font-bold text-3xl md:text-4xl text-[#30e8b0] pb-6">
           Какво е Z Experience?
         </h2>
-        <p className="font-inter font-normal text-3xl text-white leading-relaxed">
+        <p className="font-inter font-normal text-xl md:text-3xl text-white leading-relaxed">
           Z Experience е нашият отговор на най-новите тенденции в събитийната индустрия и вдъхновение от поколението, което променя правилата – Gen Z. Това са хората, които ценят автентичността, креативността и емоционалните преживявания повече от всичко друго. Те не търсят просто присъствие на събитие – искат да бъдат част от история, която ги докосва лично и им позволява да я споделят със света. <br /><br />
 
 Z Experience събитията се раждат от този нов начин на мислене. Те са иммерсивни, визуално въздействащи и интерактивни – събития, в които участниците не са публика, а съ-създатели. Балансът между забавление, емоция и смисъл е ключов, защото именно той прави всяко преживяване незабравимо и „споделяемо“.
@@ -186,13 +186,13 @@ Z Experience събитията се раждат от този нов начи�
       {/* текст – над декора */}
       <div className="order-1 md:order-2 max-w-2xl mr-auto text-left md:pl-16 relative z-10">
       <div className="max-w-2xl mr-auto text-left pl-16 relative z-10">
-        <h2 className="font-poppins font-bold text-4xl text-[#30e8b0] mb-6">
+        <h2 className="font-poppins font-bold text-3xl md:text-4xl text-[#30e8b0] mb-6">
           Нашият подход
         </h2>
-        <p className="font-inter text-3xl text-white leading-snug mb-6">
+        <p className="font-inter text-xl md:text-3xl text-white leading-snug mb-6">
           Нашият подход съчетава прецизност и креативност:
         </p>
-        <ul className="list-disc pl-6 marker:text-white font-inter text-3xl text-white leading-snug space-y-6">
+        <ul className="list-disc pl-6 marker:text-white font-inter text-xl md:text-3xl text-white leading-snug space-y-6">
           <li>Storyliving вместо storytelling – не просто да чуеш история, а да я преживееш.</li>
           <li>Мултисетивни изживявания – комбинация от звук, визия, вкус и атмосфера.</li>
           <li>Устойчивост и автентичност – събития с грижа към околната среда и с истински човешки елемент.</li>
@@ -215,8 +215,9 @@ Z Experience събитията се раждат от този нов начи�
 
 
              {/* Call to action */}
-      <div className="mt-20 bg-[#f6f6f6] rounded-2xl p-6 text-center max-w-3xl mx-auto relative z-[2]">
-        <p className="text-2xl font-inter font-bold text-[#075994] mb-8 max-w-2xl mx-auto">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mt-20 bg-[#f6f6f6] rounded-2xl p-6 text-center mx-auto relative z-[2]">
+        <p className="text-xl md:text-2xl font-inter font-bold text-[#075994] mb-8 max-w-2xl mx-auto">
         Z Experience е смела стъпка отвъд класическата организация – <span className="text-[#6e67b4]">това е начин да създадеш паметно преживяване, което говори на езика на съвременната публика и определено остава забелязано.</span>
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -226,6 +227,7 @@ Z Experience събитията се раждат от този нов начи�
           >
             Кликни тук, за да направиш запитване
           </Link>
+          </div>
         </div>
       </div>
 

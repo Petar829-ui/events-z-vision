@@ -207,6 +207,7 @@ const Corporate = () => {
 </section>
 
       {/* CTA */}
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mt-20 bg-white rounded-2xl p-6 text-center max-w-3xl mx-auto relative z-[2]">
         <p className="text-2xl font-inter font-bold text-[#075994] mb-8 max-w-2xl mx-auto">
           Ако планирате тиймбилдинг, конференция или фирмено парти и искате то да бъде повече от стандартно събитие,
@@ -219,6 +220,7 @@ const Corporate = () => {
           >
             Кликни тук, за да направиш запитване
           </Link>
+          </div>
         </div>
       </div>
 

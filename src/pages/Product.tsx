@@ -109,6 +109,7 @@ const Product = () => {
 </section>
 
              {/* Call to action */}
+             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mt-20 bg-[#f6f6f6] rounded-2xl p-6 text-center max-w-3xl mx-auto relative z-[2]">
         <p className="text-2xl font-inter font-bold text-[#075994] mb-8 max-w-2xl mx-auto">
         Ако искате вашият продукт или марка да бъдат не просто видени, а преживени – Z Experience е правилният избор. <span className="text-[#6e67b4]">Свържете се с нас и ще превърнем идеята ви в събитие, за което ще се говори!</span>
@@ -120,6 +121,7 @@ const Product = () => {
           >
             Кликни тук, за да направиш запитване
           </Link>
+          </div>
         </div>
       </div>
 

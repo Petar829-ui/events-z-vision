@@ -22,6 +22,10 @@ import ZExperience from './pages/ZExperience';
 import AuthorsZ from './pages/AuthorsZ';
 import Personalized from './pages/Personalized';
 import Product from './pages/Product';
+import Delivery from './pages/Delivery';
+import Politics from './pages/Politics';
+import Politicsfor from './pages/Politicsfor';
+import Generalterms from './pages/Generalterms';
 import Contacts from './pages/Contacts';
 import Inquiry from './pages/Inquiry';
 import ScrollToTop from './components/ScrollToTop';
@@ -54,6 +58,10 @@ function App() {
           <Route path='/AuthorsZ' element={<AuthorsZ />} />
           <Route path='/Personalized' element={<Personalized />} />
           <Route path='/Product' element={<Product />} />
+          <Route path='/Delivery' element={<Delivery />} />
+          <Route path='/Politics' element={<Politics />} />
+          <Route path='/Politicsfor' element={<Politicsfor />} />
+          <Route path='/Generalterms' element={<Generalterms />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/inquiry" element={<Inquiry />} />
         </Routes>

@@ -28,10 +28,10 @@ const PersonalCelebrations = () => {
     <div className="relative text-[#ebee68] font-inter font-normal">
     <div className="grid grid-cols-1 md:grid-cols-2 item-start gap-8 mad:gap-12">
 <div className="space-y-6 md:pr-8">
-  <h2 className="font-poppins font-bold text-4xl pb-2">
+  <h2 className="font-poppins font-bold text-3xl md:text-4xl pb-2">
     Нашите услуги
   </h2>
-  <ul className="list-disc pl-6 space-y-4 text-white text-2xl md:text-2xl leading-relaxed font-inter marker:text-[#ebee68]">
+  <ul className="list-disc pl-6 space-y-4 text-white text-xl md:text-2xl leading-relaxed font-inter marker:text-[#ebee68]">
     <p className="text-[#ebee68]">Вашите лични поводи заслужават специално внимание и организация, която превръща момента в незабравимо преживяване. В тази категория предлагаме:
     </p>
     <li>
@@ -114,10 +114,10 @@ const PersonalCelebrations = () => {
       {/* текст – над декора */}
       <div className="order-1 md:order-2 max-w-2xl mr-auto text-left md:pl-16 relative z-10">
       <div className="max-w-2xl mr-auto text-left pl-16 relative z-10">
-        <h2 className="font-poppins font-bold text-4xl text-[#ebee68] mb-6">
+        <h2 className="font-poppins font-bold text-3xl md:text-4xl text-[#ebee68] mb-6">
           Нашият подход
         </h2>
-        <p className="font-inter text-3xl text-[#ebee68] leading-snug mb-6">
+        <p className="font-inter text-xl md:text-3xl text-[#ebee68] leading-snug mb-6">
         Вярваме, че личните събития са отражение на хората, които ги празнуват. Затова започваме с разговор, за да разберем какво е важно за вас – атмосферата, темата, изненадите. След това изграждаме концепция и координираме всички елементи: локация, декор, музика, програма, фото и видеозаснемане. Можете да изберете цялостна организация или да поверите на нас само определени части, докато останалото остане във ваши ръце.
         </p>
       </div>
@@ -140,10 +140,10 @@ const PersonalCelebrations = () => {
     <div className="relative text-[#ebee68] font-inter font-normal">
     <div className="grid grid-cols-1 md:grid-cols-2 item-start gap-8 mad:gap-12">
 <div className="space-y-6 md:pr-8">
-  <h2 className="font-poppins font-bold text-4xl pb-2">
+  <h2 className="font-poppins font-bold text-3xl md:text-4xl pb-2">
     Защо да ни се доверите? 
   </h2>
-<p className="text-3xl mb:3xl">
+<p className="text-xl mb:text-3xl">
     Празниците трябва да се изживяват, а не да се организират в напрежение. Ние ви помагаме да се освободите от стреса и да се насладите на момента. Работим с широка мрежа от партньори – декоратори, музиканти, фотографи, кетъринг фирми и аниматори – за да създадем празник, който е изцяло във вашия стил. Независимо дали искате елегантност, забавление или нещо напълно нестандартно, ще ви предложим решение, което носи радост и оставя емоция.
 </p>
 </div>
@@ -172,7 +172,8 @@ const PersonalCelebrations = () => {
       </div>
     </section>
 
-             {/* Call to action mt-20 bg-white rounded-2xl p-6 text-center max-w-3xl mx-auto relative z-[2]*/}
+             {/* Call to action */}
+             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative z-[20] mt-6 bg-white rounded-2xl p-6 text-center max-w-3xl mx-auto">
             <p className="text-2xl font-inter font-bold text-[#075994] mb-5 max-w-2xl mx-auto">
               Вашият празник е вашата история. <span className="text-[#f96e0c]">Нека я превърнем в преживяване, което ще се помни остави следа у вас и гостите ви!</span>
@@ -184,6 +185,7 @@ const PersonalCelebrations = () => {
               >
                 Кликни тук, за да направиш запитване
               </Link>
+              </div>
             </div>
           </div>
 

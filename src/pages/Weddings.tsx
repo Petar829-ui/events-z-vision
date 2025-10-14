@@ -168,7 +168,8 @@ const Weddings = () => {
       </div>
     </section>
 
-             {/* Call to action mt-20 bg-white rounded-2xl p-6 text-center max-w-3xl mx-auto relative z-[2]*/}
+             {/* Call to action */}
+             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative z-[20] mt-6 bg-white rounded-2xl p-6 text-center max-w-3xl mx-auto">
             <p className="text-2xl font-inter font-bold text-[#075994] mb-5 max-w-2xl mx-auto">
               Вашата сватба е вашата история. <span className="text-[#f96e0c]">Нека я разкажем заедно</span> – с любов, елегантност и внимание към всеки детайл!
@@ -180,6 +181,7 @@ const Weddings = () => {
               >
                 Кликни тук, за да направиш запитване
               </Link>
+              </div>
             </div>
           </div>
 
