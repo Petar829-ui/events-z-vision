@@ -22,7 +22,7 @@ const Teambuildings = () => {
             <h2 className="text-[44px] sm:text-5xl md:text-6xl lg:text-6xl font-poppins font-semibold text-[#c1ff72] text-center -mt-[40px]">
                 Тийм<span className="text-white">билдинги</span>
             </h2>
-            <p className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl font-poppins font-semibold text-[#c1ff72] text-center mt-24 sm:mt-36 md:mt-46 lg:mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
+            <p className="text-2xl md:text-3xl lg:text-3xl font-poppins font-semibold text-[#c1ff72] text-center mt-24 sm:mt-36 md:mt-46 lg:mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
             Един <span className="text-white">екип</span> е силен тогава, когато споделя повече от работни задачи – <span className="text-white">когато членовети му заедно
             преживяват моменти</span>, които ги сближават, усъвършенстват и вдъхновяват.
             </p>
@@ -127,7 +127,7 @@ const Teambuildings = () => {
     <section className="mt-16 relative z-[10]">
        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid place-items-stretch p-6 rounded-3xl bg-[#f6f6f6]">
-           <p className="text-3xl text-[#075994] font-inter font-semibold text-center">
+           <p className="text-xl md:text-3xl text-[#075994] font-inter font-semibold text-center">
             Тиймбилдингите са <span className="text-[#f96e0c]">много повече</span> от приятна пауза в работния ритъм – те са <span className="text-[#f96e0c]">стратегически инструмент</span>
             за развитие на екипа и работната динамика, като същевременно могат и да <span className="text-[#f96e0c]">обогатят и подобрят знанията
             и уменията</span> на служителите
@@ -153,7 +153,7 @@ const Teambuildings = () => {
         <h2 className="font-poppins font-bold text-4xl text-[#c1ff72] pb-6">
           Обучителни 
         </h2>
-        <p className="font-inter font-normal text-3xl text-[#c1ff72] leading-relaxed">
+        <p className="font-inter font-normal text-xl md:text-3xl text-[#c1ff72] leading-relaxed">
         Тиймбилдингите с цел обучение развиват умения, които пряко влияят върху ефективността на работата.
         Комуникация, лидерство, креативност, способност за работа под напрежение и др. се упражняват в среда,
         която е стимулираща и вдъхновяваща. Така служителите не само усвояват нови личностни и работни умения,
@@ -193,7 +193,7 @@ const Teambuildings = () => {
         <h2 className="font-poppins font-bold text-4xl text-[#c1ff72] mb-6">
           Развлекателни
         </h2>
-        <p className="font-inter text-3xl text-[#c1ff72] leading-snug mb-6">
+        <p className="font-inter text-xl md:text-3xl text-[#c1ff72] leading-snug mb-6">
         Развлекателните тиймбилдинги, от своя страна, носят лекота, смях и енергия, които сближават хората и
         укрепват връзките помежду им. Те създават атмосфера на доверие, в която колегите се виждат не само като
         професионалисти, а и като личности. Това прави ежедневната работа по-естествена и хармонична, а екипът –<br /> 

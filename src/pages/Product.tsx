@@ -35,10 +35,10 @@ const Product = () => {
     <div className="relative text-[#30e8b0] font-inter font-normal">
     <div className="grid grid-cols-1 md:grid-cols-2 item-start gap-8 mad:gap-12">
 <div className="space-y-6 md:pr-8">
-  <h2 className="font-poppins font-bold text-4xl pb-2">
+  <h2 className="font-poppins font-bold text-3xl md:text-4xl pb-2">
     Какво представлява услугата?
   </h2>
-  <p className="font-itner font-normal text-white text-2xl">
+  <p className="font-itner font-normal text-white text-xl md:text-2xl">
     В днешния свят стандартните презентации и кампании вече не са достатъчни. Хората искат да бъдат докоснати емоционално, да усетят продукта или марката като част от собственото си преживяване. Именно това предлагат продуктовите и рекламни Z Experience събития – иновативна услуга, която превръща бранд комуникацията в изкуство. Предлагаме евент мениджъмт услуги, промоутъри и хостеси, както и персонализирани декорации на щандове и зали<br /><br />
 
 Тук продуктът и брандът оживяват – чрез интерактивни инсталации, мултисетивни преживявания, визуален ентъртейнмънт, музика и storytelling. Участниците не са просто публика, а активни съ-създатели на емоцията, която марката иска да предаде. Това е начин да изградите връзка, която остава отвъд събитието – спомен, асоциация, емоция. и да затвърдите бранд идентичността си.
@@ -47,7 +47,7 @@ const Product = () => {
 
                                   {/* IMG 6 */}
           <div className="justify-self-center md:justify-self-end self-start">
-          <div className="w-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center pb-8 pl-10 md:mt-12">
+          <div className="w-[380px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center pb-8 pl-7 md:pl-10 md:mt-12">
               <figure className="mt-10 justify-center">
                 <img
                   src="58.svg"
@@ -86,16 +86,16 @@ const Product = () => {
       
 <div className="order-1 md:order-2 max-w-2xl mr-auto text-left md:pl-16 relative z-10">
       {/* текст – над декора */}
-      <div className="max-w-2xl mr-auto text-left pl-16 relative z-10">
-        <h2 className="font-poppins font-bold text-4xl text-[#30e8b0] mb-6">
+      <div className="max-w-2xl mr-auto text-left md:pl-16 relative z-10">
+        <h2 className="font-poppins font-bold text-3xl md:text-4xl text-[#30e8b0] mb-6">
           Нашият подход
         </h2>
-        <p className="font-inter text-3xl text-white leading-snug mb-6">
+        <p className="font-inter text-xl md:text-3xl text-white leading-snug mb-6">
         Нашият подход е да създаваме кампании и продуктови събития, които говорят на съвременната аудитория и потребители, които ценят автентичността и уникалните моменти. От брандирани подаръци и фотозони, до устойчиви концепции и Instagrammable детайли, всяко продуктово събитие се превръща в запомняща се история, която живее както офлайн, така и онлайн.
         </p>
       </div>
       </div>
-       <div className="order-2 md:order-1 mw-[420px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center pb-8 pl-10 mt-22">
+       <div className="order-2 md:order-1 mw-[420px] w-[380px] sm:w-[460px] md:w-[600px] aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center pb-8 pl-7 md:pl-10 mt-22">
         <figure className="mt-10 justify-center">
         <img
           src="59.svg"

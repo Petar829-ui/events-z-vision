@@ -35,10 +35,10 @@ const Personalized = () => {
     <div className="relative text-[#30e8b0] font-inter font-normal">
     <div className="grid grid-cols-1 md:grid-cols-2 item-start gap-8 mad:gap-12">
 <div className="space-y-6 md:pr-8">
-  <h2 className="font-poppins font-bold text-4xl pb-2">
+  <h2 className="font-poppins font-bold text-3xl md:text-4xl pb-2">
     Какво представлява услугата?
   </h2>
-  <p className="font-itner font-normal text-white text-3xl">
+  <p className="font-itner font-normal text-white text-xl md:text-3xl">
     Ако не припознавате вашето събитие в нито една от останалите категории сте на точното място. Услугата ни  “Персонализирани Z Experience събития” e идеална за всеки, който иска да излезе извън стандартните решения и да създаде нещо автентично – било то артистична вечер, концептуално парти или социално-културен проект. Нашата роля е да добавим професионализъм, креативен дизайн и техническа подкрепа, така че вашата визия да бъде реализирана безупречно.
   </p>
 </div>
@@ -82,11 +82,11 @@ const Personalized = () => {
     <div className="flex flex-col md:flex-row items-start md:items-center relative">
       {/* текст – над декора */}
       <div className="order-1 md:order-2 max-w-2xl mr-auto text-left md:pl-16 relative z-10">
-      <div className="max-w-2xl mr-auto text-left pl-16 relative z-10">
-        <h2 className="font-poppins font-bold text-4xl text-[#30e8b0] mb-6">
+      <div className="max-w-2xl mr-auto text-left md:pl-16 relative z-10">
+        <h2 className="font-poppins font-bold text-3xl md:text-4xl text-[#30e8b0] mb-6">
           Нашият подход
         </h2>
-        <p className="font-inter text-3xl text-white leading-snug mb-6">
+        <p className="font-inter text-xl md:text-3xl text-white leading-snug mb-6">
         За нас няма „твърди рамки“ – именно вашият личен почерк, смели хрумвания и нестандартни желания са това, което превръща един формат в неповторимо преживяване. Вие определяте темата, посланието или атмосферата, която искате да създадете, а ние изграждаме структура, сценарий и логистика около нея, като се осланяме на най новите трендове сред Gen Z поколението.
         </p>
       </div>

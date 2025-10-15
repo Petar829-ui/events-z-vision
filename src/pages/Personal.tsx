@@ -22,7 +22,7 @@ const Personal = () => {
             <h2 className="text-6xl font-poppins font-semibold text-[#ebee68] text-center mt-20">
                 Лични <span className="text-white">събития</span>
             </h2>
-            <p className="text-3xl font-playfair font-bold text-[#ebee68] text-center mt-20 md:mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
+            <p className="text-xl md:text-3xl font-playfair font-bold text-[#ebee68] text-center mt-20 md:mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
             <span className="text-white">Личните празници</span> са моменти, които <span className="text-white">остават завинаги</span> – първи рождени дни, сватби, юбилеи, кръщенета или просто специални поводи, които искаме да споделим с най-близките си хора. Те са част от историята ни и 
             <span className="text-white">заслужават внимание, грижа и подходяща организация</span>, която да превърне деня в истинско преживяване.
             </p>
@@ -128,7 +128,7 @@ const Personal = () => {
         <h2 className="font-poppins font-bold text-4xl text-[#ebee68] pb-6">
           Защо ние? 
         </h2>
-        <p className="font-inter font-normal text-3xl text-[#ebee68] leading-relaxed">
+        <p className="font-inter font-normal text-xl md:text-3xl text-[#ebee68] leading-relaxed">
         Да поверите организацията на личното си събитие на професионалисти означава да си подарите спокойствие и увереност, че всеки детайл ще бъде изпипан. Ние вярваме, че празниците не са просто формалност, а изживяване, което трябва да носи емоция и да се помни. Работим със селектирана мрежа от партньори – от флорална декорация и кетъринг, до фотографи и музиканти – за да ви осигурим не просто услуга, а цялостно изживяване.
         </p>
       </div>
@@ -174,7 +174,7 @@ const Personal = () => {
         <h2 className="font-poppins font-bold text-4xl text-[#ebee68] mb-6">
           Нашият подход
         </h2>
-        <p className="font-inter text-3xl text-[#ebee68] leading-snug mb-6">
+        <p className="font-inter text-xl md:text-3xl text-[#ebee68] leading-snug mb-6">
         Всяко събитие започва с разговор – за вашите мечти, идеи и очаквания. Изслушваме ви внимателно и превръщаме желанията ви в конкретна концепция. След това поемаме цялата организация – от локацията и декорацията, до видеозаснемането и финалните детайли. Нашият подход съчетава креативност и прецизност, за да гарантира, че събитието ще бъде уникално и автентично, както е и вашата история.
         </p>
       </div>

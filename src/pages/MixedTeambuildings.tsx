@@ -19,11 +19,11 @@ const MixedTeambuildings = () => {
           style={{ backgroundImage: "url('B18.svg')" }}
         />
         <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-24 md:pt-56 pb-16">
-          <h2 className="text-[47px] md:text-6xl lg:text-6xl font-poppins font-semibold text-[#c1ff72] leading-tight text-center">
+          <h2 className="text-5xl md:text-6xl lg:text-6xl font-poppins font-semibold text-[#c1ff72] leading-tight text-center">
             Смесени тиймбилдинги <br />
             <span className="text-white">(обучение + развлечение)</span>
           </h2>
-          <p className="text-2xl md:text-4xl font-playfair font-semibold text-[#c1ff72] text-center mt-24 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
+          <p className="text-xl md:text-4xl font-playfair font-semibold text-[#c1ff72] text-center mt-24 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
             <span className="text-white">Смесените тиймбилдинги </span>
             комбинират най-доброто от двата свята – енергията на забавлението и
             ползите от обучението. Те са идеалното решение за компании, които
@@ -50,7 +50,7 @@ const MixedTeambuildings = () => {
             </div>
 
             {/* Текст 1 */}
-            <p className="font-inter font-normal text-[#c1ff72] text-2xl md:text-3xl leading-tight max-w-[46ch] text-left mb-0 md:mb-16">
+            <p className="font-inter font-normal text-[#c1ff72] text-xl md:text-3xl leading-tight max-w-[46ch] text-left mb-0 md:mb-16">
               Този тип програми създават динамична среда, в която играта и
               ученето вървят ръка за ръка. Екипът се изправя пред различни
               предизвикателства, които едновременно изискват креативно мислене,
@@ -83,7 +83,7 @@ const MixedTeambuildings = () => {
             </div>
 
             {/* Текст 2 */}
-            <p className="font-inter font-normal text-[#c1ff72] text-2xl md:text-3xl leading-tight max-w-[46ch] text-left">
+            <p className="font-inter font-normal text-[#c1ff72] text-xl md:text-3xl leading-tight max-w-[46ch] text-left">
               Персонализираните формати се разработват спрямо спецификата на
               всяка компания и целите, които тя си поставя. Те могат да
               включват елементи от спортни или кулинарни активности, куизове или
@@ -110,7 +110,7 @@ const MixedTeambuildings = () => {
       <section className="py-16 bg-[#075994]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center p-10 rounded-3xl bg-[#f6f6f6] relative z-[10]">
-            <h2 className="text-3xl md:text-3xl font-inter font-semibold text-[#075994] mb-4">
+            <h2 className="text-3xl font-inter font-semibold text-[#075994] mb-4">
               Готови ли сте за преживяване, което съчетава забавление и реални
               резултати? <span className="text-[#f96e0c]">Ние ще ви помогнем да създадете именно такъв тиймбилдинг.</span>
             </h2>

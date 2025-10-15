@@ -100,15 +100,15 @@ const Header = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4 min-h-16">
+        <div className="flex justify-between items-center py-4 min-h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 absolute md:left-10 lg:left-10 xl:left-10">
             <img
-              src="Events Z visioN logo1.pdf.png"
+              src="Events Z visioN logo1.svg"
               alt="Events Z Vision Logo"
-              className="h-12 w-12 object-contain"
+              className="h-32 w-32 object-contain"
             />
-            <span
+           <span
               className={`text-xl font-inter font-bold ${
                 scrolled ? "text-gray-900" : "text-white"
               }`}

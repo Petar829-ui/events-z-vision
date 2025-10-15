@@ -24,13 +24,25 @@ const Home = () => {
             src="test.svg" 
             alt="img"
             className="
-              absolute hidden md:block pointer-events-none z-0 max-w-none h-auto
+              absolute hidden md:block pointer-events-none top-10 sm:top-20 md:top-17 z-0 max-w-none h-auto
               [width:clamp(480px,45vw,850px)]
               [right:clamp(8px,8vw,140px)]
               [top:clamp(16px,6vh,64px)]
               lg:[right:clamp(24px,9vw,160px)]
               xl:[right:clamp(32px,10vw,180px)]
-              xl:top-10
+            "
+          />
+          <img 
+            src="63.svg" 
+            alt="img"
+            className="
+              absolute hidden md:block pointer-events-none top-10 sm:top-20 md:top-17 z-0 max-w-none h-auto
+              [width:clamp(480px,45vw,750px)]
+              [right:clamp(8px,8vw,140px)]
+              [top:clamp(16px,6vh,64px)]
+              lg:[right:clamp(24px,9vw,160px)]
+              xl:[right:clamp(32px,10vw,180px)]
+              
             "
           />
         </section>
@@ -134,14 +146,14 @@ const Home = () => {
           className="pointer-events-none absolute left-1/2 top-2/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-auto object-contain z-0 opacity-70"
         />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-7xl font-caveat Display bont-serif text-[#c1ff72] mb-6 text-center relative z-[10]">
+          <h1 className="text-6xl md:text-7xl font-caveat Display bont-serif text-[#c1ff72] mb-6 text-center relative z-[10]">
             Кои сме ние?
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="z-[10]">
               <div className="space-y-6">
                 <div>
-                  <p className="text-2xl text-[#c1ff72] font-inter font-normal leading-relaxed mt-10">
+                  <p className="text-xl md:text-2xl text-[#c1ff72] font-inter font-normal leading-relaxed mt-10">
                     Ние сме новото поколение създатели на събития – с душа, посока и визия. Създаваме
                     преживявания, които доказват, че животът е красив, когато се споделя с готини хора, в правилната
                     среда и по вълнуващ, автентичен и неподправен начин. В основата ни стоят новаторството, страстта и
@@ -151,7 +163,7 @@ const Home = () => {
 
                 <div>
                   <h3 className="text-5xl font-caveat font-normal text-[#c1ff72] mb-3">Нашата мисия</h3>
-                  <p className="text-2xl text-[#c1ff72] leading-relaxed font-inter font-normal">
+                  <p className="text-xl md:text-2xl text-[#c1ff72] leading-relaxed font-inter font-normal">
                     Мисията ни е да превръщаме всяко ваше събитие в споделена история, като съчетаваме прецизност с
                     емоция,свежест с професионализъм, превръщайки всеки момент в значим и запомнящ се.
                   </p>
@@ -161,7 +173,7 @@ const Home = () => {
 
             <div className="bg-[#c1ff72] p-8 rounded-xl z-[10]">
               <h3 className="text-5xl font-caveat font-normal text-[#075994] mb-6">Какво ни отличава?</h3>
-              <ul className="font-inter font-normal text-lg">
+              <ul className="font-inter font-normal text-xl md:text-lg">
                 {[
                   "Не разглеждаме събитията просто като услуга, а като артистичен израз и личен наш ангажимент. Слушаме внимателно. Мечтаем заедно с клиента. Надскачаме очакванията. Комбинираме достъпност с безкомпромисно качество, smart решения и авторски почерк. Създаваме нови стандарти в мениджмънта на събития -корпоративни и лични.",
                 ].map((item, index) => (
@@ -180,7 +192,7 @@ const Home = () => {
       <section className="py-16 bg-[#075994]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center p-10 rounded-xl bg-[#f6f6f6] relative z-[10]">
-            <h2 className="text-3xl md:text-3xl font-inter font-semibold text-[#075994] mb-4">
+            <h2 className="text-3xl font-inter font-semibold text-[#075994] mb-4">
               Готов ли си да изживееш <span className="text-[#f96e0c]">мечтаното събитие</span>?
             </h2>
             <p className="font-inter font-normal text-xl text-[#075994] m-6">

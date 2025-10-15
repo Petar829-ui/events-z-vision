@@ -19,10 +19,10 @@ const Training = () => {
           style={{ backgroundImage: "url('B16.svg')" }}
         />
         <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-44 pb-16">
-            <h2 className="text-5xl md:text-6xl lg:text-6xl font-poppins font-semibold text-[#c1ff72] text-center mt-10 md:mt-20">
+            <h2 className="text-5xl md:text-6xl font-poppins font-semibold text-[#c1ff72] text-center mt-10 md:mt-20">
                 Обучителни <span className="text-white">тиймбилдинги</span>
             </h2>
-            <p className="text-2xl md:text-4xl lg:text-4xl font-playfair font-semibold text-[#c1ff72] text-center mt-24 md:mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
+            <p className="text-xl md:text-4xl font-playfair font-semibold text-[#c1ff72] text-center mt-24 md:mt-56 max-w-6xl md:max-w-7xl lg:max-w-[90rem] mx-auto leading-relaxed">
             Фокусът при <span className="text-white">обучителните тиймбилдинги</span> е върху придобиването на 
             <span className="text-white"> реални и практически приложими знания умения</span> от служителите, които правят работата по-ефективна и отношенията в екипа по-силни
             </p>
@@ -55,7 +55,7 @@ const Training = () => {
 
     {/* Текст отдолу центриран (ред 2) */}
     <div className="md:col-span-2">
-      <p className="font-inter font-normal text-[#c1ff72] text-3xl text-left leading-tight mt-10 px-6 sm:px-8 md:px-10 max-w-[64ch] mx-auto">
+      <p className="font-inter font-normal text-[#c1ff72] text-xl md:text-3xl text-left leading-tight mt-10 px-6 sm:px-8 md:px-10 max-w-[64ch] mx-auto">
         Обучителните тиймбилдинги, посветени на работата в екип, са насочени към изграждане на доверие, 
         ефективна комуникация и усещане за обща цел. Участниците преминават през различни активности, 
         които ги учат да комбинират силните си страни, да се подкрепят в предизвикателни ситуации и 
@@ -93,7 +93,7 @@ const Training = () => {
 
     {/* Текст отдолу центриран (ред 2) */}
     <div className="md:col-span-2">
-      <p className="font-inter font-normal text-[#c1ff72] text-3xl text-left leading-tight mt-10 px-6 sm:px-8 md:px-10 max-w-[64ch] mx-auto">
+      <p className="font-inter font-normal text-[#c1ff72] text-xl md:text-3xl text-left leading-tight mt-10 px-6 sm:px-8 md:px-10 max-w-[64ch] mx-auto">
         Фокусът тук е върху индивидуалното развитие, което води до по-ефективни и уверени екипи. Програмата обхваща теми като емоционална интелигентност, управление на стреса, адаптивност и умения за решаване на конфликти. Участниците се учат как да бъдат по-гъвкави, да изразяват себе си уверено и да намират решения дори в напрегнати ситуации. Този тип тиймбилдинг е подходящ за компании от всякакъв мащаб, които искат да подкрепят устойчивото развитие на своите служители и да изградят култура на личностно и професионално израстване.
       </p>
     </div>
@@ -127,7 +127,7 @@ const Training = () => {
 
     {/* Текст отдолу центриран (ред 2) */}
     <div className="md:col-span-2">
-      <p className="font-inter font-normal text-[#c1ff72] text-3xl text-left leading-tight mt-10 px-6 sm:px-8 md:px-10 max-w-[64ch] mx-auto">
+      <p className="font-inter font-normal text-[#c1ff72] text-xl md:text-3xl text-left leading-tight mt-10 px-6 sm:px-8 md:px-10 max-w-[64ch] mx-auto">
         Този вид тиймбилдинг развива стратегическо мислене, умения за планиране и ефективно разпределяне на задачите. Чрез практическо обучение участниците се учат как да управляват времето си, да приоритизират и да работят организирано дори под напрежение. Програмата е особено полезна за екипи, които работят по сложни проекти или имат кратки срокове за изпълнение. Подходящ е за фирми, които се разширяват на нови пазари, въвеждат нови процеси или искат да развият лидерски потенциал в служителите си.
       </p>
     </div>
@@ -160,7 +160,7 @@ const Training = () => {
 
     {/* Текст отдолу центриран (ред 2) */}
     <div className="md:col-span-2">
-      <p className="font-inter font-normal text-[#c1ff72] text-3xl text-left leading-tight mt-10 px-6 sm:px-8 md:px-10 max-w-[64ch] mx-auto">
+      <p className="font-inter font-normal text-[#c1ff72] text-xl md:text-3xl text-left leading-tight mt-10 px-6 sm:px-8 md:px-10 max-w-[64ch] mx-auto">
         Тиймбилдингите, посветени на фирмените ценности, имат за цел да изградят усещане за принадлежност и да затвърдят културата на компанията. Чрез carefully подбрани активности служителите не само научават повече за ценностите на организацията, но и ги преживяват в действие – като споделена отговорност, етика, иновация или устойчивост. Този формат е изключително подходящ за компании, които преминават през ребрандинг, въвеждане на нова визия или обединяване на отдели и екипи. В резултат се създава по-силна връзка между хората и ясно усещане, че работят за една обща цел.
       </p>
     </div>
@@ -193,7 +193,7 @@ const Training = () => {
 
     {/* Текст отдолу центриран (ред 2) */}
     <div className="md:col-span-2">
-      <p className="font-inter font-normal text-[#c1ff72] text-3xl text-left leading-tight mt-10 px-6 sm:px-8 md:px-10 max-w-[64ch] mx-auto">
+      <p className="font-inter font-normal text-[#c1ff72] text-xl md:text-3xl text-left leading-tight mt-10 px-6 sm:px-8 md:px-10 max-w-[64ch] mx-auto">
         Тематичните формати превръщат обучението в преживяване с конкретна цел и атмосфера. Те могат да бъдат свързани с иновации, устойчивост, креативност, спорт или друга тема, която резонира с екипа и визията на компанията. Всяко събитие се изработва индивидуално и се адаптира към специфичните нужди и цели на бизнеса. Подходящи са както за стартиращи организации, които искат да изградят идентичност, така и за утвърдени компании, които търсят свеж и различен начин да мотивират хората си. Резултатът е преживяване, което съчетава обучение, емоция и запомняща се история.
       </p>
     </div>
@@ -203,7 +203,7 @@ const Training = () => {
       <section className="py-16 bg-[#075994]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center p-10 rounded-3xl bg-[#f6f6f6] relative z-[10]">
-            <h2 className="text-3xl md:text-3xl font-inter font-semibold text-[#075994] mb-4">
+            <h2 className="text-2xl md:text-3xl font-inter font-semibold text-[#075994] mb-4">
               Ако планирате да да осъществите обучителен тиймбилдинг с  екипа/колегите си - <span className='text-[#f96e0c]'>доверете ни се, заедно можем да създадем идеалният обучителен тиймбилдинг!</span>
             </h2>
             <div className="mt-8">

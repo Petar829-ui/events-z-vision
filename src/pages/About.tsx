@@ -18,7 +18,7 @@ const About = () => {
             <h1 className="text-5xl md:text-6xl font-poppins font-semibold text-[#c1ff72] py-28 md:mb-16">
               За <span className="text-white">нас</span>
             </h1>
-            <p className="text-2xl md:text-3xl font-playfair font-semibold text-[#c1ff72] py-28 mx-auto leading-relaxed">
+            <p className="text-xl md:text-3xl font-playfair font-semibold text-[#c1ff72] py-28 mx-auto leading-relaxed">
               Организацията на събития е <span className="text-white">изкуство</span>, в което всеки детайл има значение.
               В <span className="text-white">Events Z Vision</span> предлагаме пълна гама услуги за <span className="text-white">корпоративни събития,
               лични празници и нестандартни “Z Experience” формати.</span> Събитията,

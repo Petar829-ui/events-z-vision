@@ -35,10 +35,10 @@ const Weddings = () => {
     <div className="relative text-[#ebee68] font-inter font-normal">
     <div className="grid grid-cols-1 md:grid-cols-2 item-start gap-8 mad:gap-12">
 <div className="space-y-6 md:pr-8">
-  <h2 className="font-poppins font-bold text-4xl pb-2">
+  <h2 className="font-poppins font-bold text-3xl md:text-4xl pb-2">
     Нашите услуги
   </h2>
-  <ul className="list-disc pl-6 space-y-4 text-white text-2xl md:text-2xl leading-relaxed font-inter marker:text-[#ebee68]">
+  <ul className="list-disc pl-6 space-y-4 text-white text-xl md:text-2xl leading-relaxed font-inter marker:text-[#ebee68]">
     <li>
       <span className="font-bold text-[#ebee68]">Сватбен планер</span><span className="text-[#ebee68]"> – цялостно планиране на сватбата, график, консултации и подбор на доставчици. </span>
     </li>
@@ -108,10 +108,10 @@ const Weddings = () => {
       {/* текст – над декора */}
       <div className="order-1 md:order-2 max-w-2xl mr-auto text-left md:pl-16 relative z-10">
       <div className="max-w-2xl mr-auto text-left pl-16 relative z-10">
-        <h2 className="font-poppins font-bold text-4xl text-[#ebee68] mb-6">
+        <h2 className="font-poppins font-bold text-3xl md:text-4xl text-[#ebee68] mb-6">
           Нашият подход
         </h2>
-        <p className="font-inter text-3xl text-[#ebee68] leading-snug mb-6">
+        <p className="font-inter text-xl md:text-3xl text-[#ebee68] leading-snug mb-6">
         Всяко събитие започва с разговор – за вашите мечти, идеи и очаквания. Изслушваме ви внимателно и превръщаме желанията ви в конкретна концепция. След това поемаме цялата организация – от локацията и декорацията, до видеозаснемането и финалните детайли. Нашият подход съчетава креативност и прецизност, за да гарантира, че събитието ще бъде уникално и автентично, както е и вашата история.
         </p>
       </div>
@@ -135,10 +135,10 @@ const Weddings = () => {
     <div className="relative text-[#ebee68] font-inter font-normal">
     <div className="grid grid-cols-1 md:grid-cols-2 item-start gap-8 mad:gap-12">
 <div className="space-y-6 md:pr-8">
-  <h2 className="font-poppins font-bold text-4xl pb-2">
+  <h2 className="font-poppins font-bold text-3xl md:text-4xl pb-2">
     Възможност за частична организация от наша страна 
   </h2>
-<p className="text-2xl mb:3xl">
+<p className="text-xl mb:text-3xl">
     Не всяка двойка има нужда от цялостна организация – понякога младоженците искат да бъдат активно включени и сами да поемат част от подготовката. В такива случаи ние предлагаме частична организация, при която се грижим за определени елементи, докато вие запазвате контрол върху останалото.
 Можем да съдействаме за избор на локация, декорация, музика, водещ, кетъринг или професионално фото и видеозаснемане, докато други детайли – като например списъка с гости или подбора на облекла – остават изцяло във ваши ръце. Така получавате гъвкавост и спокойствие, като същевременно знаете, че ключовите части от сватбата ви са поверени на професионалисти.
 </p>

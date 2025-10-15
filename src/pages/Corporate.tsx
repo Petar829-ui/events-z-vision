@@ -127,7 +127,7 @@ const Corporate = () => {
       <section className="mt-16 relative z-[10]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid place-items-stretch p-6 rounded-3xl bg-[#f6f6f6]">
-            <p className="text-3xl text-[#075994] font-inter font-semibold text-center">
+            <p className="text-xl md:text-3xl text-[#075994] font-inter font-semibold text-center">
               Всяко <span className="text-[#f96e0c]">корпоративно събитие</span> е повече от дата в календара – то е момент, който обединява хората зад
               една обща идея. Независимо дали става дума за <span className="text-[#f96e0c]">тиймбилдинг, фирмено парти или бизнес конференция</span>,
               то носи възможност да изградите връзки, да вдъхновите екипа си и да <span className="text-[#f96e0c]">оставите</span> <span className="text-[#f96e0c]">впечатление</span>, което
@@ -150,7 +150,7 @@ const Corporate = () => {
               <h2 className="font-poppins font-bold text-4xl text-[#c1ff72] pb-6">
                 Защо ние?
               </h2>
-              <p className="font-inter font-normal text-3xl text-[#c1ff72] leading-relaxed">
+              <p className="font-inter font-normal text-xl md:text-3xl text-[#c1ff72] leading-relaxed">
                 В <span className="font-bold">Events Z Vision</span> подхождаме към корпоративните събития като към преживявания със смисъл. За нас те не са
                 просто добре изпълнена програма, а внимателно изградена история, в която всеки детайл има значение – от
                 атмосферата и пространството, до усещането, което хората ще носят със себе си след края му.
@@ -187,7 +187,7 @@ const Corporate = () => {
         <p className="font-inter text-3xl text-[#c1ff72] leading-snug mb-6">
           Нашият подход съчетава прецизност и креативност:
         </p>
-        <ul className="list-disc pl-6 marker:text-white font-inter text-3xl text-[#c1ff72] leading-snug space-y-6">
+        <ul className="list-disc pl-6 marker:text-white font-inter text-xl md:text-3xl text-[#c1ff72] leading-snug space-y-6">
           <li>професионална организация, която освобождава вас и екипа ви от стреса;</li>
           <li>авторски идеи и storytelling елементи, които придават уникален характер на всяко събитие;</li>
           <li>баланс между елегантност и свежест</li>
