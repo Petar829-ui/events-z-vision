@@ -65,7 +65,7 @@ const Conferences = () => {
 
       {/* Row 2: 2 елемента, центрирани */}
       <li className="col-span-full">
-        <ul className="flex flex-col sm:flex-row items-center justify-center gap-12">
+        <ul className="flex flex-col sm:flex-row items-center justify-center gap-12 grid grid-cols-2 md:grid-cols-2">
           {/* 4) Кетъринг и оборудване */}
           <li className="text-center">
             <img
