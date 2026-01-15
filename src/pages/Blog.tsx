@@ -25,21 +25,21 @@ const Blog = () => {
 </Helmet>
 
 <h1 className="sr-only">Истории, вдъхновения и идеи от света на събитията</h1>
-      <section className="relative isolate overflow-hidden h-[119ch] w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+      <section className="relative isolate overflow-hidden h-[100%] w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
         <div aria-hidden="true" className="absolute inset-0 bg-cover bg-center -z-10 pointer-events-none" style={{ backgroundImage: "url('website B1 design EZV.svg')" }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 py-12">
-            <h1 className="text-5xl md:text-6xl font-poppins font-semibold text-[#c1ff72] mb-24">Блог</h1>
-            <p className="text-3xl font-playfair font-semibold text-white max-w-7xl mx-auto">
+            <h1 className="text-4xl md:text-6xl font-poppins font-semibold text-[#c1ff72] mt-24 mb-14 md:mb-24">Блог</h1>
+            <p className="text-1xl md:text-3xl font-playfair font-semibold text-white max-w-7xl mx-auto">
               Събитията не свършват, когато светлините изгаснат – те остават като вдъхновение, идеи и истории.
               В нашия блог споделяме най-новите тенденции в организацията на събития, практични съвети за
               успешни корпоративни и лични формати, както и задкулисни моменти от нашат
             </p>
-            <p className="text-3xl font-playfair font-semibold text-[#c1ff72] max-w-7xl mx-auto m-12">
+            <p className="text-1xl md:text-3xl font-playfair font-semibold text-[#c1ff72] max-w-7xl mx-auto m-12">
               Тук ще откриете идеи за декорация, вдъхновяващи примери за тиймбилдинги, актуални теми от света
               на маркетинга и бранд изживяването.
             </p>
-            <p className="text-3xl font-playfair font-semibold text-white max-w-7xl mx-auto">
+            <p className="text-1xl md:text-3xl font-playfair font-semibold text-white max-w-7xl mx-auto">
               Ако търсите вдъхновение за следващото си събитие или искате да надникнете в кухнята на събитийната
               индустрия – сте на правилното място.
             </p>
@@ -81,11 +81,11 @@ const Blog = () => {
                     <div className="flex items-center"><User className="h-4 w-4 mr-1" /><span>{filteredPosts[0].author}</span></div>
                     <div className="flex items-center"><Tag className="h-4 w-4 mr-1" /><span>{filteredPosts[0].category}</span></div>
                   </div>
-                  <h2 className="text-3xl font-bold text-[#075994] mb-4">{filteredPosts[0].title}</h2>
-                  <p className="text-lg text-[#075994] mb-6 leading-relaxed">{filteredPosts[0].excerpt}</p>
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#075994] mb-4">{filteredPosts[0].title}</h2>
+                  <p className="text-1xl md:text-lg text-[#075994] mb-6 leading-relaxed">{filteredPosts[0].excerpt}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-[#075994]">{filteredPosts[0].readTime}</span>
-                    <button className="inline-flex items-center text-[#3b84b6] hover:text-[#075994] font-inter font-semibold transition-colors">
+                    <button className="inline-flex items-center text-sm text-[#3b84b6] hover:text-[#075994] font-inter font-semibold transition-colors">
                       Прочетете повече <ArrowRight className="ml-2 h-4 w-4" />
                     </button>
                   </div>
@@ -119,7 +119,7 @@ const Blog = () => {
                   <span>{post.readTime}</span>
                 </div>
 
-                <h3 className="text-xl font-bold text-[#075994] mb-3 line-clamp-2">
+                <h3 className="text-2xl md:text-xl font-bold text-[#075994] mb-3 line-clamp-2">
                   {post.title}
                 </h3>
 

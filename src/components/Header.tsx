@@ -108,13 +108,6 @@ const Header = () => {
               alt="Events Z Vision Logo"
               className="h-32 w-32 object-contain"
             />
-           <span
-              className={`text-xl font-inter font-bold ${
-                scrolled ? "text-gray-900" : "text-white"
-              }`}
-            >
-              Events Z Vision
-            </span>
           </Link>
 
           {/* Desktop nav (не пипам) */}

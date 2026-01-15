@@ -19,19 +19,19 @@ const AuthorsZ = () => {
   
 return (
     <div className="min-h-screen bg-gradient-to-r from-[#000000] via-[#3533cd] to-[#075994] pb-10">
-        <section className="relative h-[119ch] overflow-hidden isolate">
+        <section className="relative h-[100%] overflow-hidden isolate">
         <div
           aria-hidden="true"
           className="absolute inset-0 left-[-8px] right-[-8px] bg-cover bg-center -z-10 pointer-events-none"
           style={{ backgroundImage: "url('B26.svg')" }}
         />
         <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-64 pb-16">
-            <h2 className="text-6xl font-poppins font-semibold text-[#30e8b0] text-center -mt-10 mb-5">
+            <h2 className="text-4xl md:text-6xl font-poppins font-semibold text-[#30e8b0] text-center -mt-10 mb-5">
                 <span className="text-white">Авторски</span> Z Experience <span className="text-white">събития</span>
             </h2>
             </div>
-          <div className="mx-auto w-[630px] backdrop-blur-md aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center p-6 md:p-10 mb-20">
-            <p className="text-3xl font-inter font-normal text-white text-center leading-relaxed">
+          <div className="mx-auto w-[360px] sm:w-[530px] md:w-[630px] backdrop-blur-md aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center p-6 md:p-10 mb-20">
+            <p className="text-1xl md:text-3xl font-inter font-normal text-white text-center leading-relaxed">
               Нашите авторски <span className="text-[#30e8b0]">Z Experience</span> събития са вдъхновени от<br /> идеята за преживявания, които <span className="text-[#30e8b0]">съчетават изкуство, учене и забавление</span>. Това са инициативи, които ние създаваме и развиваме като собствена концепция – <span className="text-[#30e8b0]">пространства</span> за изразяване, откриване и свързване.
             </p>
           </div>
@@ -39,7 +39,7 @@ return (
 
 <section className="mt-16">
     <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-16 max-w-7xl">
-        <p className="text-2xl font-inter font-normal text-white text-left leading-relaxed">
+        <p className="text-1xl md:text-2xl font-inter font-normal text-white text-left leading-relaxed">
             Разгледай разнообразните ни предстоящи и изминали формати: арт терапии, неформално обучение, тематични уъркшопи, културни вечери и др., които провокират въображението и създават чувство за общност. Всеки проект има своя история и атмосфера – било то чрез музика, визуални изкуства или интерактивни активности. <br /><br />
 
 Целта на авторските Z Experience събития е да вдъхновяват, да предлагат нов начин за среща с изкуството и знанието, и да създават пространства за личностно развитие и споделени емоции. Те са отворени за всеки, който иска да преживее нещо различно, да се потопи в нови светове и да излезе от рамките на ежедневието.
@@ -81,8 +81,8 @@ return (
                     <div className="flex items-center"><User className="h-4 w-4 mr-1" /><span>{filteredPosts[0].author}</span></div>
                     <div className="flex items-center"><Tag className="h-4 w-4 mr-1" /><span>{filteredPosts[0].category}</span></div>
                   </div>
-                  <h2 className="text-3xl font-bold text-[#075994] mb-4">{filteredPosts[0].title}</h2>
-                  <p className="text-lg text-[#075994] mb-6 leading-relaxed">{filteredPosts[0].excerpt}</p>
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#075994] mb-4">{filteredPosts[0].title}</h2>
+                  <p className="text-1xl md:text-lg text-[#075994] mb-6 leading-relaxed">{filteredPosts[0].excerpt}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-[#075994]">{filteredPosts[0].readTime}</span>
                     <button className="inline-flex items-center text-[#3b84b6] hover:text-[#075994] font-inter font-semibold transition-colors">
