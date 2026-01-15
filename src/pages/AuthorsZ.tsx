@@ -32,7 +32,7 @@ return (
             </div>
           <div className="mx-auto w-[360px] sm:w-[530px] md:w-[630px] backdrop-blur-md aspect-square rounded-full border-4 border-[#30e8b0] grid place-items-center p-6 md:p-10 mb-20">
             <p className="text-1xl md:text-3xl font-inter font-normal text-white text-center leading-relaxed">
-              Нашите1 авторски <span className="text-[#30e8b0]">Z Experience</span> събития са вдъхновени от<br /> идеята за преживявания, които <span className="text-[#30e8b0]">съчетават изкуство, учене и забавление</span>. Това са инициативи, които ние създаваме и развиваме като собствена концепция – <span className="text-[#30e8b0]">пространства</span> за изразяване, откриване и свързване.
+              Нашите авторски <span className="text-[#30e8b0]">Z Experience</span> събития са вдъхновени от<br /> идеята за преживявания, които <span className="text-[#30e8b0]">съчетават изкуство, учене и забавление</span>. Това са инициативи, които ние създаваме и развиваме като собствена концепция – <span className="text-[#30e8b0]">пространства</span> за изразяване, откриване и свързване.
             </p>
           </div>
         </section>
