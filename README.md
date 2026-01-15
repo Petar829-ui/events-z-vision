@@ -5,40 +5,32 @@ Production website built for Events Z Vision.
 ## 🌍 Live
 https://eventszvision.bg/
 
-## 📸 Screenshots
-### Desktop
-![Desktop – Home](image-15.png)
-![Desktop – Sections](image-16.png)
-
-### Mobile
-![Mobile – Home](image-17.png)
-![Mobile – Menu](image-18.png)
-
 ## ⚛️ Tech Stack
 - React
 - TypeScript
-- CSS
+- Tailwind CSS
 - Responsive UI (mobile-first)
-- Modern component-based architecture
-- React Router
+- Vite
 
 ## 👤 My Role
-- Built the UI using React and TypeScript
+- Built the frontend using React & TypeScript
 - Implemented full responsive layout (mobile, tablet, desktop)
-- Structured components and styling
-- Worked on real production requirements
+- Handled UI structure, styling, and component logic
+- Worked on a real production website
 
 ## 🤝 Collaboration
-Developed together with a collaborator who handled some JavaScript logic, while I focused on TypeScript and responsive UI.
+This project was developed collaboratively.
+I focused on the TypeScript-based frontend and responsive UI,
+while a collaborator handled part of the JavaScript logic.
 
 ## ✨ Features
 - Fully responsive design
 - Clean and modern UI
-- Production-ready layout
+- Production-ready codebase
 - Real client website
 
-## 📌 Status
-Live and actively used.
+## 📸 Screenshots
+(Add screenshots of desktop & mobile views here)
 
-## Why this project matters
-This project was built to meet real client needs and is actively used in production.
+## 📌 Status
+Live and actively used in production.
