@@ -15,10 +15,10 @@ https://eventszvision.bg/
 ## ⚛️ Tech Stack
 - React
 - TypeScript
-- CSS
-- Responsive UI (mobile-first)
-- Modern component-based architecture
+- Tailwind CSS
 - React Router
+- Vite
+- - Responsive design (mobile-first)
 
 ## 👤 My Role
 - Built the UI using React and TypeScript
